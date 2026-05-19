@@ -1,1 +1,1 @@
- "# Manual de usuario del Laboratorio Virtual para el dise¤o logico digital mediante Logica Reconfigurable" 
+ # Manual de usuario del Laboratorio Virtual para el diseÂ¤o logico digital mediante Logica Reconfigurable
