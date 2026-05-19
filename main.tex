@@ -1,0 +1,530 @@
+% ============================================================
+%  Manual de Usuario — Laboratorio de Programación Virtual
+%  para el Diseño Lógico Digital mediante Lógica Reconfigurable
+% ============================================================
+\documentclass[12pt, a4paper, twoside]{book}
+
+% ── Codificación y lenguaje ─────────────────────────────────
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+
+% ── Tipografía elegante ─────────────────────────────────────
+\usepackage{lmodern}
+\usepackage{microtype}
+
+% ── Geometría de página ─────────────────────────────────────
+\usepackage[
+  top=3cm, bottom=3cm,
+  inner=3.5cm, outer=2.5cm,
+  headheight=15pt
+]{geometry}
+
+% ── Color y gráficos ────────────────────────────────────────
+\usepackage[dvipsnames, table]{xcolor}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+% Paleta principal
+\definecolor{PrimaryBlue}{RGB}{0, 61, 124}
+\definecolor{AccentBlue}{RGB}{0, 120, 215}
+\definecolor{LightGray}{RGB}{245, 247, 250}
+\definecolor{DarkGray}{RGB}{60, 60, 60}
+\definecolor{SuccessGreen}{RGB}{34, 139, 34}
+\definecolor{WarnOrange}{RGB}{204, 102, 0}
+
+% ── Encabezados y pies de página ────────────────────────────
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\small\color{PrimaryBlue}\leftmark}
+\fancyhead[RO]{\small\color{PrimaryBlue}\rightmark}
+\fancyfoot[C]{\small\color{DarkGray}\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\color{AccentBlue}\hrule width\headwidth height\headrulewidth}
+
+% ── Capítulos y secciones (titlesec) ────────────────────────
+\usepackage{titlesec}
+\usepackage{titletoc}
+
+% Estilo de capítulo con banda de color
+\titleformat{\chapter}[block]
+  {\normalfont\huge\bfseries\color{white}}
+  {}
+  {0pt}
+  {%
+    \begin{tikzpicture}[remember picture, overlay]
+      \fill[PrimaryBlue] (-2cm,-1.2cm) rectangle (\textwidth+2cm, 1.5cm);
+    \end{tikzpicture}%
+    \vspace{-0.5cm}%
+    \hspace{0.5cm}\thechapter\hspace{1cm}%
+  }
+  []
+\titlespacing*{\chapter}{0pt}{-30pt}{40pt}
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{PrimaryBlue}}
+  {\thesection}{1em}{}
+  [{\color{AccentBlue}\titlerule[0.8pt]}]
+
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\color{DarkGray}}
+  {\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries\color{AccentBlue}}
+  {\thesubsubsection}{1em}{}
+
+% ── Listas y enumeraciones ──────────────────────────────────
+\usepackage{enumitem}
+\setlist[itemize,1]{label=\textcolor{AccentBlue}{\textbullet}}
+\setlist[itemize,2]{label=\textcolor{PrimaryBlue}{\textendash}}
+
+% ── Cajas y avisos ──────────────────────────────────────────
+\usepackage[most]{tcolorbox}
+
+\tcbset{
+  base style/.style={
+    enhanced, arc=4pt, boxrule=0pt,
+    left=6pt, right=6pt, top=6pt, bottom=6pt,
+    fonttitle=\bfseries\small,
+  }
+}
+
+\newtcolorbox{notebox}[1][Nota]{
+  base style,
+  colback=AccentBlue!10, colframe=AccentBlue,
+  title={#1}, attach boxed title to top left={xshift=8pt, yshift=-4pt},
+  boxed title style={colback=AccentBlue, arc=3pt, boxrule=0pt}
+}
+
+\newtcolorbox{warnbox}[1][Advertencia]{
+  base style,
+  colback=WarnOrange!10, colframe=WarnOrange,
+  title={#1}, attach boxed title to top left={xshift=8pt, yshift=-4pt},
+  boxed title style={colback=WarnOrange, arc=3pt, boxrule=0pt}
+}
+
+\newtcolorbox{tipbox}[1][Consejo]{
+  base style,
+  colback=SuccessGreen!8, colframe=SuccessGreen,
+  title={#1}, attach boxed title to top left={xshift=8pt, yshift=-4pt},
+  boxed title style={colback=SuccessGreen, arc=3pt, boxrule=0pt}
+}
+
+% Paso numerado (para procedimientos)
+\newtcolorbox{stepbox}[1]{
+  base style,
+  colback=LightGray, colframe=PrimaryBlue, boxrule=1pt,
+  title={Paso #1}, fonttitle=\bfseries\color{white},
+  attach boxed title to top left={xshift=8pt, yshift=-4pt},
+  boxed title style={colback=PrimaryBlue, arc=3pt}
+}
+
+% ── Código fuente ───────────────────────────────────────────
+\usepackage{listings}
+\lstset{
+  backgroundcolor=\color{LightGray},
+  basicstyle=\ttfamily\small\color{DarkGray},
+  keywordstyle=\bfseries\color{PrimaryBlue},
+  commentstyle=\itshape\color{SuccessGreen!70!black},
+  stringstyle=\color{WarnOrange},
+  numberstyle=\tiny\color{DarkGray!60},
+  numbers=left, numbersep=8pt,
+  breaklines=true, keepspaces=true,
+  frame=single, framerule=0.4pt, rulecolor=\color{AccentBlue!40},
+  xleftmargin=15pt, xrightmargin=5pt,
+  captionpos=b,
+  showstringspaces=false,
+}
+
+% Lenguaje VHDL básico
+\lstdefinelanguage{VHDL}{
+  morekeywords={
+    entity, architecture, port, in, out, inout, buffer, signal,
+    process, begin, end, if, then, else, elsif, case, when,
+    std_logic, std_logic_vector, integer, boolean,
+    library, use, all, is, of, downto, to, others,
+    component, map, generic, wait, rising_edge, falling_edge
+  },
+  morecomment=[l]{--},
+  morestring=[b]{"},
+  sensitive=false
+}
+
+% ── Hipervínculos ───────────────────────────────────────────
+\usepackage[
+  colorlinks=true,
+  linkcolor=PrimaryBlue,
+  urlcolor=AccentBlue,
+  citecolor=DarkGray,
+  bookmarks=true,
+  bookmarksnumbered=true,
+  pdftitle={Manual de Usuario — Laboratorio de Programación Virtual},
+  pdfauthor={Treviño Hernández Jonathan; Peñarrieta Villa Jesús},
+  pdfsubject={VPL · VHDL · Lógica Digital Reconfigurable}
+]{hyperref}
+
+\usepackage{bookmark}
+
+% ── Tablas ──────────────────────────────────────────────────
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+% ── Misceláneos ─────────────────────────────────────────────
+\usepackage{emptypage}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font=small, labelfont={bf,color=PrimaryBlue}}
+
+% ============================================================
+%  Macros de utilidad
+% ============================================================
+\newcommand{\vpl}{\textsc{VPL}\xspace}
+\newcommand{\vhdl}{\textsc{VHDL}\xspace}
+\newcommand{\moodle}{\textit{Moodle}\xspace}
+\newcommand{\archivo}[1]{\texttt{\small#1}}
+\newcommand{\menu}[1]{\textsf{\textbf{#1}}}
+
+\usepackage{xspace}
+
+% ============================================================
+%  DOCUMENTO
+% ============================================================
+\begin{document}
+
+% ── Portada ─────────────────────────────────────────────────
+\begin{titlepage}
+  \pagecolor{PrimaryBlue}
+  \color{white}
+  \centering
+  \vspace*{1.5cm}
+
+  % Logo o símbolo decorativo
+  \begin{tikzpicture}
+    \draw[white, line width=2pt] (0,0) rectangle (3,3);
+    \draw[AccentBlue!60, line width=1.2pt] (0.3,0.3) rectangle (2.7,2.7);
+    \node[white, font=\Huge\bfseries] at (1.5,1.5) {VPL};
+  \end{tikzpicture}
+
+  \vspace{1cm}
+  {\fontsize{11}{13}\selectfont\scshape Laboratorio de Programación Virtual}\\[0.4cm]
+  {\fontsize{11}{13}\selectfont\scshape para el Diseño Lógico Digital}\\[0.4cm]
+  {\fontsize{11}{13}\selectfont\scshape mediante Lógica Reconfigurable}\\[1cm]
+
+  {\color{AccentBlue!60}\rule{0.6\textwidth}{1pt}}\\[0.8cm]
+
+  {\Huge\bfseries Manual de Usuario}\\[0.5cm]
+
+  {\color{AccentBlue!60}\rule{0.6\textwidth}{1pt}}\\[2cm]
+
+  {\large
+    Treviño Hernández Jonathan\\[0.3cm]
+    Peñarrieta Villa Jesús
+  }\\[2.5cm]
+
+  {\small\color{white!70} Versión 1.0 \textendash{} \the\year}
+
+  \vfill
+  {\small\color{white!60}
+    Escuela Superior de Cómputo\\
+    Ingeniería en Sistemas Computacionales
+  }
+  \vspace{1cm}
+\end{titlepage}
+
+\nopagecolor  % restaurar fondo blanco
+
+% ── Página de créditos ──────────────────────────────────────
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{center}
+  \small\color{DarkGray}
+  \textbf{Manual de Usuario}\\
+  Laboratorio de Programación Virtual para el Diseño Lógico Digital\\
+  mediante Lógica Reconfigurable\\[1em]
+  \textit{Treviño Hernández Jonathan \textendash{} Peñarrieta Villa Jesús}\\[1em]
+  \the\year\\[2em]
+  Este documento fue elaborado con fines académicos.\\
+  Plataforma: Moodle + Virtual Programming Lab (VPL)
+\end{center}
+\vspace*{\fill}
+\clearpage
+
+% ── Tabla de contenidos ─────────────────────────────────────
+\frontmatter
+\tableofcontents
+\listoffigures
+\listoftables
+\clearpage
+
+% ── Prefacio ────────────────────────────────────────────────
+\chapter*{Prefacio}
+\addcontentsline{toc}{chapter}{Prefacio}
+
+Este manual describe el uso del \textbf{Laboratorio de Programación Virtual}
+(\vpl) integrado en \moodle para el diseño y verificación de circuitos
+digitales escritos en \vhdl mediante lógica reconfigurable.
+
+El documento se divide en dos partes independientes:
+
+\begin{itemize}
+  \item \textbf{Parte I — Guía del Alumno:} acceso, edición, compilación,
+        simulación y evaluación automática de diseños \vhdl dentro del entorno \vpl.
+  \item \textbf{Parte II — Guía del Profesor:} creación y configuración de
+        actividades \vpl, definición de casos de prueba, generación de
+        \textit{testbenches} y análisis de reportes de evaluación.
+\end{itemize}
+
+\begin{notebox}[Sobre este documento]
+  Se recomienda leer cada sección de forma secuencial la primera vez
+  y usarlo después como referencia rápida.
+\end{notebox}
+
+\clearpage
+
+% ============================================================
+%           PARTE I — GUÍA DEL ALUMNO
+% ============================================================
+\mainmatter
+
+\part{Guía del Alumno}
+
+% ── Capítulo 1 ──────────────────────────────────────────────
+\chapter{Acceder a la Actividad VPL}
+\label{ch:acceso}
+
+\section{Requisitos previos}
+\label{sec:requisitos}
+% Navegador compatible, cuenta Moodle, acceso al curso
+
+\section{Ingreso a la plataforma Moodle}
+\label{sec:ingreso-moodle}
+% Pasos para iniciar sesión
+
+\section{Localizar y abrir la actividad VPL}
+\label{sec:abrir-vpl}
+% Cómo encontrar la actividad dentro del curso
+
+% ── Capítulo 2 ──────────────────────────────────────────────
+\chapter{Entrar al Editor de VPL}
+\label{ch:editor}
+
+\section{Descripción del entorno de edición}
+\label{sec:entorno}
+% Interfaz, paneles, barra de herramientas
+
+\section{Ajustes del editor}
+\label{sec:ajustes-editor}
+% Tema, indentación, atajos de teclado
+
+% ── Capítulo 3 ──────────────────────────────────────────────
+\chapter{Crear Archivos VHDL}
+\label{ch:crear-vhdl}
+
+\section{Estructura básica de un archivo VHDL}
+\label{sec:estructura-vhdl}
+% Entity, architecture, libraries
+
+\section{Crear un nuevo archivo en VPL}
+\label{sec:nuevo-archivo}
+% Procedimiento paso a paso
+
+\section{Nomenclatura y organización de archivos}
+\label{sec:nomenclatura}
+
+% ── Capítulo 4 ──────────────────────────────────────────────
+\chapter{Compilar Archivos VHDL}
+\label{ch:compilar}
+
+\section{Proceso de compilación en VPL}
+\label{sec:proceso-compilacion}
+% Qué ocurre al ejecutar la compilación
+
+\section{Interpretación de errores y advertencias}
+\label{sec:errores-compilacion}
+% Mensajes comunes y cómo corregirlos
+
+\section{Buenas prácticas de compilación}
+\label{sec:buenas-practicas-comp}
+
+% ── Capítulo 5 ──────────────────────────────────────────────
+\chapter{Generación de Código Testbench}
+\label{ch:testbench-alumno}
+
+\section{¿Qué es un testbench?}
+\label{sec:que-testbench}
+
+\section{Generación automática en el entorno VPL}
+\label{sec:gen-automatica-tb}
+
+\section{Personalización del testbench generado}
+\label{sec:personalizar-tb}
+
+% ── Capítulo 6 ──────────────────────────────────────────────
+\chapter{Uso de la Simulación en VPL}
+\label{ch:simulacion}
+
+\section{Iniciar la simulación}
+\label{sec:iniciar-sim}
+
+\section{Visualización de formas de onda}
+\label{sec:formas-onda}
+
+\section{Depuración mediante simulación}
+\label{sec:debug-sim}
+
+% ── Capítulo 7 ──────────────────────────────────────────────
+\chapter{Uso de la Evaluación Automática}
+\label{ch:evaluacion-alumno}
+
+\section{¿Cómo funciona la evaluación automática?}
+\label{sec:como-evalua}
+
+\section{Enviar el diseño para evaluación}
+\label{sec:enviar-evaluacion}
+
+\section{Interpretar la retroalimentación}
+\label{sec:retroalimentacion}
+
+\section{Reintentos y límite de envíos}
+\label{sec:reintentos}
+
+% ============================================================
+%           PARTE II — GUÍA DEL PROFESOR
+% ============================================================
+\part{Guía del Profesor}
+
+% ── Capítulo 8 ──────────────────────────────────────────────
+\chapter{Creación de Actividad VPL}
+\label{ch:crear-actividad}
+
+\section{Agregar VPL al curso en Moodle}
+\label{sec:agregar-vpl}
+
+\section{Configuraciones importantes}
+\label{sec:config-importantes}
+
+\subsection{Parámetros generales}
+\label{subsec:params-generales}
+% Nombre, descripción, calificación máxima
+
+\subsection{Restricciones de entrega}
+\label{subsec:restricciones}
+% Fechas, intentos, contraseña
+
+\subsection{Ejecución y recursos}
+\label{subsec:ejecucion-recursos}
+% Tiempo de CPU, memoria, servidor de ejecución
+
+\subsection{Visibilidad de resultados}
+\label{subsec:visibilidad}
+
+% ── Capítulo 9 ──────────────────────────────────────────────
+\chapter{Acciones Permitidas}
+\label{ch:acciones}
+
+\section{Tipos de acciones en VPL}
+\label{sec:tipos-acciones}
+% Ejecutar, depurar, evaluar
+
+\section{Configurar acciones disponibles para el alumno}
+\label{sec:config-acciones}
+
+\section{Scripts de acción}
+\label{sec:scripts-accion}
+% vpl_run.sh, vpl_debug.sh, vpl_evaluate.sh
+
+% ── Capítulo 10 ─────────────────────────────────────────────
+\chapter{Ficheros para la Ejecución}
+\label{ch:ficheros}
+
+\section{Archivos requeridos}
+\label{sec:archivos-requeridos}
+% Lista de ficheros necesarios para el entorno VHDL
+
+\section{Archivo \texttt{vpl\_evaluate.cases}}
+\label{sec:vpl-evaluate-cases}
+
+\subsection{Sintaxis general de los casos de prueba}
+\label{subsec:sintaxis-general}
+% Estructura básica: case, input, output, grade
+
+\subsection{Sintaxis específica para evaluar código VHDL}
+\label{subsec:sintaxis-vhdl}
+% Variables, señales, tiempos de simulación, comparación de vectores
+
+% ── Capítulo 11 ─────────────────────────────────────────────
+\chapter{Creación de un Testbench}
+\label{ch:crear-testbench}
+
+\section{Estructura del testbench para evaluación}
+\label{sec:estructura-tb-eval}
+
+\section{Plantilla base}
+\label{sec:plantilla-tb}
+
+\begin{lstlisting}[language=VHDL, caption={Plantilla base de testbench}]
+\end{lstlisting}
+
+\section{Automatización del testbench desde \archivo{vpl\_evaluate.sh}}
+\label{sec:auto-tb}
+
+% ── Capítulo 12 ─────────────────────────────────────────────
+\chapter{Test de Evaluación por Parte del Profesor}
+\label{ch:test-profesor}
+
+\section{Diseñar casos de prueba efectivos}
+\label{sec:casos-efectivos}
+
+\section{Probar la actividad antes de publicarla}
+\label{sec:probar-actividad}
+% Modo de prueba interno, cuenta de alumno de prueba
+
+\section{Verificación de la rúbrica de calificación}
+\label{sec:rubrica}
+
+% ── Capítulo 13 ─────────────────────────────────────────────
+\chapter{Análisis del Reporte de Resultados Generados por VPL}
+\label{ch:reporte}
+
+\section{Acceder al reporte de calificaciones}
+\label{sec:acceder-reporte}
+
+\section{Estructura del reporte de VPL}
+\label{sec:estructura-reporte}
+% Secciones: compilation, simulation, grade
+
+\section{Identificar errores frecuentes en entregas}
+\label{sec:errores-frecuentes}
+
+\section{Exportar y analizar resultados}
+\label{sec:exportar-resultados}
+% CSV, integración con libro de calificaciones Moodle
+
+% ── Apéndices ───────────────────────────────────────────────
+\appendix
+
+\chapter{Glosario de Términos}
+\label{apx:glosario}
+% VPL, VHDL, testbench, lógica reconfigurable, FPGA, etc.
+
+\chapter{Referencia Rápida de Comandos}
+\label{apx:referencia}
+% Tabla de comandos GHDL, scripts de VPL
+
+\chapter{Recursos y Referencias}
+\label{apx:recursos}
+% Documentación oficial VPL, IEEE VHDL, Moodle
+
+% ── Bibliografía ────────────────────────────────────────────
+\backmatter
+\bibliographystyle{plain}
+% \bibliography{referencias}
+
+\end{document}

@@ -1,0 +1,65 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {chapter}{Prefacio}{\es@scroman {vii}}{chapter*.4}%
+\contentsline {part}{I\hspace {1em}Guía del Alumno}{1}{part.1}%
+\contentsline {chapter}{\numberline {1}Acceder a la Actividad VPL}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Requisitos previos}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Ingreso a la plataforma Moodle}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Localizar y abrir la actividad VPL}{3}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Entrar al Editor de VPL}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Descripción del entorno de edición}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Ajustes del editor}{5}{section.2.2}%
+\contentsline {chapter}{\numberline {3}Crear Archivos VHDL}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Estructura básica de un archivo VHDL}{7}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Crear un nuevo archivo en VPL}{7}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Nomenclatura y organización de archivos}{7}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Compilar Archivos VHDL}{9}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Proceso de compilación en VPL}{9}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Interpretación de errores y advertencias}{9}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Buenas prácticas de compilación}{9}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Generación de Código Testbench}{11}{chapter.5}%
+\contentsline {section}{\numberline {5.1}¿Qué es un testbench?}{11}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Generación automática en el entorno VPL}{11}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Personalización del testbench generado}{11}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Uso de la Simulación en VPL}{13}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Iniciar la simulación}{13}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Visualización de formas de onda}{13}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Depuración mediante simulación}{13}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Uso de la Evaluación Automática}{15}{chapter.7}%
+\contentsline {section}{\numberline {7.1}¿Cómo funciona la evaluación automática?}{15}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Enviar el diseño para evaluación}{15}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Interpretar la retroalimentación}{15}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Reintentos y límite de envíos}{15}{section.7.4}%
+\contentsline {part}{II\hspace {1em}Guía del Profesor}{17}{part.2}%
+\contentsline {chapter}{\numberline {8}Creación de Actividad VPL}{19}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Agregar VPL al curso en Moodle}{19}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Configuraciones importantes}{19}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Parámetros generales}{19}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Restricciones de entrega}{19}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.3}Ejecución y recursos}{19}{subsection.8.2.3}%
+\contentsline {subsection}{\numberline {8.2.4}Visibilidad de resultados}{19}{subsection.8.2.4}%
+\contentsline {chapter}{\numberline {9}Acciones Permitidas}{21}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Tipos de acciones en VPL}{21}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Configurar acciones disponibles para el alumno}{21}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Scripts de acción}{21}{section.9.3}%
+\contentsline {chapter}{\numberline {10}Ficheros para la Ejecución}{23}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Archivos requeridos}{23}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Archivo \texttt {vpl\_evaluate.cases}}{23}{section.10.2}%
+\contentsline {subsection}{\numberline {10.2.1}Sintaxis general de los casos de prueba}{23}{subsection.10.2.1}%
+\contentsline {subsection}{\numberline {10.2.2}Sintaxis específica para evaluar código VHDL}{23}{subsection.10.2.2}%
+\contentsline {chapter}{\numberline {11}Creación de un Testbench}{25}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Estructura del testbench para evaluación}{25}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Plantilla base}{25}{section.11.2}%
+\contentsline {section}{\numberline {11.3}Automatización del testbench desde \texttt {\small vpl\_evaluate.sh}}{25}{section.11.3}%
+\contentsline {chapter}{\numberline {12}Test de Evaluación por Parte del Profesor}{27}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Diseñar casos de prueba efectivos}{27}{section.12.1}%
+\contentsline {section}{\numberline {12.2}Probar la actividad antes de publicarla}{27}{section.12.2}%
+\contentsline {section}{\numberline {12.3}Verificación de la rúbrica de calificación}{27}{section.12.3}%
+\contentsline {chapter}{\numberline {13}Análisis del Reporte de Resultados Generados por VPL}{29}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Acceder al reporte de calificaciones}{29}{section.13.1}%
+\contentsline {section}{\numberline {13.2}Estructura del reporte de VPL}{29}{section.13.2}%
+\contentsline {section}{\numberline {13.3}Identificar errores frecuentes en entregas}{29}{section.13.3}%
+\contentsline {section}{\numberline {13.4}Exportar y analizar resultados}{29}{section.13.4}%
+\contentsline {chapter}{\numberline {A}Glosario de Términos}{31}{appendix.Alph1}%
+\contentsline {chapter}{\numberline {B}Referencia Rápida de Comandos}{33}{appendix.Alph2}%
+\contentsline {chapter}{\numberline {C}Recursos y Referencias}{35}{appendix.Alph3}%
+\contentsfinish 
