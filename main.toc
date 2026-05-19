@@ -39,15 +39,18 @@
 \contentsline {chapter}{\numberline {9}Acciones Permitidas}{25}{chapter.9}%
 \contentsline {section}{\numberline {9.1}Tipos de acciones en VPL}{25}{section.9.1}%
 \contentsline {section}{\numberline {9.2}Configurar acciones disponibles para el alumno}{25}{section.9.2}%
-\contentsline {section}{\numberline {9.3}Scripts de acción}{27}{section.9.3}%
-\contentsline {chapter}{\numberline {10}Ficheros para la Ejecución}{29}{chapter.10}%
+\contentsline {chapter}{\numberline {10}Configuración de Casos de Prueba}{29}{chapter.10}%
 \contentsline {section}{\numberline {10.1}Archivo \texttt {vpl\_evaluate.cases}}{29}{section.10.1}%
 \contentsline {subsection}{\numberline {10.1.1}Sintaxis general de los casos de prueba}{29}{subsection.10.1.1}%
-\contentsline {subsection}{\numberline {10.1.2}Sintaxis específica para evaluar código VHDL}{29}{subsection.10.1.2}%
-\contentsline {chapter}{\numberline {11}Creación de un test}{31}{chapter.11}%
-\contentsline {section}{\numberline {11.1}Estructura del testbench para evaluación}{31}{section.11.1}%
-\contentsline {chapter}{\numberline {12}Test de Evaluación por Parte del Profesor}{33}{chapter.12}%
-\contentsline {chapter}{\numberline {A}Glosario de Términos}{35}{appendix.Alph1}%
-\contentsline {chapter}{\numberline {B}Referencia Rápida de Comandos}{37}{appendix.Alph2}%
-\contentsline {chapter}{\numberline {C}Recursos y Referencias}{39}{appendix.Alph3}%
+\contentsline {subsubsection}{Configuración global}{29}{subsubsection*.15}%
+\contentsline {subsubsection}{Definición de un caso}{30}{subsubsection*.16}%
+\contentsline {subsubsection}{Secciones de señales}{30}{subsubsection*.17}%
+\contentsline {subsection}{\numberline {10.1.2}Sintaxis específica para evaluar código VHDL}{31}{subsection.10.1.2}%
+\contentsline {subsubsection}{Circuitos combinatorios}{31}{subsubsection*.18}%
+\contentsline {subsubsection}{Circuitos secuenciales}{32}{subsubsection*.19}%
+\contentsline {subsubsection}{Uso del comodín \texttt {\_}}{33}{subsubsection*.20}%
+\contentsline {chapter}{\numberline {11}Test de Evaluación por Parte del Profesor}{35}{chapter.11}%
+\contentsline {chapter}{\numberline {A}Glosario de Términos}{37}{appendix.Alph1}%
+\contentsline {chapter}{\numberline {B}Referencia Rápida de Comandos}{39}{appendix.Alph2}%
+\contentsline {chapter}{\numberline {C}Recursos y Referencias}{41}{appendix.Alph3}%
 \contentsfinish 

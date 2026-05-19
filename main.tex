@@ -49,32 +49,25 @@
 \usepackage{titlesec}
 \usepackage{titletoc}
 
-% Estilo de capítulo con banda de color
-\titleformat{\chapter}[block]
-  {\normalfont\huge\bfseries\color{white}}
-  {}
-  {0pt}
-  {%
-    \begin{tikzpicture}[remember picture, overlay]
-      \fill[PrimaryBlue] (-2cm,-1.2cm) rectangle (\textwidth+2cm, 1.5cm);
-    \end{tikzpicture}%
-    \vspace{-0.5cm}%
-    \hspace{0.5cm}\thechapter\hspace{1cm}%
-  }
-  []
-\titlespacing*{\chapter}{0pt}{-30pt}{40pt}
+\titleformat{\chapter}[display]
+  {\normalfont}
+  {\raggedleft\fontsize{72}{72}\selectfont\color{DarkGray!18}\thechapter}
+  {-14pt}
+  {\huge\bfseries\color{DarkGray}}
+  [{\vspace{6pt}\color{AccentBlue}\titlerule[1pt]}]
+\titlespacing*{\chapter}{0pt}{20pt}{32pt}
 
 \titleformat{\section}
-  {\normalfont\Large\bfseries\color{PrimaryBlue}}
+  {\normalfont\Large\bfseries\color{DarkGray}}
   {\thesection}{1em}{}
-  [{\color{AccentBlue}\titlerule[0.8pt]}]
+  [{\vspace{2pt}\color{DarkGray!30}\titlerule[0.5pt]}]
 
 \titleformat{\subsection}
   {\normalfont\large\bfseries\color{DarkGray}}
   {\thesubsection}{1em}{}
 
 \titleformat{\subsubsection}
-  {\normalfont\normalsize\bfseries\color{AccentBlue}}
+  {\normalfont\normalsize\bfseries\itshape\color{DarkGray}}
   {\thesubsubsection}{1em}{}
 
 % ── Listas y enumeraciones ──────────────────────────────────
@@ -422,7 +415,7 @@ Antes de crear una actividad \vpl, verificar que se cumplan los siguientes requi
 \end{warnbox}
 
 \section{Crear una actividad VPL}
-\label{ch:crear-actividad}
+\label{sec:crear-actividad-vpl}
 Para crear una actividad \vpl en un curso de \moodle, seguir estos pasos: 
 \begin{stepbox}{1}
   Ingresar al curso donde se desea agregar la actividad \vpl.
@@ -431,7 +424,7 @@ Para crear una actividad \vpl en un curso de \moodle, seguir estos pasos:
 \centering
 \includegraphics[width=1\textwidth]{moodle/mis_cursos_moodle.png}
 \caption{Cursos disponibles en Moodle}
-\label{fig:sum_success}
+\label{fig:mis-cursos-moodle}
 \end{figure}
 \begin{stepbox}{2}
   Activar el modo de edición del curso haciendo clic en el botón \menu{Activar edición}.
@@ -440,7 +433,7 @@ Para crear una actividad \vpl en un curso de \moodle, seguir estos pasos:
 \centering
 \includegraphics[width=1\textwidth]{moodle/curso_vpl.png}
 \caption{Cursos donde se desea agregar la actividad VPL}
-\label{fig:sum_success}
+\label{fig:curso-vpl}
 \end{figure}
 \begin{stepbox}{3}
   En la sección del curso donde se desea colocar la actividad, hacer clic en \menu{Añadir una actividad o recurso}.En la ventana emergente, seleccionar \textbf{Virtual Programming Lab (VPL)}.
@@ -449,7 +442,7 @@ Para crear una actividad \vpl en un curso de \moodle, seguir estos pasos:
 \centering
 \includegraphics[width=1\textwidth]{vpl/crear_actividad_vpl.png}
 \caption{Crear actividad VPL}
-\label{fig:sum_success}
+\label{fig:crear-actividad-vpl}
 \end{figure}
 
 Una vez creada la actividad VPL, se nos muestra una vista para la configuración principal de la actividad, donde se pueden establecer diferentes configuraciones, de las cuales mencionaremos las mas relevantes para el correcto funcionamiento de la actividad, sin embargo, se recomienda revisar cada una de las opciones para personalizar la actividad a las necesidades del curso.
@@ -461,7 +454,7 @@ Incluye el nombre de la actividad (obligatorio), una descripción corta y una de
 \centering
 \includegraphics[width=1\textwidth]{vpl/actividad_vpl.png}
 \caption{Configuraciones generales de la actividad VPL}
-\label{fig:sum_success}
+\label{fig:config-generales-vpl}
 \end{figure}
 
 \subsection{Restricciones de entrega}
@@ -472,7 +465,7 @@ Aqui lo mas importante es configurar el numero maximo de archivos que el alumno 
 \centering
 \includegraphics[width=1\textwidth]{vpl/restricciones_actividad_vpl.png}
 \caption{Restricciones de entrega en la actividad VPL}
-\label{fig:sum_success}
+\label{fig:restricciones-vpl}
 \end{figure}
 
 \subsection{Otras configuraciones}
@@ -485,7 +478,7 @@ Una vez configurada la activisdad, se debe guardar los cambios para que la activ
 \centering
 \includegraphics[width=1\textwidth]{vpl/guardar_actividad_vpl.png}
 \caption{Guardar cambios en la actividad VPL}
-\label{fig:sum_success}
+\label{fig:guardar-actividad-vpl}
 \end{figure}
 
 Una vez guardadas las configuraciones establecidas, la actividad deberia verse como en la siguiente imagen:
@@ -524,7 +517,7 @@ Para habilitar o deshabilitar estas acciones para los alumnos, se deben seguir l
 \centering
 \includegraphics[width=1\textwidth]{profesor/mas_actividad_vpl.png}
 \caption{Mas configuraciones de la actividad VPL}
-\label{fig:sum_success}
+\label{fig:mas-actividad-vpl}
 \end{figure}
 \begin{stepbox}{2}
   En la sección de \textbf{Acciones de ejecución}, seleccionar las acciones que se desean habilitar para los alumnos.
@@ -533,7 +526,7 @@ Para habilitar o deshabilitar estas acciones para los alumnos, se deben seguir l
 \centering
 \includegraphics[width=1\textwidth]{profesor/opciones_ejecucion_vpl.png}
 \caption{Opciones de ejecución en la actividad VPL}
-\label{fig:sum_success}
+\label{fig:opciones-ejecucion-vpl}
 \end{figure} 
 
 \begin{stepbox}{3}
@@ -548,36 +541,258 @@ Para habilitar o deshabilitar estas acciones para los alumnos, se deben seguir l
 
 
 
-\section{Scripts de acción}
-\label{sec:scripts-accion}
-% vpl_run.sh, vpl_debug.sh, vpl_evaluate.sh
-
 % ── Capítulo 10 ─────────────────────────────────────────────
-\chapter{Ficheros para la Ejecución}
+\chapter{Configuración de Casos de Prueba}
 \label{ch:ficheros}
 
-
+El archivo \archivo{vpl\_evaluate.cases} contiene los casos de prueba que el
+evaluador \archivo{vpl\_evaluate.sh} ejecuta al calificar un diseño \vhdl.
+El evaluador compila el código del alumno, detecta la entidad top, extrae sus
+puertos, genera un testbench \vhdl automáticamente a partir de los casos, lo
+simula con GHDL y calcula la nota final.
 
 \section{Archivo \texttt{vpl\_evaluate.cases}}
 \label{sec:vpl-evaluate-cases}
 
+El archivo tiene dos bloques diferenciados:
+
+\begin{enumerate}
+  \item \textbf{Configuración global} --- parámetros que aplican a todos los
+        casos (reloj, reset, tiempo de simulación). Aparecen antes del primer
+        \texttt{case}.
+  \item \textbf{Definición de casos} --- uno o más bloques \texttt{case}, cada
+        uno con sus secciones \texttt{input:} y \texttt{output:}.
+\end{enumerate}
+
+Las líneas que comienzan con \texttt{\#} son comentarios y se ignoran.
+Los nombres de parámetro son insensibles a mayúsculas y minúsculas.
+
 \subsection{Sintaxis general de los casos de prueba}
 \label{subsec:sintaxis-general}
-% Estructura básica: case, input, output, grade
+
+\subsubsection{Configuración global}
+
+Los parámetros globales se escriben como \texttt{parámetro = valor} y se
+colocan al inicio del archivo, antes de cualquier \texttt{case}.
+La Tabla~\ref{tab:params-global} lista los parámetros disponibles.
+
+\begin{longtable}{L{3.6cm} L{3.2cm} L{5.7cm}}
+  \caption{Parámetros de configuración global}
+  \label{tab:params-global}\\
+  \toprule
+  \textbf{Parámetro} & \textbf{Ejemplo} & \textbf{Descripción} \\
+  \midrule
+  \endfirsthead
+  \toprule
+  \textbf{Parámetro} & \textbf{Ejemplo} & \textbf{Descripción} \\
+  \midrule
+  \endhead
+  \bottomrule
+  \endfoot
+  \texttt{stop\_time\_all} & \texttt{1 ms} &
+    Tiempo máximo de simulación global. \\
+  \addlinespace
+  \texttt{clock} & \texttt{CLK} &
+    Nombre del puerto de reloj. Si se omite, el evaluador lo detecta
+    automáticamente buscando puertos llamados \texttt{clk}, \texttt{clock}
+    o \texttt{ck}. \\
+  \addlinespace
+  \texttt{clock\_period} & \texttt{10 ns} &
+    Período completo del reloj. \\
+  \addlinespace
+  \texttt{reset} & \texttt{RESET} &
+    Nombre del puerto de reset. Si se omite se busca entre
+    \texttt{reset}, \texttt{rst}, \texttt{clr} y variantes con sufijo
+    \texttt{\_n}. \\
+  \addlinespace
+  \texttt{reset\_active} & \texttt{1} &
+    Nivel activo del reset: \texttt{1} = activo alto, \texttt{0} = activo
+    bajo. \\
+  \addlinespace
+  \texttt{reset\_type} & \texttt{async} &
+    Tipo de reset: \texttt{async} o \texttt{sync}. \\
+  \addlinespace
+  \texttt{reset\_cycles} & \texttt{2} &
+    Ciclos de reloj durante los que se mantiene el reset al inicio de la
+    simulación. \\
+\end{longtable}
+
+\subsubsection{Definición de un caso}
+
+Cada caso comienza con la línea \texttt{case = \textit{descripción}} y contiene
+los parámetros opcionales listados en la Tabla~\ref{tab:params-caso}, seguidos
+de las secciones de señales.
+
+\begin{longtable}{L{3.6cm} L{3.2cm} L{5.7cm}}
+  \caption{Parámetros por caso de prueba}
+  \label{tab:params-caso}\\
+  \toprule
+  \textbf{Parámetro} & \textbf{Ejemplo} & \textbf{Descripción} \\
+  \midrule
+  \endfirsthead
+  \toprule
+  \textbf{Parámetro} & \textbf{Ejemplo} & \textbf{Descripción} \\
+  \midrule
+  \endhead
+  \bottomrule
+  \endfoot
+  \texttt{case} & \texttt{Prueba AND} &
+    Nombre del caso; aparece en los reportes de fallo. \\
+  \addlinespace
+  \texttt{stop\_time} & \texttt{50 ns} &
+    Tiempo de simulación específico para este caso.
+    Sobreescribe \texttt{stop\_time\_all} solo para este caso. \\
+  \addlinespace
+  \texttt{grade reduction} & \texttt{25\%} &
+    Penalización si el caso falla. Se admite porcentaje (\texttt{\%}) o
+    valor absoluto. Si se omite, la penalización se reparte
+    equitativamente entre todos los casos. \\
+\end{longtable}
+
+\subsubsection{Secciones de señales}
+
+Dentro de cada caso se declaran dos secciones:
+
+\begin{itemize}
+  \item \texttt{input:} --- valores que se aplican a los puertos de entrada.
+  \item \texttt{output:} --- valores esperados en los puertos de salida.
+\end{itemize}
+
+Cada señal se especifica en una línea indentada con el formato:
+
+\begin{center}
+  \texttt{~~~~NOMBRE\_SEÑAL = valor}
+\end{center}
+
+El valor puede ser:
+
+\begin{itemize}
+  \item \textbf{Escalar} --- un único vector de bits: \texttt{A = 1010}.
+  \item \textbf{Array} --- varios valores para múltiples ciclos de reloj:
+        \texttt{X = [0, 1, 1, 0]}.
+  \item \textbf{Comodín} --- guion bajo \texttt{\_} dentro de un array de
+        salida indica que ese ciclo no se verifica:
+        \texttt{Z = [\_, \_, 1, 0]}.
+\end{itemize}
+
+Si alguna señal de entrada o salida usa sintaxis de array, el evaluador
+activa el \textbf{modo secuencial}: genera un testbench que aplica un valor
+por ciclo de reloj y verifica la salida al final de cada ciclo.
+Sin arrays y sin reloj detectado, opera en \textbf{modo combinatorio}:
+aplica las entradas, espera \texttt{stop\_time} y verifica las salidas una
+sola vez.
 
 \subsection{Sintaxis específica para evaluar código VHDL}
 \label{subsec:sintaxis-vhdl}
-% Variables, señales, tiempos de simulación, comparación de vectores
+
+\subsubsection{Circuitos combinatorios}
+
+Para circuitos sin reloj se omite la configuración global de clock/reset.
+El evaluador aplica los valores de \texttt{input:}, espera \texttt{stop\_time}
+y compara las salidas declaradas en \texttt{output:}.
+
+\begin{lstlisting}[caption={Caso combinatorio --- sumador de 4 bits con acarreo},
+                   label={lst:cases-comb}]
+# Tiempo de espera por defecto para todos los casos
+stop_time_all = 50 ns
+
+case = Suma basica sin acarreo
+stop_time = 20 ns
+grade reduction = 50%
+input:
+    A  = 0011
+    B  = 0101
+    Co = 0
+output:
+    S  = 1000
+    C4 = 0
+
+case = Suma con acarreo de entrada
+stop_time = 20 ns
+grade reduction = 50%
+input:
+    A  = 1111
+    B  = 0001
+    Co = 1
+output:
+    S  = 0001
+    C4 = 1
+\end{lstlisting}
+
+\subsubsection{Circuitos secuenciales}
+
+Para circuitos con reloj se declara la configuración global antes del primer
+\texttt{case}. Los valores de entrada y salida se escriben como arrays
+\texttt{[v0, v1, \ldots]}, donde cada elemento corresponde a un ciclo de
+reloj. El evaluador genera el reloj, aplica el reset durante
+\texttt{reset\_cycles} ciclos y luego recorre el array ciclo a ciclo.
+
+\begin{lstlisting}[caption={Caso secuencial --- FSM Mealy},
+                   label={lst:cases-seq}]
+clock         = CLK
+clock_period  = 10 ns
+reset         = RESET
+reset_active  = 0       # activo bajo
+reset_type    = async
+reset_cycles  = 2
+stop_time_all = 1 ms
+
+# Secuencia X=[0,0,1,1] desde estado inicial C
+# Transiciones: C->B->A->B->C
+case = Recorrido C-B-A-B-C
+grade reduction = 60%
+input:
+    X = [0, 0, 1, 1]
+output:
+    Z1 = [1, 0, 1, 1]
+    Z2 = [0, 1, 1, 0]
+
+case = Una transicion C a B
+grade reduction = 40%
+input:
+    X = [0]
+output:
+    Z1 = [1]
+    Z2 = [0]
+\end{lstlisting}
+
+\begin{warnbox}[Longitud de arrays]
+  Los arrays de \texttt{input:} y \texttt{output:} de un mismo caso deben
+  tener la misma longitud. El evaluador no rellena valores faltantes.
+\end{warnbox}
+
+\subsubsection{Uso del comodín \texttt{\_}}
+
+El comodín \texttt{\_} en un array de salida indica que ese ciclo no se
+verifica. Es útil cuando la salida del circuito no está definida durante los
+primeros ciclos (por ejemplo, mientras se llena un pipeline o un registro de
+desplazamiento).
+
+\begin{lstlisting}[caption={Comodin en salidas de registro de desplazamiento},
+                   label={lst:cases-wildcard}]
+clock         = CLK
+clock_period  = 10 ns
+reset         = CLR
+reset_active  = 1
+reset_type    = async
+reset_cycles  = 2
+stop_time_all = 1 ms
+
+# Ciclo 1: carga L=1 -> Q=100000000000
+# Ciclo 2: desplaza SHE=1 -> Q=010000000000
+# Ciclo 3: desplaza SHE=1 -> Q=001000000000
+case = Cargar y desplazar
+grade reduction = 35%
+input:
+    L   = [1, 0, 0]
+    SHE = [0, 1, 1]
+    ES  = [0, 0, 0]
+    D   = 100000000000
+output:
+    LED = [_, 0100010000000000, 0100001000000000]
+\end{lstlisting}
 
 % ── Capítulo 11 ─────────────────────────────────────────────
-\chapter{Creación de un test}
-\label{ch:crear-testbench}
-
-\section{Estructura del testbench para evaluación}
-\label{sec:estructura-tb-eval}
-
-
-% ── Capítulo 12 ─────────────────────────────────────────────
 \chapter{Test de Evaluación por Parte del Profesor}
 \label{ch:test-profesor}
 
