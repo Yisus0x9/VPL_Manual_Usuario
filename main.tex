@@ -400,41 +400,153 @@ El documento se divide en dos partes independientes:
 % ============================================================
 \part{Guía del Profesor}
 
+
 % ── Capítulo 8 ──────────────────────────────────────────────
 \chapter{Creación de Actividad VPL}
 \label{ch:crear-actividad}
 
-\section{Agregar VPL al curso en Moodle}
-\label{sec:agregar-vpl}
+\section{Precondiciones}
+\label{sec:precondiciones-profesor}
 
-\section{Configuraciones importantes}
-\label{sec:config-importantes}
+Antes de crear una actividad \vpl, verificar que se cumplan los siguientes requisitos:
 
-\subsection{Parámetros generales}
-\label{subsec:params-generales}
-% Nombre, descripción, calificación máxima
+\begin{itemize}
+  \item \textbf{Cuenta con rol de profesor y permisos de edición:} el usuario debe tener asignado el rol de \textit{Profesor} en \moodle con capacidad de editar el curso. Sin este rol, las opciones de configuración de actividades no estarán disponibles.
+  \item \textbf{Sesión activa:} el profesor debe haber iniciado sesión en la plataforma \moodle antes de realizar cualquier operación.
+  \item \textbf{Curso creado:} debe existir al menos un curso en \moodle al cual el profesor tenga acceso de edición. La actividad \vpl se agrega dentro de un curso existente.
+  \item \textbf{Plugin de VPL instalado:} El plugin de VPL debe estar instalado y activo en la plataforma \moodle.
+\end{itemize}
+
+\begin{warnbox}[Verificación de permisos]
+  Si las opciones de edición no aparecen en el curso, contactar al administrador de la plataforma para revisar el rol asignado a la cuenta.
+\end{warnbox}
+
+\section{Crear una actividad VPL}
+\label{ch:crear-actividad}
+Para crear una actividad \vpl en un curso de \moodle, seguir estos pasos: 
+\begin{stepbox}{1}
+  Ingresar al curso donde se desea agregar la actividad \vpl.
+\end{stepbox}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{moodle/mis_cursos_moodle.png}
+\caption{Cursos disponibles en Moodle}
+\label{fig:sum_success}
+\end{figure}
+\begin{stepbox}{2}
+  Activar el modo de edición del curso haciendo clic en el botón \menu{Activar edición}.
+\end{stepbox}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{moodle/curso_vpl.png}
+\caption{Cursos donde se desea agregar la actividad VPL}
+\label{fig:sum_success}
+\end{figure}
+\begin{stepbox}{3}
+  En la sección del curso donde se desea colocar la actividad, hacer clic en \menu{Añadir una actividad o recurso}.En la ventana emergente, seleccionar \textbf{Virtual Programming Lab (VPL)}.
+\end{stepbox}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{vpl/crear_actividad_vpl.png}
+\caption{Crear actividad VPL}
+\label{fig:sum_success}
+\end{figure}
+
+Una vez creada la actividad VPL, se nos muestra una vista para la configuración principal de la actividad, donde se pueden establecer diferentes configuraciones, de las cuales mencionaremos las mas relevantes para el correcto funcionamiento de la actividad, sin embargo, se recomienda revisar cada una de las opciones para personalizar la actividad a las necesidades del curso.
+
+\subsection{Configuraciones generales}
+\label{sec:config-generales}
+Incluye el nombre de la actividad (obligatorio), una descripción corta y una descripción detallada donde podemos añadir mas recursos (texto, imagenes, videos, etc.).
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{vpl/actividad_vpl.png}
+\caption{Configuraciones generales de la actividad VPL}
+\label{fig:sum_success}
+\end{figure}
 
 \subsection{Restricciones de entrega}
 \label{subsec:restricciones}
-% Fechas, intentos, contraseña
+En esta sección se puedes establecer configuraciones como el numero maximo de archivos que el alumno puede entrgar, el tipo de trabajo (individual o grupal), fecha de entrega, entre otras opciones que pueden ser útiles para controlar la entrega de los trabajos por parte de los alumnos.
+Aqui lo mas importante es configurar el numero maximo de archivos que el alumno puede entregar, por default se establecieron 2 archivos maximos, considerando un archivo vhdl fuente y su archivo testbench generado, sin embargo, dependiendo de la actividad se pueden establecer mas archivos maximos para que el alumno pueda entregar archivos adicionales (por ejemplo, un archivo de texto con una explicación del diseño o un diagrama del circuito).
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{vpl/restricciones_actividad_vpl.png}
+\caption{Restricciones de entrega en la actividad VPL}
+\label{fig:sum_success}
+\end{figure}
 
-\subsection{Ejecución y recursos}
-\label{subsec:ejecucion-recursos}
-% Tiempo de CPU, memoria, servidor de ejecución
+\subsection{Otras configuraciones}
+\label{subsec:config-otras}
+EL VPL es un plugin muy completo que ofrece muchas opciones de configuración, por lo que se recomienda revisar cada una de las secciones para personalizar la actividad a las necesidades del curso, sin embargo, se recomienda revisar la  documentacion propia de VPL for Moodle para  saber mas acerca de las otras configuraciones.
 
-\subsection{Visibilidad de resultados}
-\label{subsec:visibilidad}
+
+Una vez configurada la activisdad, se debe guardar los cambios para que la actividad quede disponible para los alumnos.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{vpl/guardar_actividad_vpl.png}
+\caption{Guardar cambios en la actividad VPL}
+\label{fig:sum_success}
+\end{figure}
+
+Una vez guardadas las configuraciones establecidas, la actividad deberia verse como en la siguiente imagen:
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{vpl/overview_actividad_vpl.png}
+\caption{Visión general de la actividad VPL}
+\label{fig:vista_general}
+\end{figure}
 
 % ── Capítulo 9 ──────────────────────────────────────────────
 \chapter{Acciones Permitidas}
 \label{ch:acciones}
+En esta sección se describen como configurar las acciones que ofrece el entorno de VPL, esto respecto a la ejecución, depuración y evaluación de los diseños VHDL entregados por los alumnos.
+Es importante configurar esta sección una vez creada la actividad, ya que si visualizamos la imagen \ref{fig:vista_general}, observamos que por se visualiza la acción  RUN habilitada y Evaluate deshabilitada, 
+por lo que hay que configurar las  acciones para permitir o no al alumno usarlas.
 
 \section{Tipos de acciones en VPL}
 \label{sec:tipos-acciones}
-% Ejecutar, depurar, evaluar
+En el laboratorio virtual de VPL, existen 5 tipos principales de acciones  que se pueden configurar para los alumnos:
+\begin{itemize}
+  \item \textbf{Run (Ejecutar):} Permite a los alumnos ejecutar su código VHDL para verificar su funcionamiento básico. Esta acción generalmente compila y simula el diseño, mostrando los resultados de la simulación.
+  \item \textbf{Debug (Depurar):} Permite a los alumnos depurar su código VHDL, lo que puede incluir la visualización de formas de onda, inspección de señales y análisis detallado del comportamiento del diseño durante la simulación.
+  \item \textbf{Evaluate (Evaluar):} Permite a los alumnos enviar su diseño para evaluación automática, donde se ejecutan casos de prueba predefinidos para verificar la corrección del diseño y asignar una calificación basada en los resultados. 
+  \item \textbf{Remote Lab (Laboratorio Remoto):} Permite conectarse al laboratorio remoto de FPGA'S.
+  \item \textbf{Testbench (Generar Testbench):} Permite a los alumnos generar automáticamente un testbench básico para su diseño VHDL, lo que facilita la simulación y verificación de su código.
+\end{itemize}
 
 \section{Configurar acciones disponibles para el alumno}
 \label{sec:config-acciones}
+Para habilitar o deshabilitar estas acciones para los alumnos, se deben seguir los siguientes pasos:
+\begin{stepbox}{1}
+  Ingresar a la actividad VPL creada y hacer clic en el botón \menu{MAS / More} para que se desplieguen mas opciones del VPL.
+\end{stepbox}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{profesor/mas_actividad_vpl.png}
+\caption{Mas configuraciones de la actividad VPL}
+\label{fig:sum_success}
+\end{figure}
+\begin{stepbox}{2}
+  En la sección de \textbf{Acciones de ejecución}, seleccionar las acciones que se desean habilitar para los alumnos.
+\end{stepbox}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{profesor/opciones_ejecucion_vpl.png}
+\caption{Opciones de ejecución en la actividad VPL}
+\label{fig:sum_success}
+\end{figure} 
+
+\begin{stepbox}{3}
+  Dentro de esta sección lo mas importante es habilitar o deshabilitar las opciones de \textbf{Run} , \textbf{Debug} , \textbf{Remote Lab} , \textbf{Generate Testbench} y \textbf{Evaluate}, ya que estas son las acciones principales para que el alumno pueda ejecutar.
+\end{stepbox}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{profesor/permitir_opciones_vpl.png}
+\caption{Permitir opciones de ejecución en la actividad VPL}
+\label{fig:permitir_opciones}
+\end{figure} 
+
+
 
 \section{Scripts de acción}
 \label{sec:scripts-accion}
@@ -444,9 +556,7 @@ El documento se divide en dos partes independientes:
 \chapter{Ficheros para la Ejecución}
 \label{ch:ficheros}
 
-\section{Archivos requeridos}
-\label{sec:archivos-requeridos}
-% Lista de ficheros necesarios para el entorno VHDL
+
 
 \section{Archivo \texttt{vpl\_evaluate.cases}}
 \label{sec:vpl-evaluate-cases}
@@ -460,52 +570,17 @@ El documento se divide en dos partes independientes:
 % Variables, señales, tiempos de simulación, comparación de vectores
 
 % ── Capítulo 11 ─────────────────────────────────────────────
-\chapter{Creación de un Testbench}
+\chapter{Creación de un test}
 \label{ch:crear-testbench}
 
 \section{Estructura del testbench para evaluación}
 \label{sec:estructura-tb-eval}
 
-\section{Plantilla base}
-\label{sec:plantilla-tb}
-
-\begin{lstlisting}[language=VHDL, caption={Plantilla base de testbench}]
-\end{lstlisting}
-
-\section{Automatización del testbench desde \archivo{vpl\_evaluate.sh}}
-\label{sec:auto-tb}
 
 % ── Capítulo 12 ─────────────────────────────────────────────
 \chapter{Test de Evaluación por Parte del Profesor}
 \label{ch:test-profesor}
 
-\section{Diseñar casos de prueba efectivos}
-\label{sec:casos-efectivos}
-
-\section{Probar la actividad antes de publicarla}
-\label{sec:probar-actividad}
-% Modo de prueba interno, cuenta de alumno de prueba
-
-\section{Verificación de la rúbrica de calificación}
-\label{sec:rubrica}
-
-% ── Capítulo 13 ─────────────────────────────────────────────
-\chapter{Análisis del Reporte de Resultados Generados por VPL}
-\label{ch:reporte}
-
-\section{Acceder al reporte de calificaciones}
-\label{sec:acceder-reporte}
-
-\section{Estructura del reporte de VPL}
-\label{sec:estructura-reporte}
-% Secciones: compilation, simulation, grade
-
-\section{Identificar errores frecuentes en entregas}
-\label{sec:errores-frecuentes}
-
-\section{Exportar y analizar resultados}
-\label{sec:exportar-resultados}
-% CSV, integración con libro de calificaciones Moodle
 
 % ── Apéndices ───────────────────────────────────────────────
 \appendix
