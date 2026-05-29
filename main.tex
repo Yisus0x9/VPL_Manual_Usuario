@@ -275,8 +275,7 @@ El documento se divide en dos partes independientes:
 \end{itemize}
 
 \begin{notebox}[Sobre este documento]
-  Se recomienda leer cada sección de forma secuencial la primera vez
-  y usarlo después como referencia rápida.
+  Se recomienda leer la documentación oficial de VPL for Moodle para saber más sobre sus características avanzadas, personalización y solución de problemas comunes: \url{https://vpl.dis.ulpgc.es/documentation/vpl-4.4.2/}
 \end{notebox}
 
 \clearpage
@@ -294,15 +293,81 @@ El documento se divide en dos partes independientes:
 
 \section{Requisitos previos}
 \label{sec:requisitos}
-% Navegador compatible, cuenta Moodle, acceso al curso
+
+Para utilizar el laboratorio virtual \vpl es necesario contar con:
+
+\begin{itemize}
+  \item \textbf{Navegador web actualizado:} se recomienda Chrome, Firefox,
+        Brave o Edge. 
+  \item \textbf{Cuenta activa en Moodle:} el alumno debe tener usuario y
+        contraseña válidos para iniciar sesión en la plataforma.
+  \item \textbf{Matrícula en el curso:} la cuenta debe estar inscrita en el
+        curso que contiene la actividad \vpl.
+  \item \textbf{Conexión a internet estable:} la compilación y simulación se
+        ejecutan en el servidor; una conexión inestable puede interrumpir
+        la ejecución.
+\end{itemize}
 
 \section{Ingreso a la plataforma Moodle}
 \label{sec:ingreso-moodle}
-% Pasos para iniciar sesión
+
+\begin{stepbox}{1}
+  Abrir el navegador e ingresar la dirección URL de la plataforma \moodle
+  proporcionada por el profesor o institución.
+\end{stepbox}
+
+\begin{stepbox}{2}
+  En la página de inicio de sesión, introducir el \textbf{nombre de usuario}
+  y la \textbf{contraseña} y hacer clic en \menu{Iniciar sesión}.
+\end{stepbox}
+
 
 \section{Localizar y abrir la actividad VPL}
 \label{sec:abrir-vpl}
-% Cómo encontrar la actividad dentro del curso
+
+Una vez dentro de \moodle, la sección \menu{My courses} muestra los cursos
+en los que el alumno está inscrito.
+
+\begin{stepbox}{1}
+  Hacer clic en \menu{My courses} en la barra de navegación superior para
+  ver el listado de cursos disponibles.
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{alumno/vista_curso_almno_1.png}
+\caption{Vista de cursos disponibles en Moodle para el alumno}
+\label{fig:vista-cursos-alumno}
+\end{figure}
+
+\begin{stepbox}{2}
+  Hacer clic sobre la tarjeta del curso correspondiente para acceder a él.
+\end{stepbox}
+
+\begin{stepbox}{3}
+  Dentro del curso, localizar la actividad \vpl en la lista de actividades
+  y hacer clic sobre ella para abrir su página.
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{alumno/vista_actividad_2.png}
+\caption{Página de la actividad VPL con información de entrega}
+\label{fig:vista-actividad}
+\end{figure}
+
+En la página de la actividad (Figura~\ref{fig:vista-actividad}) se muestra
+información relevante:
+
+\begin{itemize}
+  \item \textbf{Due date:} fecha y hora límite de entrega.
+  \item \textbf{Maximum number of files:} número máximo de archivos
+        permitidos (generalmente el archivo \vhdl fuente y su testbench).
+  \item \textbf{Type of work:} modalidad de la actividad (individual o grupal).
+\end{itemize}
+
+Para ingresar al editor y comenzar a trabajar, hacer clic en el botón
+\menu{VPL} en la parte inferior de la página o en la pestaña \menu{Edit}.
 
 % ── Capítulo 2 ──────────────────────────────────────────────
 \chapter{Entrar al Editor de VPL}
@@ -310,11 +375,46 @@ El documento se divide en dos partes independientes:
 
 \section{Descripción del entorno de edición}
 \label{sec:entorno}
-% Interfaz, paneles, barra de herramientas
+
+Al acceder al editor de \vpl se carga un entorno compuesto por tres áreas
+principales:
+
+\begin{itemize}
+  \item \textbf{Barra de herramientas:} en la parte superior contiene las
+        acciones disponibles: crear archivo, guardar, ejecutar (\textit{Run}),
+        depurar (\textit{Debug}), generar testbench y evaluar, entre otras.
+  \item \textbf{Panel de archivos y editor:} área central donde se escribe y
+        edita el código \vhdl. Las pestañas superiores muestran los archivos
+        abiertos y el panel \textit{File list} los lista a la izquierda.
+  \item \textbf{Panel de resultados (\textit{Compilation}):} aparece a la
+        derecha al ejecutar cualquier acción y muestra la salida del
+        compilador o del simulador.
+\end{itemize}
+
+Para crear el primer archivo de trabajo, hacer clic en el ícono
+\menu{Crear nuevo archivo} (primer ícono de la barra de herramientas).
+Aparece un cuadro de diálogo solicitando el nombre del nuevo archivo
+(Figura~\ref{fig:acceso-editor}). Al scceder por primera vez al editor, en automatico lanza el recuadro para solicitar
+el nombre del nuevo archivo, por lo que el paso de hacer clic en el ícono de crear nuevo archivo se puede omitir si es la primera vez que se accede al editor.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{alumno/acceso_editor_vpl_3.png}
+\caption{Editor de VPL con el diálogo para crear un nuevo archivo}
+\label{fig:acceso-editor}
+\end{figure}
 
 \section{Ajustes del editor}
 \label{sec:ajustes-editor}
-% Tema, indentación, atajos de teclado
+
+El editor incluye resaltado de sintaxis para \vhdl, indentación automática
+y deshacer/rehacer cambios con los controles de la barra de herramientas.
+
+\begin{tipbox}[Pantalla completa]
+  El ícono de pantalla completa (extremo derecho de la barra de herramientas)
+  amplía el editor para aprovechar todo el espacio disponible, lo que
+  resulta útil al revisar el código y los resultados al mismo tiempo.
+\end{tipbox}
 
 % ── Capítulo 3 ──────────────────────────────────────────────
 \chapter{Crear Archivos VHDL}
@@ -322,14 +422,66 @@ El documento se divide en dos partes independientes:
 
 \section{Estructura básica de un archivo VHDL}
 \label{sec:estructura-vhdl}
-% Entity, architecture, libraries
+
+Un archivo \vhdl mínimo consta de tres partes:
+
+\begin{enumerate}
+  \item \textbf{Declaración de bibliotecas} --- importación de paquetes
+        estándar necesarios (por ejemplo \texttt{ieee.std\_logic\_1164}).
+  \item \textbf{Entidad (\textit{entity})} --- define el nombre del
+        componente y sus puertos de entrada y salida.
+  \item \textbf{Arquitectura (\textit{architecture})} --- describe el
+        comportamiento o la estructura interna del componente.
+\end{enumerate}
+
 
 \section{Crear un nuevo archivo en VPL}
 \label{sec:nuevo-archivo}
-% Procedimiento paso a paso
+
+\begin{stepbox}{1}
+  En la barra de herramientas, hacer clic en el ícono
+  \menu{Crear nuevo archivo}.
+\end{stepbox}
+
+\begin{stepbox}{2}
+  En el cuadro de diálogo, escribir el nombre del archivo incluyendo la
+  extensión \texttt{.vhd} (por ejemplo: \texttt{alu.vhd}) y hacer clic
+  en \menu{OK}.
+\end{stepbox}
+
+\begin{stepbox}{3}
+  El archivo recién creado aparece como una nueva pestaña en el editor y
+  queda listado en el panel \textit{File list} (Figura~\ref{fig:fichero-creado}).
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{alumno/fichero_creado_4.png}
+\caption{Archivo \texttt{alu.vhd} creado y visible en el editor de VPL}
+\label{fig:fichero-creado}
+\end{figure}
+
+\begin{stepbox}{4}
+  Escribir el código \vhdl en el área del editor. La
+  Figura~\ref{fig:codigo-creado} muestra un ejemplo de diseño de una
+  Unidad Lógico-Aritmética (\textsc{ALU}) con su entidad y arquitectura
+  completas.
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{alumno/codigo_creado_5.png}
+\caption{Código VHDL escrito en el archivo \texttt{alu.vhd}}
+\label{fig:codigo-creado}
+\end{figure}
 
 \section{Nomenclatura y organización de archivos}
 \label{sec:nomenclatura}
+
+Se recomienda usar nombres descriptivos en minúsculas separando palabras
+con guion bajo (por ejemplo: \texttt{sumador\_restador.vhd},
+\texttt{mux\_4to1.vhd}). Evitar espacios y caracteres especiales en los
+nombres de archivo, ya que pueden causar errores durante la compilación.
 
 % ── Capítulo 4 ──────────────────────────────────────────────
 \chapter{Compilar Archivos VHDL}
@@ -337,14 +489,74 @@ El documento se divide en dos partes independientes:
 
 \section{Proceso de compilación en VPL}
 \label{sec:proceso-compilacion}
-% Qué ocurre al ejecutar la compilación
+
+La acción \textbf{Run} compila el diseño \vhdl y muestra el resultado en
+el panel \textit{Compilation}. Para ejecutarla:
+
+\begin{stepbox}{1}
+  Con el archivo \vhdl abierto en el editor, hacer clic en el ícono
+  \menu{Run} (triángulo de reproducción) en la barra de herramientas.
+\end{stepbox}
+
+\begin{stepbox}{2}
+  Esperar a que el servidor procese la compilación. El panel de resultados
+  muestra el progreso con mensajes \texttt{SUCCESS:=>} para cada etapa
+  completada correctamente (Figura~\ref{fig:accion-run}).
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{alumno/accion_run_6.png}
+\caption{Resultado de compilación exitosa en el panel de resultados}
+\label{fig:accion-run}
+\end{figure}
+
+Para visualizar el código y los resultados simultáneamente, activar la
+vista en pantalla completa desde la barra de herramientas
+(Figura~\ref{fig:full-screen}).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{alumno/full_screen_7.png}
+\caption{Vista en pantalla completa del editor con compilación exitosa}
+\label{fig:full-screen}
+\end{figure}
 
 \section{Interpretación de errores y advertencias}
 \label{sec:errores-compilacion}
-% Mensajes comunes y cómo corregirlos
+
+Si el código contiene errores, el panel los reporta con el prefijo
+\texttt{ERROR:=>} seguido de la descripción del problema y la línea donde
+se encontró (Figura~\ref{fig:run-errores}).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{alumno/accion_run_errores_8.png}
+\caption{Panel de resultados mostrando errores de compilación}
+\label{fig:run-errores}
+\end{figure}
+
+Los mensajes de error de GHDL siguen el formato:
+
+\begin{center}
+  \texttt{archivo.vhd:<línea>:<columna>: error: <descripción>}
+\end{center}
+
+Para corregir un error, localizar la línea indicada en el mensaje, revisar
+la sintaxis en esa sección y ejecutar \menu{Run} nuevamente para
+verificar la corrección.
 
 \section{Buenas prácticas de compilación}
 \label{sec:buenas-practicas-comp}
+
+\begin{itemize}
+  \item Compilar frecuentemente mientras se escribe el código, en lugar de
+        esperar a tener el diseño completo.
+  \item Corregir errores de arriba a abajo: un error temprano puede
+        generar errores secundarios en líneas posteriores.
+  \item Verificar que el nombre de la entidad coincida exactamente con el
+        nombre del archivo \texttt{.vhd}.
+\end{itemize}
 
 % ── Capítulo 5 ──────────────────────────────────────────────
 \chapter{Generación de Código Testbench}
@@ -353,11 +565,98 @@ El documento se divide en dos partes independientes:
 \section{¿Qué es un testbench?}
 \label{sec:que-testbench}
 
+Un \textit{testbench} es un archivo \vhdl especial cuyo propósito es
+instanciar el componente bajo prueba (\textit{Unit Under Test},
+\textsc{UUT}) y aplicarle estímulos (vectores de prueba) para verificar
+su comportamiento. El testbench no sintetiza en hardware; solo se utiliza
+en simulación.
+
 \section{Generación automática en el entorno VPL}
 \label{sec:gen-automatica-tb}
 
+\vpl genera automáticamente un testbench básico a partir del archivo \vhdl
+fuente. Para utilizarlo:
+
+\begin{stepbox}{1}
+  Asegurarse de que el archivo \vhdl fuente contiene código válido y
+  compila sin errores.
+\end{stepbox}
+
+\begin{warnbox}[Archivo vacío]
+  Si se intenta generar el testbench con el archivo fuente vacío, \vpl
+  muestra el error \textit{``The file `\texttt{archivo.vhd}' is empty.
+  Add VHDL content before generating a testbench.''}, como se observa
+  en la Figura~\ref{fig:tb-error-vacio}. Es necesario escribir al menos
+  la entidad y la arquitectura antes de generar el testbench.
+\end{warnbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{alumno/accion_generar_tesbench_archivo_vhdl_sin_codigo_10.png}
+\caption{Error al intentar generar testbench desde un archivo VHDL vacío}
+\label{fig:tb-error-vacio}
+\end{figure}
+
+\begin{stepbox}{2}
+  Hacer clic en el ícono \menu{Generate testbench} en la barra de
+  herramientas del editor.
+\end{stepbox}
+
+\begin{stepbox}{3}
+  \vpl analiza la entidad del archivo fuente, extrae sus puertos y genera
+  automáticamente un archivo \texttt{<nombre>\_tb.vhd} con la estructura
+  básica: declaración de señales, instanciación del componente
+  (\textit{port map}) y un proceso \texttt{stim\_proc} con el marcador
+  \texttt{-- TODO: add test vectors here}
+  (Figura~\ref{fig:testbench-generado}).
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{alumno/accion_generar_testbench_9.png}
+\caption{Testbench generado automáticamente para el diseño VHDL}
+\label{fig:testbench-generado}
+\end{figure}
+
 \section{Personalización del testbench generado}
 \label{sec:personalizar-tb}
+
+El testbench generado incluye la estructura necesaria, pero los vectores
+de prueba deben añadirse manualmente dentro del proceso \texttt{stim\_proc}.
+Cada vector consiste en asignar valores a las señales de entrada y esperar
+un tiempo antes del siguiente estímulo:
+
+\begin{lstlisting}[caption={Ejemplo de vectores de prueba en el testbench},
+                   label={lst:tv-ejemplo}, language=VHDL]
+stim_proc: process is
+begin
+  -- Vector 1
+  A    <= "10101010";
+  B    <= "11110001";
+  Co   <= '0';
+  aluP <= "0001";
+  wait for 20 ns;
+
+  -- Vector 2
+  A    <= "00001111";
+  B    <= "00000001";
+  Co   <= '1';
+  aluP <= "0001";
+  wait for 20 ns;
+
+  wait;
+end process stim_proc;
+\end{lstlisting}
+
+La Figura~\ref{fig:tb-casos} muestra el testbench con varios vectores de
+prueba ya añadidos en el proceso \texttt{stim\_proc}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{alumno/casos_de_prueba_en_tesbench_11.png}
+\caption{Testbench con vectores de prueba añadidos manualmente}
+\label{fig:tb-casos}
+\end{figure}
 
 % ── Capítulo 6 ──────────────────────────────────────────────
 \chapter{Uso de la Simulación en VPL}
@@ -366,11 +665,150 @@ El documento se divide en dos partes independientes:
 \section{Iniciar la simulación}
 \label{sec:iniciar-sim}
 
+La acción \textbf{Debug} compila el diseño junto con su testbench y abre
+la herramienta \textbf{GTKWave} para visualizar las formas de onda.
+Antes de iniciarla, verificar que:
+
+\begin{itemize}
+  \item El archivo fuente \vhdl compile sin errores.
+  \item El testbench \texttt{\_tb.vhd} esté creado y contenga vectores
+        de prueba con sentencias \texttt{wait}.
+\end{itemize}
+
+\begin{stepbox}{1}
+  Hacer clic en el ícono \menu{Debug} en la barra de herramientas del
+  editor.
+\end{stepbox}
+
+\begin{stepbox}{2}
+  \vpl compila ambos archivos, genera el archivo de simulación
+  (\texttt{.ghw}) y lanza GTKWave. El panel \textit{Compilation} muestra
+  el progreso detallado con mensajes \texttt{SUCCESS:=>} e \texttt{INFO:=>}
+  sobre la clasificación de archivos, detección de la entidad principal,
+  tiempo de simulación y proyecto GTKWave generado
+  (Figura~\ref{fig:output-debug}).
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{alumno/output_debug_consola_17.png}
+\caption{Salida detallada del proceso de compilación al ejecutar Debug}
+\label{fig:output-debug}
+\end{figure}
+
+\begin{stepbox}{3}
+  Una vez completado el proceso, GTKWave se abre mostrando el árbol de
+  señales (\textit{SST}) a la izquierda y el área de formas de onda a la
+  derecha (Figura~\ref{fig:gtkwave-vacio}). El área de formas de onda
+  aparece inicialmente vacía hasta que se añadan señales.
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{alumno/accion_debug_12.png}
+\caption{GTKWave abierto con la jerarquía de señales y área de visualización vacía}
+\label{fig:gtkwave-vacio}
+\end{figure}
+
 \section{Visualización de formas de onda}
 \label{sec:formas-onda}
 
+\begin{stepbox}{1}
+  En el panel \textsc{SST} (izquierda), expandir la jerarquía haciendo
+  clic sobre los nodos hasta llegar a las señales del circuito bajo prueba
+  (Figura~\ref{fig:senales-sim}).
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{alumno/senales_ensimulacion_13.png}
+\caption{Árbol de señales SST expandido con menú contextual para importar señales}
+\label{fig:senales-sim}
+\end{figure}
+
+\begin{stepbox}{2}
+  Hacer clic derecho sobre el componente deseado y seleccionar
+  \menu{Recurse Import} \textrightarrow{} \menu{Append} para añadir todas
+  sus señales al área de visualización.
+\end{stepbox}
+
+\begin{stepbox}{3}
+  Si GTKWave muestra el cuadro de diálogo \textit{``Really import N
+  facilities?''} (Figura~\ref{fig:recurse-warning}), hacer clic en
+  \menu{Yes} para confirmar la importación.
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{alumno/preguntar_anadir_senales_14.png}
+\caption{Diálogo de confirmación para importar todas las señales del componente}
+\label{fig:recurse-warning}
+\end{figure}
+
+\begin{stepbox}{4}
+  Las señales aparecen en el panel izquierdo con sus formas de onda en el
+  área de visualización (Figura~\ref{fig:visualizacion-senales}).
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{alumno/visualizacion_senales_15.png}
+\caption{Formas de onda de las señales del diseño visualizadas en GTKWave}
+\label{fig:visualizacion-senales}
+\end{figure}
+
+Las señales de tipo vector (por ejemplo \texttt{a[7:0]}, \texttt{res[7:0]})
+se muestran por defecto como bus. Para visualizar cada bit individualmente,
+hacer clic en la flecha de expansión junto al nombre de la señal
+(Figura~\ref{fig:desplegar-vectores}).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{alumno/desplegar_senaels_vectores_16.png}
+\caption{Señales vectoriales expandidas mostrando cada bit individualmente en GTKWave}
+\label{fig:desplegar-vectores}
+\end{figure}
+
 \section{Depuración mediante simulación}
 \label{sec:debug-sim}
+
+GTKWave permite inspeccionar el valor de cada señal en cualquier instante
+haciendo clic sobre el área de formas de onda. El valor aparece en la
+columna junto al nombre de la señal. Para navegar entre eventos, usar los
+controles de avance y retroceso de la barra de herramientas de GTKWave.
+
+Para controlar el tiempo total de simulación, añadir la directiva
+\texttt{vpl\_stop\_time} como comentario en las primeras líneas del
+testbench \texttt{\_tb.vhd}:
+
+\begin{lstlisting}[language=VHDL, numbers=none,
+  caption={Directiva para establecer el tiempo de simulación},
+  label={lst:stop-time}]
+-- vpl_stop_time = 2 ms
+\end{lstlisting}
+
+La Figura~\ref{fig:stop-time-tb} muestra el testbench con esta directiva
+y la salida del compilador confirmando que el tiempo fue detectado
+correctamente.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{alumno/uso_stime_stop_en_tesbench_18.png}
+\caption{Directiva \texttt{vpl\_stop\_time} declarada en el testbench y confirmada por el compilador}
+\label{fig:stop-time-tb}
+\end{figure}
+
+Al lanzar la simulación con esta directiva, GTKWave ajusta el eje temporal
+hasta el valor especificado (Figura~\ref{fig:stop-time-sim}), lo que
+permite visualizar con mayor resolución el comportamiento del circuito
+durante el intervalo de interés.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{alumno/uso_do_stime_stop_simulacion_19.png}
+\caption{GTKWave con el eje temporal ajustado al tiempo definido por \texttt{vpl\_stop\_time}}
+\label{fig:stop-time-sim}
+\end{figure}
 
 % ── Capítulo 7 ──────────────────────────────────────────────
 \chapter{Uso de la Evaluación Automática}
@@ -379,14 +817,89 @@ El documento se divide en dos partes independientes:
 \section{¿Cómo funciona la evaluación automática?}
 \label{sec:como-evalua}
 
+\begin{warnbox}[Opcional]
+ Esta opción por default esta deshabilitada para el alumno, el profesor puede habilitarla o no dependiendo de la configuración de la actividad. Si la evaluación automática no está habilitada, el alumno tendra que esperar a que el profesor evalue su actividad para poder ver los resultados y la calificación obtenida.
+\end{warnbox}
+Al enviar el diseño para evaluación, \vpl ejecuta el archivo \vhdl del
+alumno contra los casos de prueba definidos por el profesor. Para cada
+caso, el evaluador:
+
+\begin{enumerate}
+  \item Compila el diseño del alumno con GHDL.
+  \item Genera un testbench automático a partir de los casos de prueba.
+  \item Simula el diseño y compara las salidas obtenidas con las esperadas.
+  \item Calcula la calificación final aplicando las penalizaciones definidas
+        para cada caso fallido.
+\end{enumerate}
+
+El resultado aparece en el panel de comentarios con el detalle de qué
+casos pasaron (\texttt{PASS}) y cuáles fallaron (\texttt{FAIL}), junto
+con la calificación final.
+
 \section{Enviar el diseño para evaluación}
 \label{sec:enviar-evaluacion}
+
+\begin{stepbox}{1}
+  Verificar que el diseño compile sin errores utilizando la acción
+  \menu{Run} antes de enviarlo.
+\end{stepbox}
+
+\begin{stepbox}{2}
+  Hacer clic en el ícono \menu{Evaluate} en la barra de herramientas.
+  \vpl procesará el diseño y mostrará la calificación obtenida en el panel
+  de resultados.
+\end{stepbox}
+
+\begin{stepbox}{3}
+  Una vez evaluado, el diseño queda registrado como entrega en \moodle.
+  La Figura~\ref{fig:vista-entrega} muestra la vista de entrega con la
+  fecha y hora de envío y el enlace para descargar el archivo entregado.
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{alumno/vista_entrega_20.png}
+\caption{Vista de entrega en Moodle con fecha de envío y archivo registrado}
+\label{fig:vista-entrega}
+\end{figure}
 
 \section{Interpretar la retroalimentación}
 \label{sec:retroalimentacion}
 
+El reporte de evaluación indica:
+
+\begin{itemize}
+  \item \textbf{PASS:} el caso de prueba fue superado correctamente.
+  \item \textbf{FAIL:} la salida obtenida no coincide con la esperada
+        en ese caso.
+  \item \textbf{Nota:} calificación final calculada sobre 100 puntos.
+  \item \textbf{Evaluation output:} resumen con el número de casos
+        totales, correctos y fallidos.
+\end{itemize}
+
+Leer los mensajes de \texttt{FAIL} para identificar qué señales
+presentaron valores incorrectos y en qué momento de la simulación
+ocurrieron, lo que orienta la corrección del diseño.
+
 \section{Reintentos y límite de envíos}
 \label{sec:reintentos}
+
+El número máximo de entregas está determinado por la configuración del
+profesor. Se recomienda:
+
+\begin{itemize}
+  \item Usar \menu{Run} para verificar la compilación antes de cada envío.
+  \item Depurar el comportamiento del diseño con \menu{Debug} antes de
+        gastar un intento de evaluación.
+  \item Revisar los mensajes de retroalimentación de intentos anteriores
+        para corregir los casos que fallaron.
+\end{itemize}
+
+\begin{warnbox}[Límite de intentos]
+  Si la actividad tiene un número limitado de evaluaciones, cada clic en
+  \menu{Evaluate} consume un intento sin importar el resultado obtenido.
+  Asegúrese de haber depurado el diseño antes de evaluar.
+\end{warnbox}
 
 % ============================================================
 %           PARTE II — GUÍA DEL PROFESOR
@@ -792,10 +1305,283 @@ output:
     LED = [_, 0100010000000000, 0100001000000000]
 \end{lstlisting}
 
+\section{Usar el archivo de casos para evaluar diseños VHDL}
+
+Una vez que se ha mencionado la sintaxis general de los casos de prueba, se pueden escribir casos específicos para evaluar diseños VHDL.
+Para ello, usaremos el archivo \texttt{vpl\_evaluate.cases} que se encuentra dentro de los archivos de ejecución o en la sección de configuracion de test de la actividad VPL, y se pueden escribir casos específicos para evaluar los diseños VHDL entregados por los alumnos.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{vpl/test_configuration.png}
+\caption{Archivo de configuración de casos de prueba en la actividad VPL}
+\label{fig:test_configuration}
+\end{figure} 
+
+La edición de este archivo tambien se hace usando el editor de código integrado en VPL, por lo que se pueden usar las mismas herramientas de edición, como el resaltado de sintaxis, la indentación automática y la búsqueda de texto para facilitar la escritura de los casos de prueba.
+Una vez escritos los casos de prueba, se deben guardar los cambios para que el evaluador pueda usarlos al calificar los diseños entregados por los alumnos.
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{vpl/test_creado.png}
+\caption{Archivo de casos de prueba creado y guardado en la actividad VPL}
+\label{fig:test_creado}
+\end{figure} 
+Una vez teniendo los casos de prueba escritos y guardados, el evaluador los ejecutará automáticamente cada vez que un alumno envíe su diseño para evaluación, generando un reporte con los resultados de cada caso y la calificación final basada en las penalizaciones definidas.
+En la seccion \ref{ch:test-profesor} se explica cómo el profesor puede verificar que los casos de prueba funcionan correctamente antes de que los alumnos entreguen sus diseños.
+
 % ── Capítulo 11 ─────────────────────────────────────────────
 \chapter{Test de Evaluación por Parte del Profesor}
 \label{ch:test-profesor}
 
+VPL permite al profesor verificar que el sistema de evaluación automática funciona correctamente \emph{antes} de que los alumnos entreguen sus soluciones. Para ello, el profesor proporciona soluciones de referencia —correctas e incorrectas— y VPL las evalúa automáticamente, generando un reporte que indica si cada caso obtuvo la calificación esperada.
+
+% ── 11.1 ─────────────────────────────────────────────────────
+\section{Propósito}
+
+El test de evaluación sirve para:
+
+\begin{itemize}
+  \item Confirmar que los casos de prueba (\texttt{vpl\_evaluate.cases}) detectan
+        errores en diseños incorrectos.
+  \item Verificar que una solución correcta obtiene la calificación máxima.
+  \item Detectar errores de configuración en los scripts de evaluación antes
+        de publicar la actividad.
+  \item Repetir la verificación cada vez que se actualicen los scripts o se
+        cambie el servidor de ejecución.
+\end{itemize}
+
+% ── 11.2 ─────────────────────────────────────────────────────
+\section{Estructura de la carpeta de pruebas}
+\label{sec:test-estructura}
+
+Dentro de los \textbf{Archivos de ejecución} de la actividad se debe crear la
+carpeta raíz:
+
+\begin{center}
+  \texttt{vpl\_evaluation\_tests/}
+\end{center}
+
+Cada subcarpeta dentro de ella representa un caso de prueba y debe seguir
+\emph{exactamente} el formato:
+
+\begin{center}
+  \texttt{[pass|fail]-\textit{<nombre>}[-\textit{<calificacion>}]}
+\end{center}
+
+\begin{itemize}
+  \item \texttt{pass} — solución correcta; se espera calificación igual a la
+        máxima definida en la actividad (o igual a \textit{<calificacion>} si
+        se especifica).
+  \item \texttt{fail} — solución incorrecta; se espera calificación
+        \emph{menor} que la máxima (o exactamente \textit{<calificacion>} si
+        se especifica).
+  \item \textit{<nombre>} — descripción breve del escenario, sin guiones.
+  \item \textit{<calificacion>} — opcional; calificación numérica esperada
+        (entero o decimal).
+\end{itemize}
+
+Cada subcarpeta debe contener los archivos fuente del diseño que se desea
+evaluar (por ejemplo, el archivo \texttt{.vhd} del circuito).
+
+\subsection{Ejemplos de nombres de subcarpeta}
+
+\begin{center}
+\begin{tabular}{L{5.5cm} L{8cm}}
+  \toprule
+  \textbf{Nombre} & \textbf{Significado} \\
+  \midrule
+  \texttt{pass-Solucion correcta-10}  & Diseño correcto; se espera nota 10 \\
+  \texttt{pass-Correcto}              & Diseño correcto; se espera nota máxima de la actividad \\
+  \texttt{fail-Error de salida-3}     & Diseño incorrecto; se espera nota exacta 3 \\
+  \texttt{fail-Ciclo infinito-0}      & Diseño con bucle infinito; se espera nota 0 \\
+  \texttt{fail-Error de compilacion}  & Diseño que no compila; se espera nota $<$ máxima \\
+  \bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Estructura de directorios}
+
+La jerarquía de archivos debe quedar así:
+
+\begin{lstlisting}[caption={Estructura mínima de \texttt{vpl\_evaluation\_tests}},
+                   label={lst:test-dir}, numbers=none]
+vpl_evaluation_tests/
+    pass-Solucion correcta-10/
+        mi_circuito.vhd
+    fail-Error de salida-3/
+        mi_circuito.vhd
+    fail-Ciclo infinito-0/
+        mi_circuito.vhd
+    fail-Error de compilacion/
+        mi_circuito.vhd
+\end{lstlisting}
+
+\begin{notebox}[Requisito mínimo]
+  Debe existir \textbf{al menos una subcarpeta} de tipo \texttt{pass}.
+  Sin ella, VPL reporta un error de configuración y no ejecuta ninguna prueba.
+\end{notebox}
+
+\subsection{Actividades con variaciones}
+
+Si la actividad usa variaciones, se crea una subcarpeta por variación dentro de
+\texttt{vpl\_evaluation\_tests}. Cada subcarpeta de variación contiene a su vez
+las subcarpetas \texttt{pass-} y \texttt{fail-} correspondientes.
+
+\begin{lstlisting}[caption={Estructura con variaciones},
+                   label={lst:test-dir-var}, numbers=none]
+vpl_evaluation_tests/
+    variacion1/
+        pass-Correcto-10/
+            mi_circuito.vhd
+        fail-Salida erronea-0/
+            mi_circuito.vhd
+    variacion2/
+        pass-Correcto-10/
+            mi_circuito.vhd
+        fail-Salida erronea-0/
+            mi_circuito.vhd
+\end{lstlisting}
+
+% ── 11.3 ─────────────────────────────────────────────────────
+\section{Pasos para ejecutar el test}
+\label{sec:test-pasos}
+
+\begin{stepbox}{1}
+  Acceder a la actividad VPL en Moodle y abrir la página
+  \textbf{Archivos de ejecución} (menú de administración de la actividad).
+\end{stepbox}
+
+\begin{stepbox}{2}
+  Crear la carpeta \texttt{vpl\_evaluation\_tests} y las subcarpetas de casos
+  de prueba con sus archivos fuente, siguiendo el formato descrito en la
+  sección~\ref{sec:test-estructura}.
+\end{stepbox}
+
+\begin{stepbox}{3}
+  Desde la misma página de \textbf{Archivos de ejecución}, hacer clic en el
+  botón \textbf{Evaluar}. VPL ejecutará el proceso de evaluación usando los
+  casos definidos en \texttt{vpl\_evaluation\_tests}.
+\end{stepbox}
+
+\begin{stepbox}{4}
+  Revisar el reporte generado (véase sección~\ref{sec:test-reporte}).
+  Si alguna prueba falla, corregir los casos de prueba o los scripts y
+  repetir desde el paso~3.
+\end{stepbox}
+
+\begin{warnbox}[Seguridad]
+  VPL elimina automáticamente la carpeta \texttt{vpl\_evaluation\_tests}
+  cuando la actividad se encuentra fuera del modo de evaluación del profesor.
+  Esto impide que los alumnos accedan a las soluciones de referencia.
+\end{warnbox}
+
+% ── 11.4 ─────────────────────────────────────────────────────
+\section{Reporte de evaluación}
+\label{sec:test-reporte}
+
+Al ejecutar el test, VPL genera un reporte en el panel de \textbf{Comments} con
+tres bloques diferenciados: reporte de compilación, reporte de evaluación resumido
+y reporte de evaluación completo (\textit{Full Evaluation Report}).
+
+\subsection{Configuración previa de los casos de prueba}
+
+Antes de ejecutar el test es necesario que el archivo \texttt{vpl\_evaluate.cases}
+contenga los casos definidos correctamente. Como se describió en el
+capítulo~\ref{ch:ficheros}, este archivo se edita desde la pestaña
+\menu{Tests configuration} de la actividad VPL (véase
+Figura~\ref{fig:test_configuration}). La Figura~\ref{fig:test_creado} muestra el
+archivo con los casos ya escritos y guardados, listos para ser ejecutados por el
+evaluador automático.
+
+\subsection{Reporte de compilación}
+
+Indica si el evaluador pudo preparar la solución de referencia para cada caso de
+prueba. VPL muestra los pasos realizados: detección del lenguaje de programación,
+carga del archivo fuente y verificación del tipo de caso (\texttt{pass} o
+\texttt{fail}).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{vpl/resultado_vpl.png}
+\caption{Reporte generado por VPL al evaluar todos los casos de prueba correctamente}
+\label{fig:resultado_vpl}
+\end{figure}
+
+La Figura~\ref{fig:resultado_vpl} muestra el panel de \textbf{Comments} con los
+tres bloques del reporte tras ejecutar la evaluación con una solución correcta.
+La sección \textbf{COMPILATION REPORT} confirma que los archivos fuente fueron
+compilados sin errores y que la solución de tipo \texttt{pass} con calificación
+esperada de~100 fue preparada correctamente.
+
+\subsection{Reporte de evaluación (resumen)}
+
+Muestra para cada caso de \texttt{vpl\_evaluation\_tests} si la calificación
+obtenida coincide con la esperada. El formato de cada entrada es:
+
+\begin{center}
+  \texttt{<n>) <tipo> (pass|fail type) expected grade mark == <esperada>}\\
+  \texttt{Resulted grade mark = <obtenida> and expected grade mark == <esperada>}
+\end{center}
+
+Al final aparece la línea \textbf{Final report} que resume el resultado global:
+
+\begin{center}
+  \texttt{Final report: \(checkmark\) All <n> tests passed.}
+\end{center}
+
+\subsection{Reporte de evaluación completo (\textit{Full Evaluation Report})}
+
+El bloque \textbf{FULL EVALUATION REPORT} detalla la ejecución interna del
+evaluador para cada caso. En él se pueden identificar:
+
+\begin{itemize}
+  \item \textbf{Compilation output} --- resultado de compilar el diseño con GHDL.
+  \item Líneas \texttt{SUCCESS:=>} --- operaciones completadas correctamente:
+        búsqueda de archivos, detección de entidad top, extracción de puertos y
+        simulación.
+  \item Líneas \texttt{INFO:=>} --- configuración detectada: modo combinatorio o
+        secuencial, reloj, reset y casos cargados.
+  \item Líneas \texttt{PASS:} / \texttt{FAIL:} --- resultado individual de cada
+        caso de prueba.
+  \item \textbf{Nota final} --- calificación calculada en formato
+        \texttt{Nota: <n> / 100.0000}.
+  \item \textbf{Evaluation output} --- resumen estadístico: número de casos
+        totales, correctos y fallidos.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{vpl/resultado_vpl_output.png}
+\caption{Detalle del \textit{Evaluation output} y resumen estadístico al final del reporte}
+\label{fig:resultado_vpl_output}
+\end{figure}
+
+La Figura~\ref{fig:resultado_vpl_output} muestra el \textit{Evaluation output} al
+final del reporte completo, indicando \textbf{casos totales}, \textbf{casos
+correctos} y \textbf{casos fallidos}. Esta sección es la que el alumno recibe como
+comentario de retroalimentación cuando VPL evalúa su entrega.
+
+\subsection{Reporte con casos fallidos}
+
+Cuando un caso de prueba no produce la calificación esperada, el reporte lo marca
+como fallo. La Figura~\ref{fig:resultado_vpl_fail} ilustra un escenario donde el
+evaluador detecta un diseño incorrecto: aparece la línea
+\texttt{ERROR:=>FAIL: <caso>} en el reporte completo, indicando exactamente qué
+caso no pasó. Esto permite al profesor verificar que los casos de prueba detectan
+correctamente los errores en los diseños de los alumnos.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{vpl/resultado_vpl_fail.png}
+\caption{Reporte de evaluación con casos fallidos detectados por el evaluador automático}
+\label{fig:resultado_vpl_fail}
+\end{figure}
+
+\begin{tipbox}[Interpretación de casos \texttt{fail}]
+  Un caso de tipo \texttt{fail} en \texttt{vpl\_evaluation\_tests} \emph{pasa} el
+  test cuando el evaluador asigna al diseño incorrecto una calificación menor que
+  la máxima. Si el reporte muestra \texttt{Final report: All <n> tests passed}
+  para un conjunto que incluye casos \texttt{fail}, significa que los casos de
+  prueba detectan correctamente los diseños erróneos.
+\end{tipbox}
 
 % ── Apéndices ───────────────────────────────────────────────
 \appendix

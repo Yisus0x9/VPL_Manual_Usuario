@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.16)  19 MAY 2026 16:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.16)  29 MAY 2026 10:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -998,22 +998,29 @@ Package microtype Info: Character `029' is missing
  [2] (main.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-)
+
+Overfull \hbox (23.73816pt too wide) in paragraph at lines 26--26
+ [][] [][][]\T1/lmr/m/n/12 (-20) GTKWave con el eje tem-po-ral ajus-ta-do al tiem-po de-fi-ni-do por \T1/lmtt/m/n/12 vpl_stop_time[][] [][]  
+ []
+
+[3
+
+])
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
- [3
-
-] [4
-
-] (main.lot
+LaTeX Info: Redefining \. on input line 256.
+LaTeX Info: Redefining \% on input line 256.
+ [4] (main.lot
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 \tf@lot=\write6
 \openout6 = `main.lot'.
 
- [5] [6
+ [5
+
+] [6
 
 
 ]
@@ -1027,52 +1034,17 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.289 \part{Guía del Alumno}
+l.288 \part{Guía del Alumno}
                               [1
 
 ]
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.289 \part{Guía del Alumno}
+l.288 \part{Guía del Alumno}
                               [2]
 Cap\'{\i }tulo 1.
-[3
-
-] [4
-
-]
-Cap\'{\i }tulo 2.
-[5] [6
-
-]
-Cap\'{\i }tulo 3.
-[7] [8
-
-]
-Cap\'{\i }tulo 4.
-[9] [10
-
-]
-Cap\'{\i }tulo 5.
-[11] [12
-
-]
-Cap\'{\i }tulo 6.
-[13] [14
-
-]
-Cap\'{\i }tulo 7.
-[15] [16
-
-] [17] [18]
-Cap\'{\i }tulo 8.
-<moodle/mis_cursos_moodle.png, id=290, 1915.9078pt x 1095.3422pt>
-File: moodle/mis_cursos_moodle.png Graphic file (type png)
-<use moodle/mis_cursos_moodle.png>
-Package pdftex.def Info: moodle/mis_cursos_moodle.png  used on input line 425.
-(pdftex.def)             Requested size: 426.79135pt x 244.00117pt.
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 430.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 321.
 (C:\Users\jesus\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1080,140 +1052,404 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [19
+ [3
 
 ]
-<moodle/curso_vpl.png, id=296, 1915.9078pt x 1096.095pt>
+<alumno/vista_curso_almno_1.png, id=312, 1914.40219pt x 1088.56688pt>
+File: alumno/vista_curso_almno_1.png Graphic file (type png)
+<use alumno/vista_curso_almno_1.png>
+Package pdftex.def Info: alumno/vista_curso_almno_1.png  used on input line 338.
+(pdftex.def)             Requested size: 426.79135pt x 242.6746pt.
+<alumno/vista_actividad_2.png, id=314, 1910.63812pt x 1085.55562pt>
+File: alumno/vista_actividad_2.png Graphic file (type png)
+<use alumno/vista_actividad_2.png>
+Package pdftex.def Info: alumno/vista_actividad_2.png  used on input line 354.
+(pdftex.def)             Requested size: 426.79135pt x 242.48366pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 358.
+LaTeX Info: Redefining \% on input line 358.
+ [4 <./alumno/vista_curso_almno_1.png>]
+LaTeX Info: Redefining \. on input line 373.
+LaTeX Info: Redefining \% on input line 373.
+ [5 <./alumno/vista_actividad_2.png>] [6
+
+]
+Cap\'{\i }tulo 2.
+<alumno/acceso_editor_vpl_3.png, id=331, 1915.9078pt x 1088.56688pt>
+File: alumno/acceso_editor_vpl_3.png Graphic file (type png)
+<use alumno/acceso_editor_vpl_3.png>
+Package pdftex.def Info: alumno/acceso_editor_vpl_3.png  used on input line 402.
+(pdftex.def)             Requested size: 426.79135pt x 242.4919pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+LaTeX Info: Redefining \. on input line 420.
+LaTeX Info: Redefining \% on input line 420.
+ [8 <./alumno/acceso_editor_vpl_3.png>]
+Cap\'{\i }tulo 3.
+<alumno/fichero_creado_4.png, id=343, 1912.14375pt x 1094.58937pt>
+File: alumno/fichero_creado_4.png Graphic file (type png)
+<use alumno/fichero_creado_4.png>
+Package pdftex.def Info: alumno/fichero_creado_4.png  used on input line 459.
+(pdftex.def)             Requested size: 426.79135pt x 244.30113pt.
+
+Underfull \vbox (badness 1838) has occurred while \output is active []
+
+ [9
+
+]
+<alumno/codigo_creado_5.png, id=353, 1912.89656pt x 1094.58937pt>
+File: alumno/codigo_creado_5.png Graphic file (type png)
+<use alumno/codigo_creado_5.png>
+Package pdftex.def Info: alumno/codigo_creado_5.png  used on input line 473.
+(pdftex.def)             Requested size: 426.79135pt x 244.21762pt.
+LaTeX Info: Redefining \. on input line 478.
+LaTeX Info: Redefining \% on input line 478.
+ [10 <./alumno/fichero_creado_4.png> <./alumno/codigo_creado_5.png>]
+LaTeX Info: Redefining \. on input line 487.
+LaTeX Info: Redefining \% on input line 487.
+ [11] [12
+
+]
+Cap\'{\i }tulo 4.
+<alumno/accion_run_6.png, id=370, 1912.89656pt x 1093.08376pt>
+File: alumno/accion_run_6.png Graphic file (type png)
+<use alumno/accion_run_6.png>
+Package pdftex.def Info: alumno/accion_run_6.png  used on input line 509.
+(pdftex.def)             Requested size: 426.79135pt x 243.8817pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13]
+<alumno/full_screen_7.png, id=376, 1915.155pt x 1098.35344pt>
+File: alumno/full_screen_7.png Graphic file (type png)
+<use alumno/full_screen_7.png>
+Package pdftex.def Info: alumno/full_screen_7.png  used on input line 520.
+(pdftex.def)             Requested size: 426.79135pt x 244.75577pt.
+<alumno/accion_run_errores_8.png, id=378, 1914.40219pt x 1088.56688pt>
+File: alumno/accion_run_errores_8.png Graphic file (type png)
+<use alumno/accion_run_errores_8.png>
+Package pdftex.def Info: alumno/accion_run_errores_8.png  used on input line 534.
+(pdftex.def)             Requested size: 426.79135pt x 242.6746pt.
+LaTeX Info: Redefining \. on input line 538.
+LaTeX Info: Redefining \% on input line 538.
+ [14 <./alumno/accion_run_6.png> <./alumno/full_screen_7.png>]
+LaTeX Info: Redefining \. on input line 562.
+LaTeX Info: Redefining \% on input line 562.
+ [15 <./alumno/accion_run_errores_8.png>] [16
+
+]
+Cap\'{\i }tulo 5.
+<alumno/accion_generar_tesbench_archivo_vhdl_sin_codigo_10.png, id=396, 1908.37968pt x 1092.33093pt>
+File: alumno/accion_generar_tesbench_archivo_vhdl_sin_codigo_10.png Graphic file (type png)
+<use alumno/accion_generar_tesbench_archivo_vhdl_sin_codigo_10.png>
+Package pdftex.def Info: alumno/accion_generar_tesbench_archivo_vhdl_sin_codigo_10.png  used on input line 595.
+(pdftex.def)             Requested size: 426.79135pt x 244.28044pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17]
+<alumno/accion_generar_testbench_9.png, id=403, 1915.9078pt x 1103.62312pt>
+File: alumno/accion_generar_testbench_9.png Graphic file (type png)
+<use alumno/accion_generar_testbench_9.png>
+Package pdftex.def Info: alumno/accion_generar_testbench_9.png  used on input line 616.
+(pdftex.def)             Requested size: 426.79135pt x 245.84586pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 620.
+LaTeX Info: Redefining \% on input line 620.
+ [18 <./alumno/accion_generar_tesbench_archivo_vhdl_sin_codigo_10.png>]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 630.
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 631.
+<alumno/casos_de_prueba_en_tesbench_11.png, id=410, 1911.39093pt x 1095.3422pt>
+File: alumno/casos_de_prueba_en_tesbench_11.png Graphic file (type png)
+<use alumno/casos_de_prueba_en_tesbench_11.png>
+Package pdftex.def Info: alumno/casos_de_prueba_en_tesbench_11.png  used on input line 656.
+(pdftex.def)             Requested size: 426.79135pt x 244.56944pt.
+LaTeX Info: Redefining \. on input line 659.
+LaTeX Info: Redefining \% on input line 659.
+ [19 <./alumno/accion_generar_testbench_9.png>]
+LaTeX Info: Redefining \. on input line 662.
+LaTeX Info: Redefining \% on input line 662.
+ [20 <./alumno/casos_de_prueba_en_tesbench_11.png>]
+Cap\'{\i }tulo 6.
+<alumno/output_debug_consola_17.png, id=443, 1912.89656pt x 1089.31969pt>
+File: alumno/output_debug_consola_17.png Graphic file (type png)
+<use alumno/output_debug_consola_17.png>
+Package pdftex.def Info: alumno/output_debug_consola_17.png  used on input line 694.
+(pdftex.def)             Requested size: 426.79135pt x 243.04189pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21
+
+]
+<alumno/accion_debug_12.png, id=450, 1915.155pt x 1099.10625pt>
+File: alumno/accion_debug_12.png Graphic file (type png)
+<use alumno/accion_debug_12.png>
+Package pdftex.def Info: alumno/accion_debug_12.png  used on input line 708.
+(pdftex.def)             Requested size: 426.79135pt x 244.92352pt.
+LaTeX Info: Redefining \. on input line 713.
+LaTeX Info: Redefining \% on input line 713.
+ [22 <./alumno/output_debug_consola_17.png> <./alumno/accion_debug_12.png>]
+<alumno/senales_ensimulacion_13.png, id=458, 1915.9078pt x 1108.8928pt>
+File: alumno/senales_ensimulacion_13.png Graphic file (type png)
+<use alumno/senales_ensimulacion_13.png>
+Package pdftex.def Info: alumno/senales_ensimulacion_13.png  used on input line 724.
+(pdftex.def)             Requested size: 426.79135pt x 247.01974pt.
+<alumno/preguntar_anadir_senales_14.png, id=460, 1909.88531pt x 1090.82532pt>
+File: alumno/preguntar_anadir_senales_14.png Graphic file (type png)
+<use alumno/preguntar_anadir_senales_14.png>
+Package pdftex.def Info: alumno/preguntar_anadir_senales_14.png  used on input line 743.
+(pdftex.def)             Requested size: 426.79135pt x 243.76064pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 747.
+LaTeX Info: Redefining \% on input line 747.
+ [23 <./alumno/senales_ensimulacion_13.png>]
+<alumno/visualizacion_senales_15.png, id=467, 1915.155pt x 1088.56688pt>
+File: alumno/visualizacion_senales_15.png Graphic file (type png)
+<use alumno/visualizacion_senales_15.png>
+Package pdftex.def Info: alumno/visualizacion_senales_15.png  used on input line 755.
+(pdftex.def)             Requested size: 426.79135pt x 242.57495pt.
+<alumno/desplegar_senaels_vectores_16.png, id=469, 1912.14375pt x 1087.81406pt>
+File: alumno/desplegar_senaels_vectores_16.png Graphic file (type png)
+<use alumno/desplegar_senaels_vectores_16.png>
+Package pdftex.def Info: alumno/desplegar_senaels_vectores_16.png  used on input line 767.
+(pdftex.def)             Requested size: 426.79135pt x 242.78896pt.
+LaTeX Info: Redefining \. on input line 770.
+LaTeX Info: Redefining \% on input line 770.
+ [24 <./alumno/preguntar_anadir_senales_14.png> <./alumno/visualizacion_senales_15.png>]
+<alumno/uso_stime_stop_en_tesbench_18.png, id=477, 1910.63812pt x 1099.85907pt>
+File: alumno/uso_stime_stop_en_tesbench_18.png Graphic file (type png)
+<use alumno/uso_stime_stop_en_tesbench_18.png>
+Package pdftex.def Info: alumno/uso_stime_stop_en_tesbench_18.png  used on input line 796.
+(pdftex.def)             Requested size: 426.79135pt x 245.67867pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 800.
+LaTeX Info: Redefining \% on input line 800.
+ [25 <./alumno/desplegar_senaels_vectores_16.png>]
+<alumno/uso_do_stime_stop_simulacion_19.png, id=486, 1914.40219pt x 1096.095pt>
+File: alumno/uso_do_stime_stop_simulacion_19.png Graphic file (type png)
+<use alumno/uso_do_stime_stop_simulacion_19.png>
+Package pdftex.def Info: alumno/uso_do_stime_stop_simulacion_19.png  used on input line 808.
+(pdftex.def)             Requested size: 426.79135pt x 244.35284pt.
+LaTeX Info: Redefining \. on input line 814.
+LaTeX Info: Redefining \% on input line 814.
+ [26 <./alumno/uso_stime_stop_en_tesbench_18.png> <./alumno/uso_do_stime_stop_simulacion_19.png>]
+Cap\'{\i }tulo 7.
+[27
+
+]
+<alumno/vista_entrega_20.png, id=503, 1910.63812pt x 1094.58937pt>
+File: alumno/vista_entrega_20.png Graphic file (type png)
+<use alumno/vista_entrega_20.png>
+Package pdftex.def Info: alumno/vista_entrega_20.png  used on input line 861.
+(pdftex.def)             Requested size: 426.79135pt x 244.50156pt.
+LaTeX Info: Redefining \. on input line 892.
+LaTeX Info: Redefining \% on input line 892.
+ [28 <./alumno/vista_entrega_20.png>]
+LaTeX Info: Redefining \. on input line 907.
+LaTeX Info: Redefining \% on input line 907.
+ [29] [30
+
+] [31] [32]
+Cap\'{\i }tulo 8.
+<moodle/mis_cursos_moodle.png, id=525, 1915.9078pt x 1095.3422pt>
+File: moodle/mis_cursos_moodle.png Graphic file (type png)
+<use moodle/mis_cursos_moodle.png>
+Package pdftex.def Info: moodle/mis_cursos_moodle.png  used on input line 938.
+(pdftex.def)             Requested size: 426.79135pt x 244.00117pt.
+[33
+
+]
+<moodle/curso_vpl.png, id=531, 1915.9078pt x 1096.095pt>
 File: moodle/curso_vpl.png Graphic file (type png)
 <use moodle/curso_vpl.png>
-Package pdftex.def Info: moodle/curso_vpl.png  used on input line 434.
+Package pdftex.def Info: moodle/curso_vpl.png  used on input line 947.
 (pdftex.def)             Requested size: 426.79135pt x 244.16887pt.
-<vpl/crear_actividad_vpl.png, id=297, 1915.9078pt x 1097.60063pt>
+<vpl/crear_actividad_vpl.png, id=532, 1915.9078pt x 1097.60063pt>
 File: vpl/crear_actividad_vpl.png Graphic file (type png)
 <use vpl/crear_actividad_vpl.png>
-Package pdftex.def Info: vpl/crear_actividad_vpl.png  used on input line 443.
+Package pdftex.def Info: vpl/crear_actividad_vpl.png  used on input line 956.
 (pdftex.def)             Requested size: 426.79135pt x 244.50427pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 446.
-LaTeX Info: Redefining \% on input line 446.
- [20 <./moodle/mis_cursos_moodle.png> <./moodle/curso_vpl.png>]
-<vpl/actividad_vpl.png, id=305, 1915.9078pt x 1096.84781pt>
+LaTeX Info: Redefining \. on input line 959.
+LaTeX Info: Redefining \% on input line 959.
+ [34 <./moodle/mis_cursos_moodle.png> <./moodle/curso_vpl.png>]
+<vpl/actividad_vpl.png, id=539, 1915.9078pt x 1096.84781pt>
 File: vpl/actividad_vpl.png Graphic file (type png)
 <use vpl/actividad_vpl.png>
-Package pdftex.def Info: vpl/actividad_vpl.png  used on input line 455.
+Package pdftex.def Info: vpl/actividad_vpl.png  used on input line 968.
 (pdftex.def)             Requested size: 426.79135pt x 244.33658pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 459.
-LaTeX Info: Redefining \% on input line 459.
- [21 <./vpl/crear_actividad_vpl.png>]
-<vpl/restricciones_actividad_vpl.png, id=312, 1915.9078pt x 1104.37593pt>
+LaTeX Info: Redefining \. on input line 972.
+LaTeX Info: Redefining \% on input line 972.
+ [35 <./vpl/crear_actividad_vpl.png>]
+<vpl/restricciones_actividad_vpl.png, id=545, 1915.9078pt x 1104.37593pt>
 File: vpl/restricciones_actividad_vpl.png Graphic file (type png)
 <use vpl/restricciones_actividad_vpl.png>
-Package pdftex.def Info: vpl/restricciones_actividad_vpl.png  used on input line 466.
+Package pdftex.def Info: vpl/restricciones_actividad_vpl.png  used on input line 979.
 (pdftex.def)             Requested size: 426.79135pt x 246.01355pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 470.
-LaTeX Info: Redefining \% on input line 470.
- [22 <./vpl/actividad_vpl.png>]
-<vpl/guardar_actividad_vpl.png, id=318, 1915.155pt x 1095.3422pt>
+LaTeX Info: Redefining \. on input line 983.
+LaTeX Info: Redefining \% on input line 983.
+ [36 <./vpl/actividad_vpl.png>]
+<vpl/guardar_actividad_vpl.png, id=551, 1915.155pt x 1095.3422pt>
 File: vpl/guardar_actividad_vpl.png Graphic file (type png)
 <use vpl/guardar_actividad_vpl.png>
-Package pdftex.def Info: vpl/guardar_actividad_vpl.png  used on input line 479.
+Package pdftex.def Info: vpl/guardar_actividad_vpl.png  used on input line 992.
 (pdftex.def)             Requested size: 426.79135pt x 244.08475pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 483.
-LaTeX Info: Redefining \% on input line 483.
- [23 <./vpl/restricciones_actividad_vpl.png>]
-<vpl/overview_actividad_vpl.png, id=324, 1914.40219pt x 1090.82532pt>
+LaTeX Info: Redefining \. on input line 996.
+LaTeX Info: Redefining \% on input line 996.
+ [37 <./vpl/restricciones_actividad_vpl.png>]
+<vpl/overview_actividad_vpl.png, id=557, 1914.40219pt x 1090.82532pt>
 File: vpl/overview_actividad_vpl.png Graphic file (type png)
 <use vpl/overview_actividad_vpl.png>
-Package pdftex.def Info: vpl/overview_actividad_vpl.png  used on input line 487.
+Package pdftex.def Info: vpl/overview_actividad_vpl.png  used on input line 1000.
 (pdftex.def)             Requested size: 426.79135pt x 243.17809pt.
-LaTeX Info: Redefining \. on input line 493.
-LaTeX Info: Redefining \% on input line 493.
- [24 <./vpl/guardar_actividad_vpl.png> <./vpl/overview_actividad_vpl.png>]
+LaTeX Info: Redefining \. on input line 1006.
+LaTeX Info: Redefining \% on input line 1006.
+ [38 <./vpl/guardar_actividad_vpl.png> <./vpl/overview_actividad_vpl.png>]
 Cap\'{\i }tulo 9.
 
-Overfull \hbox (0.2738pt too wide) in paragraph at lines 510--510
+Overfull \hbox (0.2738pt too wide) in paragraph at lines 1023--1023
 |[]\T1/lmr/bx/n/17.28 (-20) Configurar ac-cio-nes dis-po-ni-bles pa-ra el alumno| 
  []
 
-<profesor/mas_actividad_vpl.png, id=332, 1911.39093pt x 1096.095pt>
+<profesor/mas_actividad_vpl.png, id=565, 1911.39093pt x 1096.095pt>
 File: profesor/mas_actividad_vpl.png Graphic file (type png)
 <use profesor/mas_actividad_vpl.png>
-Package pdftex.def Info: profesor/mas_actividad_vpl.png  used on input line 518.
+Package pdftex.def Info: profesor/mas_actividad_vpl.png  used on input line 1031.
 (pdftex.def)             Requested size: 426.79135pt x 244.73753pt.
-[25
+[39
 
 ]
-<profesor/opciones_ejecucion_vpl.png, id=337, 1915.155pt x 1101.36469pt>
+<profesor/opciones_ejecucion_vpl.png, id=571, 1915.155pt x 1101.36469pt>
 File: profesor/opciones_ejecucion_vpl.png Graphic file (type png)
 <use profesor/opciones_ejecucion_vpl.png>
-Package pdftex.def Info: profesor/opciones_ejecucion_vpl.png  used on input line 527.
+Package pdftex.def Info: profesor/opciones_ejecucion_vpl.png  used on input line 1040.
 (pdftex.def)             Requested size: 426.79135pt x 245.42679pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 531.
-LaTeX Info: Redefining \% on input line 531.
- [26 <./profesor/mas_actividad_vpl.png>]
-<profesor/permitir_opciones_vpl.png, id=343, 1915.155pt x 1093.83656pt>
+LaTeX Info: Redefining \. on input line 1044.
+LaTeX Info: Redefining \% on input line 1044.
+ [40 <./profesor/mas_actividad_vpl.png>]
+<profesor/permitir_opciones_vpl.png, id=577, 1915.155pt x 1093.83656pt>
 File: profesor/permitir_opciones_vpl.png Graphic file (type png)
 <use profesor/permitir_opciones_vpl.png>
-Package pdftex.def Info: profesor/permitir_opciones_vpl.png  used on input line 537.
+Package pdftex.def Info: profesor/permitir_opciones_vpl.png  used on input line 1050.
 (pdftex.def)             Requested size: 426.79135pt x 243.74924pt.
-LaTeX Info: Redefining \. on input line 545.
-LaTeX Info: Redefining \% on input line 545.
- [27 <./profesor/opciones_ejecucion_vpl.png> <./profesor/permitir_opciones_vpl.png>] [28
+LaTeX Info: Redefining \. on input line 1058.
+LaTeX Info: Redefining \% on input line 1058.
+ [41 <./profesor/opciones_ejecucion_vpl.png> <./profesor/permitir_opciones_vpl.png>] [42
 
 ]
 Cap\'{\i }tulo 10.
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 554.
-c:/Files/Trabajo-Terminal/Manual Usuario/main.tex:618: ignored error: Infinite glue shrinkage found in box being split [29]
-LaTeX Info: Redefining \. on input line 658.
-LaTeX Info: Redefining \% on input line 658.
- [30]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 695.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 1067.
+c:/Files/Trabajo-Terminal/Manual Usuario/main.tex:1131: ignored error: Infinite glue shrinkage found in box being split [43]
+LaTeX Info: Redefining \. on input line 1171.
+LaTeX Info: Redefining \% on input line 1171.
+ [44]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 701.
-LaTeX Info: Redefining \. on input line 719.
-LaTeX Info: Redefining \% on input line 719.
- [31]
+(Font)              <10.95> on input line 1214.
+LaTeX Info: Redefining \. on input line 1232.
+LaTeX Info: Redefining \% on input line 1232.
+ [45]
 
 LaTeX Font Warning: Font shape `T1/lmtt/bx/it' in size <12> not available
-(Font)              Font shape `T1/lmtt/b/sl' tried instead on input line 764.
+(Font)              Font shape `T1/lmtt/b/sl' tried instead on input line 1277.
 
-LaTeX Info: Redefining \. on input line 770.
-LaTeX Info: Redefining \% on input line 770.
-[32]
-LaTeX Info: Redefining \. on input line 796.
-LaTeX Info: Redefining \% on input line 796.
- [33] [34
+LaTeX Info: Redefining \. on input line 1283.
+LaTeX Info: Redefining \% on input line 1283.
+[46]
+<vpl/test_configuration.png, id=666, 1915.155pt x 1101.36469pt>
+File: vpl/test_configuration.png Graphic file (type png)
+<use vpl/test_configuration.png>
+Package pdftex.def Info: vpl/test_configuration.png  used on input line 1314.
+(pdftex.def)             Requested size: 426.79135pt x 245.42679pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 1318.
+LaTeX Info: Redefining \% on input line 1318.
+ [47]
+<vpl/test_creado.png, id=693, 1915.9078pt x 1102.1175pt>
+File: vpl/test_creado.png Graphic file (type png)
+<use vpl/test_creado.png>
+Package pdftex.def Info: vpl/test_creado.png  used on input line 1323.
+(pdftex.def)             Requested size: 426.79135pt x 245.51047pt.
+LaTeX Info: Redefining \. on input line 1329.
+LaTeX Info: Redefining \% on input line 1329.
+ [48 <./vpl/test_configuration.png> <./vpl/test_creado.png>]
+LaTeX Info: Redefining \. on input line 1331.
+LaTeX Info: Redefining \% on input line 1331.
+ [49] [50
 
 ]
 Cap\'{\i }tulo 11.
-[35] [36
-
-]
+[51]
+LaTeX Info: Redefining \. on input line 1429.
+LaTeX Info: Redefining \% on input line 1429.
+ [52{C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}]
+LaTeX Info: Redefining \. on input line 1477.
+LaTeX Info: Redefining \% on input line 1477.
+ [53]
+<vpl/resultado_vpl.png, id=750, 1913.64937pt x 1095.3422pt>
+File: vpl/resultado_vpl.png Graphic file (type png)
+<use vpl/resultado_vpl.png>
+Package pdftex.def Info: vpl/resultado_vpl.png  used on input line 1503.
+(pdftex.def)             Requested size: 426.79135pt x 244.28531pt.
+LaTeX Info: Redefining \. on input line 1519.
+LaTeX Info: Redefining \% on input line 1519.
+ [54 <./vpl/resultado_vpl.png>]
+<vpl/resultado_vpl_output.png, id=757, 1913.64937pt x 1101.36469pt>
+File: vpl/resultado_vpl_output.png Graphic file (type png)
+<use vpl/resultado_vpl_output.png>
+Package pdftex.def Info: vpl/resultado_vpl_output.png  used on input line 1552.
+(pdftex.def)             Requested size: 426.79135pt x 245.62845pt.
+LaTeX Info: Redefining \. on input line 1561.
+LaTeX Info: Redefining \% on input line 1561.
+ [55 <./vpl/resultado_vpl_output.png>]
+<vpl/resultado_vpl_fail.png, id=765, 1915.9078pt x 1099.85907pt>
+File: vpl/resultado_vpl_fail.png Graphic file (type png)
+<use vpl/resultado_vpl_fail.png>
+Package pdftex.def Info: vpl/resultado_vpl_fail.png  used on input line 1573.
+(pdftex.def)             Requested size: 426.79135pt x 245.00737pt.
+LaTeX Info: Redefining \. on input line 1589.
+LaTeX Info: Redefining \% on input line 1589.
+ [56 <./vpl/resultado_vpl_fail.png>]
 Ap\'{e}ndice A.
-[37] [38
+[57
+
+] [58
 
 ]
 Ap\'{e}ndice B.
-[39] [40
+[59] [60
 
 ]
 Ap\'{e}ndice C.
-[41] [42
+[61] [62
 
 ] (main.aux
 LaTeX Info: Redefining \. on input line 12.
@@ -1229,17 +1465,17 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 44587 strings out of 467871
- 1024242 string characters out of 5418376
- 1771206 words of memory out of 5000000
- 72414 multiletter control sequences out of 15000+600000
- 722937 words of font info for 174 fonts, out of 8000000 for 9000
+ 45264 strings out of 467871
+ 1037671 string characters out of 5418376
+ 1774161 words of memory out of 5000000
+ 72880 multiletter control sequences out of 15000+600000
+ 733067 words of font info for 228 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 86i,13n,98p,1044b,2226s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtko10.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtti10.pfb>
-Output written on main.pdf (52 pages, 1822298 bytes).
+ 86i,13n,98p,1044b,2230s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtko10.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtti10.pfb>
+Output written on main.pdf (72 pages, 6017921 bytes).
 PDF statistics:
- 759 PDF objects out of 1000 (max. 8388607)
- 194 named destinations out of 1000 (max. 500000)
- 58447 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 1121 PDF objects out of 1200 (max. 8388607)
+ 302 named destinations out of 1000 (max. 500000)
+ 61748 words of extra memory for PDF output out of 61914 (max. 10000000)
 

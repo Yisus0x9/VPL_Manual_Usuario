@@ -1,25 +1,50 @@
 \babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Vista de cursos disponibles en Moodle para el alumno}}{4}{figure.caption.5}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Página de la actividad VPL con información de entrega}}{5}{figure.caption.6}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Editor de VPL con el diálogo para crear un nuevo archivo}}{8}{figure.caption.7}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Archivo \texttt {alu.vhd} creado y visible en el editor de VPL}}{10}{figure.caption.8}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Código VHDL escrito en el archivo \texttt {alu.vhd}}}{10}{figure.caption.9}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Resultado de compilación exitosa en el panel de resultados}}{14}{figure.caption.10}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Vista en pantalla completa del editor con compilación exitosa}}{14}{figure.caption.11}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Panel de resultados mostrando errores de compilación}}{15}{figure.caption.12}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Error al intentar generar testbench desde un archivo VHDL vacío}}{18}{figure.caption.13}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Testbench generado automáticamente para el diseño VHDL}}{19}{figure.caption.14}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Testbench con vectores de prueba añadidos manualmente}}{20}{figure.caption.15}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Salida detallada del proceso de compilación al ejecutar Debug}}{22}{figure.caption.16}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces GTKWave abierto con la jerarquía de señales y área de visualización vacía}}{22}{figure.caption.17}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Árbol de señales SST expandido con menú contextual para importar señales}}{23}{figure.caption.18}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Diálogo de confirmación para importar todas las señales del componente}}{24}{figure.caption.19}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Formas de onda de las señales del diseño visualizadas en GTKWave}}{24}{figure.caption.20}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Señales vectoriales expandidas mostrando cada bit individualmente en GTKWave}}{25}{figure.caption.21}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Directiva \texttt {vpl\_stop\_time} declarada en el testbench y confirmada por el compilador}}{26}{figure.caption.22}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces GTKWave con el eje temporal ajustado al tiempo definido por \texttt {vpl\_stop\_time}}}{26}{figure.caption.23}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Vista de entrega en Moodle con fecha de envío y archivo registrado}}{28}{figure.caption.24}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Cursos disponibles en Moodle}}{20}{figure.caption.5}%
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Cursos donde se desea agregar la actividad VPL}}{20}{figure.caption.6}%
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Crear actividad VPL}}{21}{figure.caption.7}%
-\contentsline {figure}{\numberline {8.4}{\ignorespaces Configuraciones generales de la actividad VPL}}{22}{figure.caption.8}%
-\contentsline {figure}{\numberline {8.5}{\ignorespaces Restricciones de entrega en la actividad VPL}}{23}{figure.caption.9}%
-\contentsline {figure}{\numberline {8.6}{\ignorespaces Guardar cambios en la actividad VPL}}{24}{figure.caption.10}%
-\contentsline {figure}{\numberline {8.7}{\ignorespaces Visión general de la actividad VPL}}{24}{figure.caption.11}%
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Cursos disponibles en Moodle}}{34}{figure.caption.25}%
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Cursos donde se desea agregar la actividad VPL}}{34}{figure.caption.26}%
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Crear actividad VPL}}{35}{figure.caption.27}%
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Configuraciones generales de la actividad VPL}}{36}{figure.caption.28}%
+\contentsline {figure}{\numberline {8.5}{\ignorespaces Restricciones de entrega en la actividad VPL}}{37}{figure.caption.29}%
+\contentsline {figure}{\numberline {8.6}{\ignorespaces Guardar cambios en la actividad VPL}}{38}{figure.caption.30}%
+\contentsline {figure}{\numberline {8.7}{\ignorespaces Visión general de la actividad VPL}}{38}{figure.caption.31}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {9.1}{\ignorespaces Mas configuraciones de la actividad VPL}}{26}{figure.caption.12}%
-\contentsline {figure}{\numberline {9.2}{\ignorespaces Opciones de ejecución en la actividad VPL}}{27}{figure.caption.13}%
-\contentsline {figure}{\numberline {9.3}{\ignorespaces Permitir opciones de ejecución en la actividad VPL}}{27}{figure.caption.14}%
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Mas configuraciones de la actividad VPL}}{40}{figure.caption.32}%
+\contentsline {figure}{\numberline {9.2}{\ignorespaces Opciones de ejecución en la actividad VPL}}{41}{figure.caption.33}%
+\contentsline {figure}{\numberline {9.3}{\ignorespaces Permitir opciones de ejecución en la actividad VPL}}{41}{figure.caption.34}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {10.1}{\ignorespaces Archivo de configuración de casos de prueba en la actividad VPL}}{48}{figure.caption.41}%
+\contentsline {figure}{\numberline {10.2}{\ignorespaces Archivo de casos de prueba creado y guardado en la actividad VPL}}{48}{figure.caption.42}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {11.1}{\ignorespaces Reporte generado por VPL al evaluar todos los casos de prueba correctamente}}{54}{figure.caption.43}%
+\contentsline {figure}{\numberline {11.2}{\ignorespaces Detalle del \textit {Evaluation output} y resumen estadístico al final del reporte}}{55}{figure.caption.44}%
+\contentsline {figure}{\numberline {11.3}{\ignorespaces Reporte de evaluación con casos fallidos detectados por el evaluador automático}}{56}{figure.caption.45}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
