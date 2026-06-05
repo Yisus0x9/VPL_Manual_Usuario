@@ -1,51 +1,85 @@
 \babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Vista de cursos disponibles en Moodle para el alumno}}{4}{figure.caption.5}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Página de la actividad VPL con información de entrega}}{5}{figure.caption.6}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Vista de cursos disponibles en Moodle para el alumno}}{3}{figure.caption.5}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Página de la actividad VPL con información de entrega}}{4}{figure.caption.6}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Editor de VPL con el diálogo para crear un nuevo archivo}}{8}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Editor de VPL con el diálogo para crear un nuevo archivo}}{6}{figure.caption.7}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Archivo \texttt {alu.vhd} creado y visible en el editor de VPL}}{10}{figure.caption.8}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Código VHDL escrito en el archivo \texttt {alu.vhd}}}{10}{figure.caption.9}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Archivo \texttt {alu.vhd} creado y visible en el editor de VPL}}{8}{figure.caption.8}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Código VHDL escrito en el archivo \texttt {alu.vhd}}}{8}{figure.caption.9}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Resultado de compilación exitosa en el panel de resultados}}{14}{figure.caption.10}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Vista en pantalla completa del editor con compilación exitosa}}{14}{figure.caption.11}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Panel de resultados mostrando errores de compilación}}{15}{figure.caption.12}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Resultado de compilación exitosa en el panel de resultados}}{10}{figure.caption.10}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Vista en pantalla completa del editor con compilación exitosa}}{10}{figure.caption.11}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Panel de resultados mostrando errores de compilación}}{11}{figure.caption.12}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Error al intentar generar testbench desde un archivo VHDL vacío}}{18}{figure.caption.13}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Testbench generado automáticamente para el diseño VHDL}}{19}{figure.caption.14}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Testbench con vectores de prueba añadidos manualmente}}{20}{figure.caption.15}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Error al intentar generar testbench desde un archivo VHDL vacío}}{13}{figure.caption.13}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Testbench generado automáticamente para el diseño VHDL}}{14}{figure.caption.14}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Testbench con vectores de prueba añadidos manualmente}}{15}{figure.caption.15}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Salida detallada del proceso de compilación al ejecutar Debug}}{22}{figure.caption.16}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces GTKWave abierto con la jerarquía de señales y área de visualización vacía}}{22}{figure.caption.17}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Árbol de señales SST expandido con menú contextual para importar señales}}{23}{figure.caption.18}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Diálogo de confirmación para importar todas las señales del componente}}{24}{figure.caption.19}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Formas de onda de las señales del diseño visualizadas en GTKWave}}{24}{figure.caption.20}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Señales vectoriales expandidas mostrando cada bit individualmente en GTKWave}}{25}{figure.caption.21}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Directiva \texttt {vpl\_stop\_time} declarada en el testbench y confirmada por el compilador}}{26}{figure.caption.22}%
-\contentsline {figure}{\numberline {6.8}{\ignorespaces GTKWave con el eje temporal ajustado al tiempo definido por \texttt {vpl\_stop\_time}}}{26}{figure.caption.23}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Salida detallada del proceso de compilación al ejecutar Debug}}{17}{figure.caption.16}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces GTKWave abierto con la jerarquía de señales y área de visualización vacía}}{17}{figure.caption.17}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Árbol de señales SST expandido con menú contextual para importar señales}}{18}{figure.caption.18}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Diálogo de confirmación para importar todas las señales del componente}}{19}{figure.caption.19}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Formas de onda de las señales del diseño visualizadas en GTKWave}}{19}{figure.caption.20}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Señales vectoriales expandidas mostrando cada bit individualmente en GTKWave}}{20}{figure.caption.21}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Directiva \texttt {vpl\_stop\_time} declarada en el testbench y confirmada por el compilador}}{21}{figure.caption.22}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces GTKWave con el eje temporal ajustado al tiempo definido por \texttt {vpl\_stop\_time}}}{21}{figure.caption.23}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Vista de entrega en Moodle con fecha de envío y archivo registrado}}{28}{figure.caption.24}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Vista del editor \textsc {VPL}\xspace al evaluar: lista de archivos, código del diseño y panel con la calificación propuesta y el reporte de compilación}}{23}{figure.caption.24}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Vista de entrega en \textit {Moodle}\xspace con la evaluación automática: fecha de envío, calificación propuesta, reporte de compilación y resultado de los casos de prueba}}{24}{figure.caption.25}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Cursos disponibles en Moodle}}{34}{figure.caption.25}%
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Cursos donde se desea agregar la actividad VPL}}{34}{figure.caption.26}%
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Crear actividad VPL}}{35}{figure.caption.27}%
-\contentsline {figure}{\numberline {8.4}{\ignorespaces Configuraciones generales de la actividad VPL}}{36}{figure.caption.28}%
-\contentsline {figure}{\numberline {8.5}{\ignorespaces Restricciones de entrega en la actividad VPL}}{37}{figure.caption.29}%
-\contentsline {figure}{\numberline {8.6}{\ignorespaces Guardar cambios en la actividad VPL}}{38}{figure.caption.30}%
-\contentsline {figure}{\numberline {8.7}{\ignorespaces Visión general de la actividad VPL}}{38}{figure.caption.31}%
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Modal \textit {Remote Lab} con los campos de conexión vacíos al ejecutar el botón}}{27}{figure.caption.26}%
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Ingreso de IP, usuario y contraseña en el modal \textit {Remote Lab}}}{27}{figure.caption.27}%
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Consola \textsc {SSH}\xspace tras copiar los archivos del alumno al servidor: transferencia completada y sesión interactiva establecida}}{28}{figure.caption.28}%
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Modal \textit {Download from Remote} con los campos de conexión y de selección de archivos}}{29}{figure.caption.29}%
+\contentsline {figure}{\numberline {8.5}{\ignorespaces Ingreso de credenciales y de la lista de archivos a descargar en el modal \textit {Download from Remote}}}{30}{figure.caption.30}%
+\contentsline {figure}{\numberline {8.6}{\ignorespaces Verificación en consola de los archivos disponibles en el servidor remoto antes de la descarga}}{30}{figure.caption.31}%
+\contentsline {figure}{\numberline {8.7}{\ignorespaces Archivos descargados desde el servidor remoto incorporados a la lista de archivos del alumno}}{31}{figure.caption.32}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {9.1}{\ignorespaces Mas configuraciones de la actividad VPL}}{40}{figure.caption.32}%
-\contentsline {figure}{\numberline {9.2}{\ignorespaces Opciones de ejecución en la actividad VPL}}{41}{figure.caption.33}%
-\contentsline {figure}{\numberline {9.3}{\ignorespaces Permitir opciones de ejecución en la actividad VPL}}{41}{figure.caption.34}%
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Cursos disponibles en Moodle}}{34}{figure.caption.33}%
+\contentsline {figure}{\numberline {9.2}{\ignorespaces Cursos donde se desea agregar la actividad VPL}}{34}{figure.caption.34}%
+\contentsline {figure}{\numberline {9.3}{\ignorespaces Crear actividad VPL}}{35}{figure.caption.35}%
+\contentsline {figure}{\numberline {9.4}{\ignorespaces Configuraciones generales de la actividad VPL}}{36}{figure.caption.36}%
+\contentsline {figure}{\numberline {9.5}{\ignorespaces Restricciones de entrega en la actividad VPL}}{37}{figure.caption.37}%
+\contentsline {figure}{\numberline {9.6}{\ignorespaces Guardar cambios en la actividad VPL}}{38}{figure.caption.38}%
+\contentsline {figure}{\numberline {9.7}{\ignorespaces Visión general de la actividad VPL}}{38}{figure.caption.39}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {10.1}{\ignorespaces Archivo de configuración de casos de prueba en la actividad VPL}}{48}{figure.caption.41}%
-\contentsline {figure}{\numberline {10.2}{\ignorespaces Archivo de casos de prueba creado y guardado en la actividad VPL}}{48}{figure.caption.42}%
+\contentsline {figure}{\numberline {10.1}{\ignorespaces Mas configuraciones de la actividad VPL}}{40}{figure.caption.40}%
+\contentsline {figure}{\numberline {10.2}{\ignorespaces Opciones de ejecución en la actividad VPL}}{41}{figure.caption.41}%
+\contentsline {figure}{\numberline {10.3}{\ignorespaces Permitir opciones de ejecución en la actividad VPL}}{41}{figure.caption.42}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {11.1}{\ignorespaces Reporte generado por VPL al evaluar todos los casos de prueba correctamente}}{54}{figure.caption.43}%
-\contentsline {figure}{\numberline {11.2}{\ignorespaces Detalle del \textit {Evaluation output} y resumen estadístico al final del reporte}}{55}{figure.caption.44}%
-\contentsline {figure}{\numberline {11.3}{\ignorespaces Reporte de evaluación con casos fallidos detectados por el evaluador automático}}{56}{figure.caption.45}%
+\contentsline {figure}{\numberline {11.1}{\ignorespaces Archivo de configuración de casos de prueba en la actividad VPL}}{47}{figure.caption.49}%
+\contentsline {figure}{\numberline {11.2}{\ignorespaces Archivo de casos de prueba creado y guardado en la actividad VPL}}{47}{figure.caption.50}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {12.1}{\ignorespaces Reporte generado por VPL al evaluar todos los casos de prueba correctamente}}{52}{figure.caption.51}%
+\contentsline {figure}{\numberline {12.2}{\ignorespaces Detalle del \textit {Evaluation output} y resumen estadístico al final del reporte}}{53}{figure.caption.52}%
+\contentsline {figure}{\numberline {12.3}{\ignorespaces Reporte de evaluación con casos fallidos detectados por el evaluador automático}}{54}{figure.caption.53}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {13.1}{\ignorespaces Conexión al servidor de generación de bitstream y copia de los archivos \textsc {VHDL}\xspace mediante el botón de laboratorio remoto}}{57}{figure.caption.54}%
+\contentsline {figure}{\numberline {13.2}{\ignorespaces Menú principal de \texttt {genBIT.sh}: espacio de trabajo y proyectos existentes}}{57}{figure.caption.55}%
+\contentsline {figure}{\numberline {13.3}{\ignorespaces Creación de un nuevo proyecto y ruta \texttt {src} donde colocar los archivos \textsc {VHDL}\xspace }}{58}{figure.caption.56}%
+\contentsline {figure}{\numberline {13.4}{\ignorespaces Movimiento del archivo \textsc {VHDL}\xspace al directorio \texttt {src} del proyecto con el comando \texttt {mv}}}{59}{figure.caption.57}%
+\contentsline {figure}{\numberline {13.5}{\ignorespaces Interfaz principal del generador: vista de configuración del proyecto y botones de acción}}{60}{figure.caption.58}%
+\contentsline {figure}{\numberline {13.6}{\ignorespaces Modo de asignación de pines: editor de mapping, puertos del diseño y recursos de la tarjeta}}{61}{figure.caption.59}%
+\contentsline {figure}{\numberline {13.7}{\ignorespaces Uso del filtro para localizar puertos del diseño y recursos de la tarjeta}}{61}{figure.caption.60}%
+\contentsline {figure}{\numberline {13.8}{\ignorespaces Selección de un puerto del diseño y un recurso de la tarjeta mediante doble clic}}{62}{figure.caption.61}%
+\contentsline {figure}{\numberline {13.9}{\ignorespaces Mapeo agregado: el puerto del diseño queda asociado a un pin de la tarjeta}}{63}{figure.caption.62}%
+\contentsline {figure}{\numberline {13.10}{\ignorespaces Todos los puertos del diseño asociados a pines de la tarjeta}}{63}{figure.caption.63}%
+\contentsline {figure}{\numberline {13.11}{\ignorespaces Mapeo guardado en el archivo \texttt {pins.yml}}}{64}{figure.caption.64}%
+\contentsline {figure}{\numberline {13.12}{\ignorespaces Generación del archivo de restricciones \texttt {.xdc} a partir de los mapeos}}{65}{figure.caption.65}%
+\contentsline {figure}{\numberline {13.13}{\ignorespaces Envío del build a la cola de procesamiento con su \texttt {Job ID}}}{65}{figure.caption.66}%
+\contentsline {figure}{\numberline {13.14}{\ignorespaces Indicaciones del servicio tras enviar el build: seguimiento con \textsf {\textbf {Actualizar estado}}}}{66}{figure.caption.67}%
+\contentsline {figure}{\numberline {13.15}{\ignorespaces Estado del build actualizado: construcción del \texttt {.bit} terminada}}{67}{figure.caption.68}%
+\contentsline {figure}{\numberline {13.16}{\ignorespaces Ruta de los archivos de salida generados por el build}}{67}{figure.caption.69}%
+\contentsline {figure}{\numberline {13.17}{\ignorespaces Listado de los archivos generados en el directorio \texttt {build/} del proyecto}}{68}{figure.caption.70}%
+\contentsline {figure}{\numberline {13.18}{\ignorespaces Descarga de los archivos \texttt {.bit} y \texttt {.xdc} mediante el botón de descarga remota}}{69}{figure.caption.71}%
+\contentsline {figure}{\numberline {13.19}{\ignorespaces Visualización del archivo \texttt {.bit} descargado en el editor de \textsc {VPL}\xspace }}{69}{figure.caption.72}%
+\contentsline {figure}{\numberline {13.20}{\ignorespaces Visualización del archivo de restricciones \texttt {.xdc} en el editor de \textsc {VPL}\xspace }}{70}{figure.caption.73}%
+\contentsline {figure}{\numberline {13.21}{\ignorespaces Conexión al laboratorio remoto de FPGA's y copia de los archivos \texttt {.bit} y \texttt {.xdc}}}{71}{figure.caption.74}%
+\contentsline {figure}{\numberline {13.22}{\ignorespaces Archivos del proyecto disponibles en el laboratorio remoto de FPGA's}}{71}{figure.caption.75}%
+\contentsline {figure}{\numberline {13.23}{\ignorespaces Programación de la FPGA con \texttt {progFPGA.sh} y visualización por video del servidor}}{72}{figure.caption.76}%
+\contentsline {figure}{\numberline {13.24}{\ignorespaces Control de la FPGA con \texttt {inputFPGA.sh} usando el archivo \texttt {.xdc}}}{73}{figure.caption.77}%
+\contentsline {figure}{\numberline {13.25}{\ignorespaces Prueba de asignación de valores en los switches y respuesta de la FPGA que valida el bitstream generado}}{73}{figure.caption.78}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsfinish 

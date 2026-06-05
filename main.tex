@@ -1,8 +1,8 @@
-% ============================================================
+
 %  Manual de Usuario — Laboratorio de Programación Virtual
 %  para el Diseño Lógico Digital mediante Lógica Reconfigurable
-% ============================================================
-\documentclass[12pt, a4paper, twoside]{book}
+
+\documentclass[12pt, a4paper, twoside, openany]{book}
 
 % ── Codificación y lenguaje ─────────────────────────────────
 \usepackage[utf8]{inputenc}
@@ -175,20 +175,26 @@
 \usepackage{caption}
 \captionsetup{font=small, labelfont={bf,color=PrimaryBlue}}
 
-% ============================================================
+% Evita que LaTeX estire el espacio vertical para justificar el pie de
+% página (\flushbottom por defecto en book): el sobrante se acumula al
+% final de la página en lugar de generar saltos grandes entre bloques.
+\raggedbottom
+
+
 %  Macros de utilidad
-% ============================================================
+
 \newcommand{\vpl}{\textsc{VPL}\xspace}
 \newcommand{\vhdl}{\textsc{VHDL}\xspace}
+\newcommand{\ssh}{\textsc{SSH}\xspace}
 \newcommand{\moodle}{\textit{Moodle}\xspace}
 \newcommand{\archivo}[1]{\texttt{\small#1}}
 \newcommand{\menu}[1]{\textsf{\textbf{#1}}}
 
 \usepackage{xspace}
 
-% ============================================================
+
 %  DOCUMENTO
-% ============================================================
+
 \begin{document}
 
 % ── Portada ─────────────────────────────────────────────────
@@ -264,7 +270,7 @@ Este manual describe el uso del \textbf{Laboratorio de Programación Virtual}
 (\vpl) integrado en \moodle para el diseño y verificación de circuitos
 digitales escritos en \vhdl mediante lógica reconfigurable.
 
-El documento se divide en dos partes independientes:
+El documento se divide en tres partes independientes:
 
 \begin{itemize}
   \item \textbf{Parte I — Guía del Alumno:} acceso, edición, compilación,
@@ -272,6 +278,12 @@ El documento se divide en dos partes independientes:
   \item \textbf{Parte II — Guía del Profesor:} creación y configuración de
         actividades \vpl, definición de casos de prueba, generación de
         \textit{testbenches} y análisis de reportes de evaluación.
+  \item \textbf{Parte III — Guía del Servicio de Generación de Bitstream:}
+        uso del servicio remoto que toma un diseño \vhdl, asigna los pines
+        físicos de una tarjeta FPGA y genera el archivo de configuración
+        \texttt{.bit} junto con su archivo de restricciones \texttt{.xdc},
+        incluyendo su programación y prueba en el laboratorio remoto de
+        FPGA's.
 \end{itemize}
 
 \begin{notebox}[Sobre este documento]
@@ -280,9 +292,7 @@ El documento se divide en dos partes independientes:
 
 \clearpage
 
-% ============================================================
 %           PARTE I — GUÍA DEL ALUMNO
-% ============================================================
 \mainmatter
 
 \part{Guía del Alumno}
@@ -301,7 +311,7 @@ Para utilizar el laboratorio virtual \vpl es necesario contar con:
         Brave o Edge. 
   \item \textbf{Cuenta activa en Moodle:} el alumno debe tener usuario y
         contraseña válidos para iniciar sesión en la plataforma.
-  \item \textbf{Matrícula en el curso:} la cuenta debe estar inscrita en el
+  \item \textbf{Estar inscrito en el curso:} la cuenta debe estar inscrita en el
         curso que contiene la actividad \vpl.
   \item \textbf{Conexión a internet estable:} la compilación y simulación se
         ejecutan en el servidor; una conexión inestable puede interrumpir
@@ -475,13 +485,6 @@ Un archivo \vhdl mínimo consta de tres partes:
 \label{fig:codigo-creado}
 \end{figure}
 
-\section{Nomenclatura y organización de archivos}
-\label{sec:nomenclatura}
-
-Se recomienda usar nombres descriptivos en minúsculas separando palabras
-con guion bajo (por ejemplo: \texttt{sumador\_restador.vhd},
-\texttt{mux\_4to1.vhd}). Evitar espacios y caracteres especiales en los
-nombres de archivo, ya que pueden causar errores durante la compilación.
 
 % ── Capítulo 4 ──────────────────────────────────────────────
 \chapter{Compilar Archivos VHDL}
@@ -546,17 +549,6 @@ Para corregir un error, localizar la línea indicada en el mensaje, revisar
 la sintaxis en esa sección y ejecutar \menu{Run} nuevamente para
 verificar la corrección.
 
-\section{Buenas prácticas de compilación}
-\label{sec:buenas-practicas-comp}
-
-\begin{itemize}
-  \item Compilar frecuentemente mientras se escribe el código, en lugar de
-        esperar a tener el diseño completo.
-  \item Corregir errores de arriba a abajo: un error temprano puede
-        generar errores secundarios en líneas posteriores.
-  \item Verificar que el nombre de la entidad coincida exactamente con el
-        nombre del archivo \texttt{.vhd}.
-\end{itemize}
 
 % ── Capítulo 5 ──────────────────────────────────────────────
 \chapter{Generación de Código Testbench}
@@ -845,22 +837,41 @@ con la calificación final.
 \end{stepbox}
 
 \begin{stepbox}{2}
-  Hacer clic en el ícono \menu{Evaluate} en la barra de herramientas.
-  \vpl procesará el diseño y mostrará la calificación obtenida en el panel
-  de resultados.
-\end{stepbox}
-
-\begin{stepbox}{3}
-  Una vez evaluado, el diseño queda registrado como entrega en \moodle.
-  La Figura~\ref{fig:vista-entrega} muestra la vista de entrega con la
-  fecha y hora de envío y el enlace para descargar el archivo entregado.
+  Hacer clic en el ícono \menu{Evaluate} en la barra de herramientas del
+  editor. \vpl compila el diseño, ejecuta los casos de prueba y muestra el
+  resultado en el panel derecho. Como se observa en la
+  Figura~\ref{fig:evaluar-alumno}, el panel presenta la calificación
+  propuesta (\texttt{Proposed grade}) junto con el reporte de compilación,
+  mientras la lista de archivos del proyecto (diseño, \textit{testbench} y
+  archivos de soporte) permanece visible a la izquierda.
 \end{stepbox}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth]{alumno/vista_entrega_20.png}
-\caption{Vista de entrega en Moodle con fecha de envío y archivo registrado}
-\label{fig:vista-entrega}
+\includegraphics[width=1\textwidth]{alumno/EVALUAR_POR_ALUMNO.png}
+\caption{Vista del editor \vpl al evaluar: lista de archivos, código del
+diseño y panel con la calificación propuesta y el reporte de compilación}
+\label{fig:evaluar-alumno}
+\end{figure}
+
+\begin{stepbox}{3}
+  Una vez evaluado, el diseño queda registrado como entrega en \moodle.
+  La Figura~\ref{fig:evaluacion-propuesta} muestra la vista de entrega con
+  la fecha y hora de envío, la evaluación automática y la calificación
+  propuesta sobre 100 puntos. En el reporte se distinguen los mensajes
+  \texttt{SUCCESS} de cada etapa (búsqueda de archivos, compilación con
+  GHDL y simulación), el conteo de casos superados (\texttt{Casos: 3/3}),
+  la nota final (\texttt{Nota: 100/100}) y el comentario
+  \textit{Evaluación VHDL Automática}.
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{alumno/EVALUACION_PROPUESTA.png}
+\caption{Vista de entrega en \moodle con la evaluación automática: fecha de
+envío, calificación propuesta, reporte de compilación y resultado de los
+casos de prueba}
+\label{fig:evaluacion-propuesta}
 \end{figure}
 
 \section{Interpretar la retroalimentación}
@@ -901,9 +912,170 @@ profesor. Se recomienda:
   Asegúrese de haber depurado el diseño antes de evaluar.
 \end{warnbox}
 
-% ============================================================
+
+% ── Capítulo: Conexión y transferencia con servidores remotos ──
+\chapter{Conexión y Transferencia con Servidores Remotos}
+\label{ch:servidores-remotos}
+
+Además de las acciones estándar de \vpl, el entorno incorpora dos botones
+propios para interactuar con servidores externos desde el laboratorio
+virtual: uno para \textbf{copiar los archivos del alumno hacia un servidor
+remoto} y abrir una sesión \ssh, y otro para \textbf{descargar archivos
+desde un servidor remoto} e incorporarlos como archivos del proyecto. Estas
+funcionalidades fueron añadidas para conectarse con el generador de archivos
+\textit{bitstream} y con el laboratorio remoto de FPGA's.
+
+\section{Conexión al laboratorio remoto (copiar archivos y abrir SSH)}
+\label{sec:conexion-lab-remoto}
+
+Esta funcionalidad se añadió para copiar, mediante el comando \texttt{scp},
+los archivos del laboratorio virtual hacia un servidor remoto y, a
+continuación, establecer una conexión \ssh con dicho servidor. Resulta de
+gran utilidad para conectarse al \textbf{generador de archivos bitstream} y
+al \textbf{laboratorio remoto de FPGA's}.
+
+\begin{stepbox}{1}
+  Hacer clic en el botón de conexión al laboratorio remoto de la barra de
+  herramientas del editor. Se abre el modal \textit{Remote Lab}, que
+  solicita los datos de acceso al servidor: \texttt{Server IP / Host},
+  \texttt{Username} y \texttt{Password}
+  (Figura~\ref{fig:remoto-ejecutar}).
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{boton_conexion_lab_remoto/ejecutarr_boton.png}
+\caption{Modal \textit{Remote Lab} con los campos de conexión vacíos al
+ejecutar el botón}
+\label{fig:remoto-ejecutar}
+\end{figure}
+
+\begin{stepbox}{2}
+  Ingresar las credenciales del servidor: la dirección IP o host (por
+  ejemplo \texttt{148.204.59.117}), el nombre de usuario (\texttt{alumno01})
+  y la contraseña. Pulsar \menu{Connect} para iniciar la transferencia y la
+  conexión (Figura~\ref{fig:remoto-credenciales}).
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{boton_conexion_lab_remoto/ingresar_credenciales.png}
+\caption{Ingreso de IP, usuario y contraseña en el modal \textit{Remote Lab}}
+\label{fig:remoto-credenciales}
+\end{figure}
+
+\begin{stepbox}{3}
+  \vpl copia los archivos del alumno al servidor con \texttt{scp} y abre la
+  sesión \ssh. La consola muestra el progreso: verificación de la conexión
+  al puerto \texttt{22}, el mensaje \texttt{Transfiriendo 2 archivo(s)
+  VHDL...} seguido de \texttt{Transferencia completada} y, finalmente, el
+  prompt interactivo del servidor (\texttt{alumno01@jetrevin:\textasciitilde\ \$}), donde
+  el comando \texttt{ls} confirma que los archivos \texttt{alu.vhd} y
+  \texttt{alu\_tb.vhd} ya están en el servidor
+  (Figura~\ref{fig:remoto-conexion}).
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{boton_conexion_lab_remoto/conexion_y_copiado_de_arcivos.png}
+\caption{Consola \ssh tras copiar los archivos del alumno al servidor:
+transferencia completada y sesión interactiva establecida}
+\label{fig:remoto-conexion}
+\end{figure}
+
+\section{Descargar archivos desde un servidor remoto}
+\label{sec:descargar-archivos-remoto}
+
+Como su nombre lo indica, esta funcionalidad sirve para descargar archivos
+de un servidor remoto y mostrarlos como archivos del alumno dentro del
+proyecto. Es de utilidad para obtener los archivos de configuración
+\texttt{.bit} (bitstream) y los archivos de restricciones \texttt{.xdc}.
+
+\begin{stepbox}{1}
+  Hacer clic en el botón de descarga. Se abre el modal \textit{Download from
+  Remote}, con los campos \texttt{Server IP / Host}, \texttt{Username},
+  \texttt{Password} y el campo \texttt{Remote file(s)} para indicar qué
+  archivos descargar (Figura~\ref{fig:descargar-modal}).
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{boton_descargar_Archivos/modal_boton.png}
+\caption{Modal \textit{Download from Remote} con los campos de conexión y de
+selección de archivos}
+\label{fig:descargar-modal}
+\end{figure}
+
+Para indicar qué archivos descargar, el campo \texttt{Remote file(s)} acepta
+los siguientes formatos:
+
+\begin{itemize}
+  \item \textbf{Nombre de archivo:} un único archivo, por ejemplo
+        \texttt{archivo.bit}.
+  \item \textbf{Nombres separados por coma:} varios archivos, por ejemplo
+        \texttt{archivo1.bit,archivo2.xdc}.
+  \item \textbf{Ruta específica:} un archivo dentro de una ruta, por ejemplo
+        \texttt{ruta/archivo.bit}.
+  \item \textbf{Múltiples archivos en una ruta:} usando la sintaxis
+        \texttt{ruta/archivos:archivo1.bit,archivo2.xdc}.
+\end{itemize}
+
+\begin{stepbox}{2}
+  Ingresar las credenciales del servidor y, en el campo \texttt{Remote
+  file(s)}, los archivos a descargar (por ejemplo
+  \texttt{fichero1.txt,fichero2.vhd}). Pulsar \menu{Download}
+  (Figura~\ref{fig:descargar-credenciales}).
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{boton_descargar_Archivos/ingresar_credenciales_y archivos.png}
+\caption{Ingreso de credenciales y de la lista de archivos a descargar en el
+modal \textit{Download from Remote}}
+\label{fig:descargar-credenciales}
+\end{figure}
+
+\begin{stepbox}{3}
+  \vpl se conecta al servidor y localiza los archivos solicitados. La consola
+  muestra la sesión \ssh y, con \texttt{ls}, los archivos disponibles en el
+  servidor remoto (\texttt{fichero.txt} y \texttt{fichero2.vhd})
+  (Figura~\ref{fig:descargar-servidor}).
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{boton_descargar_Archivos/ver_archivos_en_servidor.png}
+\caption{Verificación en consola de los archivos disponibles en el servidor
+remoto antes de la descarga}
+\label{fig:descargar-servidor}
+\end{figure}
+
+\begin{stepbox}{4}
+  Al completarse la descarga, los archivos se incorporan a la lista de
+  archivos del proyecto y quedan visibles como archivos del alumno
+  (\texttt{fichero.txt} y \texttt{fichero2.vhd} aparecen en el explorador de
+  la izquierda), listos para usarse en la actividad
+  (Figura~\ref{fig:descargar-archivos}).
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{boton_descargar_Archivos/archivos_descargados.png}
+\caption{Archivos descargados desde el servidor remoto incorporados a la
+lista de archivos del alumno}
+\label{fig:descargar-archivos}
+\end{figure}
+
+\begin{warnbox}[Límite de archivos]
+  La descarga está limitada por el número máximo de archivos que puede
+  entregar el alumno, valor definido por el profesor en la configuración de
+  la actividad. Si la descarga supera ese límite, los archivos no podrán
+  incorporarse al proyecto.
+\end{warnbox}
+
+
 %           PARTE II — GUÍA DEL PROFESOR
-% ============================================================
+
 \part{Guía del Profesor}
 
 
@@ -1583,20 +1755,509 @@ correctamente los errores en los diseños de los alumnos.
   prueba detectan correctamente los diseños erróneos.
 \end{tipbox}
 
+%           PARTE III — GUÍA DEL SERVICIO DE GENERACIÓN DE BITSTREAM
+
+\part{Guía del Servicio de Generación de Bitstream}
+
+
+% ── Capítulo ────────────────────────────────────────────────
+\chapter{Servicio de Generación de Archivos Bitstream}
+\label{ch:generador-bitstream}
+
+Esta guía es independiente de los roles de alumno y profesor: documenta el
+\textbf{servicio de generación de archivos bitstream}, alojado en un servidor
+remoto, que toma un diseño \vhdl, le asigna pines físicos de una tarjeta FPGA
+y produce el archivo de configuración \texttt{.bit} junto con su archivo de
+restricciones \texttt{.xdc}. El flujo completo combina los botones de
+conexión y descarga del editor \vpl con la herramienta de línea de comandos
+\texttt{genBIT.sh}.
+
+\section{Conexión al servidor y creación del proyecto}
+\label{sec:gb-conexion}
+
+\begin{stepbox}{1}
+  Usar el botón de \textbf{conexión al laboratorio remoto} para conectarse al
+  servidor de generación de bitstream (IP \texttt{148.204.59.117}). \vpl
+  copia con \texttt{scp} los archivos \vhdl del alumno y abre la sesión \ssh.
+  La consola muestra \texttt{Transferencia completada} y, con \texttt{ls}, los
+  archivos ya presentes en el servidor (\texttt{sumres.vhd} y
+  \texttt{sumres\_tb.vhd}), como se ve en la
+  Figura~\ref{fig:gb-conexion}.
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{generador_bitstream/1_uso_de_boton_lab_remoto.png}
+\caption{Conexión al servidor de generación de bitstream y copia de los
+archivos \vhdl mediante el botón de laboratorio remoto}
+\label{fig:gb-conexion}
+\end{figure}
+
+\begin{stepbox}{2}
+  Ejecutar el comando \texttt{genBIT.sh}, que inicia el servicio de generación
+  de bitstream. Se muestra el espacio de trabajo del alumno (\textit{FPGA
+  Student Workspace}) con la carpeta de proyectos, la lista de proyectos
+  existentes y las opciones \texttt{n)} crear, \texttt{d)} eliminar y
+  \texttt{q)} salir (Figura~\ref{fig:gb-genbit}).
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{generador_bitstream/2_comando_genBIT.png}
+\caption{Menú principal de \texttt{genBIT.sh}: espacio de trabajo y proyectos
+existentes}
+\label{fig:gb-genbit}
+\end{figure}
+
+\begin{stepbox}{3}
+  Seleccionar la opción \texttt{n)} para crear un nuevo proyecto (por ejemplo
+  \texttt{prueba}). El servicio confirma la creación e indica la ruta donde se
+  deben subir los archivos \vhdl:
+  \texttt{/home/fpga-students/alumno01/projects/prueba/src}. Conviene fijarse
+  en esa ruta, ya que ahí se deben colocar los códigos \vhdl
+  (Figura~\ref{fig:gb-crear}).
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{generador_bitstream/3_crear_proyecto.png}
+\caption{Creación de un nuevo proyecto y ruta \texttt{src} donde colocar los
+archivos \vhdl}
+\label{fig:gb-crear}
+\end{figure}
+
+\begin{stepbox}{4}
+  Salir de \texttt{genBIT.sh} con la opción \texttt{q)} y, desde la sesión
+  \ssh, mover el archivo \vhdl que se subió gracias al botón de conexión al
+  laboratorio remoto hacia la carpeta del proyecto con \texttt{mv}, por
+  ejemplo:
+  \texttt{mv sumres.vhd /home/fpga-students/alumno01/projects/prueba/src}
+  (Figura~\ref{fig:gb-mover}).
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{generador_bitstream/4_mover_codigo_vhdl_a_proyecto.png}
+\caption{Movimiento del archivo \vhdl al directorio \texttt{src} del proyecto
+con el comando \texttt{mv}}
+\label{fig:gb-mover}
+\end{figure}
+
+\section{El editor de proyecto y pines}
+\label{sec:gb-editor}
+
+\begin{stepbox}{5}
+  Ejecutar nuevamente \texttt{genBIT.sh} e ingresar al proyecto. Se abre la
+  interfaz principal \textit{FPGA Project + Pins Editor}
+  (Figura~\ref{fig:gb-interfaz}). A la izquierda se muestran los datos del
+  proyecto (board \texttt{nexys4ddr-a7-100t}, top \texttt{sumRes4BCA}, archivo
+  top, \textit{part}, puertos detectados, modo UI). En el centro está la
+  \textbf{vista de configuración del proyecto} con los botones
+  \menu{Guardar} y \menu{Continuar a pines}, y la lista de entidades
+  detectadas. La barra inferior lista los atajos: \menu{Guardar},
+  \menu{Generar XDC}, \menu{Build}, \menu{Actualizar estado}, \menu{Agregar},
+  \menu{Modo pines} y \menu{Modo setup}.
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{generador_bitstream/5_ingresar_a_proyecto.png}
+\caption{Interfaz principal del generador: vista de configuración del proyecto
+y botones de acción}
+\label{fig:gb-interfaz}
+\end{figure}
+
+\begin{stepbox}{6}
+  Hacer clic en \menu{Continuar a pines} para entrar al modo de asignación
+  (Figura~\ref{fig:gb-pines}). La interfaz se organiza así:
+  \begin{itemize}
+    \item \textbf{Lado derecho, arriba:} el \textit{Editor de mapping}, que
+          muestra la asignación que se quiere hacer (puerto del diseño y
+          recurso de la tarjeta).
+    \item Debajo, los \textbf{botones} \menu{Agregar / Actualizar},
+          \menu{Eliminar}, \menu{Guardar}, \menu{Generar XDC}, \menu{Build} y
+          \menu{Actualizar estado}.
+    \item Debajo, la tabla \textbf{Puertos del top} (los puertos de nuestro
+          diseño o código \vhdl).
+    \item Debajo, la tabla \textbf{Recursos disponibles de la tarjeta}
+          (los pines disponibles en la tarjeta).
+    \item \textbf{Lado izquierdo, arriba:} la configuración del proyecto.
+    \item Debajo, la tabla de \textbf{mapeos} que se han hecho.
+    \item Debajo, un recuadro de \textbf{retroalimentación} que describe lo
+          que se está haciendo.
+  \end{itemize}
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{generador_bitstream/6_interfaz_generador_bitstream.png}
+\caption{Modo de asignación de pines: editor de mapping, puertos del diseño y
+recursos de la tarjeta}
+\label{fig:gb-pines}
+\end{figure}
+
+\begin{stepbox}{7}
+  Tanto los puertos del diseño como los recursos de la tarjeta se pueden
+  \textbf{filtrar o buscar} mediante los campos \texttt{Buscar puerto...} y
+  \texttt{Buscar recurso...} (Figura~\ref{fig:gb-filtro}).
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{generador_bitstream/7_uso_filtro.png}
+\caption{Uso del filtro para localizar puertos del diseño y recursos de la
+tarjeta}
+\label{fig:gb-filtro}
+\end{figure}
+
+\section{Asignación de pines (mapeo)}
+\label{sec:gb-mapeo}
+
+\begin{stepbox}{8}
+  Para hacer un mapeo, dar \textbf{doble clic} en el puerto del diseño; este
+  se visualiza en el \textit{Editor de mapping} como la asignación que se
+  quiere hacer. Hacer lo mismo con el recurso de la tarjeta
+  (Figura~\ref{fig:gb-asociar}).
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{generador_bitstream/8_asociar_puertos.png}
+\caption{Selección de un puerto del diseño y un recurso de la tarjeta mediante
+doble clic}
+\label{fig:gb-asociar}
+\end{figure}
+
+\begin{stepbox}{9}
+  Para agregar y confirmar el mapeo, hacer clic en \menu{Agregar /
+  Actualizar}. Del lado izquierdo aparece el mapeo (por ejemplo
+  \texttt{A(0) -> SW(0)}) en la tabla de mapeos y, debajo, la descripción de
+  lo que se hizo (Figura~\ref{fig:gb-agregar}).
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{generador_bitstream/9_agregar_mapeo.png}
+\caption{Mapeo agregado: el puerto del diseño queda asociado a un pin de la
+tarjeta}
+\label{fig:gb-agregar}
+\end{figure}
+
+\begin{stepbox}{10}
+  Repetir el procedimiento con todos los puertos hasta asociar todos los
+  pines (Figura~\ref{fig:gb-todos}).
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{generador_bitstream/10_todo_mapeados.png}
+\caption{Todos los puertos del diseño asociados a pines de la tarjeta}
+\label{fig:gb-todos}
+\end{figure}
+
+\section{Generación del bitstream}
+\label{sec:gb-build}
+
+\begin{stepbox}{11}
+  Guardar el mapeo con \menu{Guardar}. Se genera el archivo \texttt{pins.yml}
+  y la retroalimentación indica que fue validado y guardado en
+  \texttt{.../projects/prueba/pins.yml} (Figura~\ref{fig:gb-guardar}).
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{generador_bitstream/11_guardado_de_mapeo.png}
+\caption{Mapeo guardado en el archivo \texttt{pins.yml}}
+\label{fig:gb-guardar}
+\end{figure}
+
+\begin{stepbox}{12}
+  Hacer clic en \menu{Generar XDC} para crear el archivo de restricciones
+  \texttt{.xdc}. Este archivo traduce los mapeos realizados a una sintaxis
+  entendible para poder usar la FPGA (Figura~\ref{fig:gb-xdc}).
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{generador_bitstream/12_generar_xdc.png}
+\caption{Generación del archivo de restricciones \texttt{.xdc} a partir de los
+mapeos}
+\label{fig:gb-xdc}
+\end{figure}
+
+\begin{stepbox}{13}
+  Hacer clic en \menu{Build} para enviar el diseño a la cola de procesamiento
+  y generar el archivo \texttt{.bit}. El servicio devuelve un \texttt{Job ID}
+  y la ruta del proyecto (Figura~\ref{fig:gb-build1}).
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{generador_bitstream/13_construri_bit.png}
+\caption{Envío del build a la cola de procesamiento con su \texttt{Job ID}}
+\label{fig:gb-build1}
+\end{figure}
+
+\begin{stepbox}{14}
+  El servicio informa que, para revisar el avance, se debe usar
+  \menu{Actualizar estado}, y que al terminar se podrán descargar los
+  archivos por SFTP (Figura~\ref{fig:gb-build2}).
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{generador_bitstream/14_construir_bit_parte_2.png}
+\caption{Indicaciones del servicio tras enviar el build: seguimiento con
+\menu{Actualizar estado}}
+\label{fig:gb-build2}
+\end{figure}
+
+\begin{stepbox}{15}
+  Hacer clic en \menu{Actualizar estado} para saber si el \texttt{.bit} ya se
+  construyó. Cuando el proceso finaliza, la retroalimentación muestra
+  \texttt{Build terminado} (Figura~\ref{fig:gb-estado}).
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{generador_bitstream/15_actualizar_estado.png}
+\caption{Estado del build actualizado: construcción del \texttt{.bit}
+terminada}
+\label{fig:gb-estado}
+\end{figure}
+
+\begin{stepbox}{16}
+  Revisar la retroalimentación para ver la ruta donde se generaron los
+  archivos de salida (el directorio \texttt{build/} del proyecto), junto con
+  los comandos sugeridos para obtener \texttt{prueba.bit} y
+  \texttt{xdc\_prueba.xdc} (Figura~\ref{fig:gb-ruta}).
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{generador_bitstream/16_build_terminado_y_ruta_resultados.png}
+\caption{Ruta de los archivos de salida generados por el build}
+\label{fig:gb-ruta}
+\end{figure}
+
+\section{Descarga y visualización de los archivos generados}
+\label{sec:gb-descarga}
+
+\begin{stepbox}{17}
+  Salir de la interfaz e ingresar a la ruta de salida para ver qué archivos
+  hay. Con \texttt{ls} se listan los resultados del build (entre ellos
+  \texttt{prueba.bit} y \texttt{xdc\_prueba.xdc}); copiar esa ruta para la
+  descarga (Figura~\ref{fig:gb-archivos}).
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{generador_bitstream/17_visualizacion_de_Archivos_generados.png}
+\caption{Listado de los archivos generados en el directorio \texttt{build/}
+del proyecto}
+\label{fig:gb-archivos}
+\end{figure}
+
+\begin{stepbox}{18}
+  Usar el botón de \textbf{descargar archivos} para obtener el \texttt{.bit} y
+  el \texttt{.xdc}. En el campo \texttt{Remote file(s)} se indica la ruta del
+  build seguida de los archivos a descargar, por ejemplo
+  \texttt{ruta/build:prueba.bit,xdc\_prueba.xdc}
+  (Figura~\ref{fig:gb-descargar}).
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{generador_bitstream/18_descargar_archivis_bit_y_xdc.png}
+\caption{Descarga de los archivos \texttt{.bit} y \texttt{.xdc} mediante el
+botón de descarga remota}
+\label{fig:gb-descargar}
+\end{figure}
+
+\begin{stepbox}{19}
+  Visualizar el archivo \texttt{.bit} en el editor de \vpl, ya incorporado a
+  la lista de archivos del proyecto (Figura~\ref{fig:gb-ver-bit}).
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{generador_bitstream/19_ve_archivo_bit_editorvpl.png}
+\caption{Visualización del archivo \texttt{.bit} descargado en el editor de
+\vpl}
+\label{fig:gb-ver-bit}
+\end{figure}
+
+\begin{stepbox}{20}
+  Visualizar el archivo \texttt{.xdc} en el editor de \vpl, donde se observan
+  las restricciones generadas a partir de los mapeos
+  (Figura~\ref{fig:gb-ver-xdc}).
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{generador_bitstream/20_ver_Archivo_xdc_editor_vpl.png}
+\caption{Visualización del archivo de restricciones \texttt{.xdc} en el editor
+de \vpl}
+\label{fig:gb-ver-xdc}
+\end{figure}
+
+\section{Programación y prueba en el laboratorio remoto de FPGA's}
+\label{sec:gb-fpga}
+
+\begin{stepbox}{21}
+  Usar el botón de \textbf{conexión al laboratorio remoto de FPGA's} para que
+  copie los archivos, incluidos el \texttt{.bit} y el \texttt{.xdc}
+  (Figura~\ref{fig:gb-conexion-fpga}).
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{generador_bitstream/21_conexion_la_fpga.png}
+\caption{Conexión al laboratorio remoto de FPGA's y copia de los archivos
+\texttt{.bit} y \texttt{.xdc}}
+\label{fig:gb-conexion-fpga}
+\end{figure}
+
+\begin{stepbox}{22}
+  Ver los archivos ya disponibles en el laboratorio remoto de FPGA's mediante
+  \texttt{ls} en la sesión \ssh (Figura~\ref{fig:gb-ver-fpga}).
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{generador_bitstream/21_ver_archvos_lab_fpga.png}
+\caption{Archivos del proyecto disponibles en el laboratorio remoto de
+FPGA's}
+\label{fig:gb-ver-fpga}
+\end{figure}
+
+\begin{stepbox}{23}
+  Usar el comando \texttt{progFPGA.sh prueba.bit} para programar la FPGA con
+  el bitstream generado. Es posible observar la tarjeta a través del video del
+  servidor (Figura~\ref{fig:gb-prog}).
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{generador_bitstream/22_programacion_ver_servidor_video_fpga.png}
+\caption{Programación de la FPGA con \texttt{progFPGA.sh} y visualización por
+video del servidor}
+\label{fig:gb-prog}
+\end{figure}
+
+\begin{stepbox}{24}
+  Usar el comando \texttt{inputFPGA.sh xdc\_prueba.xdc} para controlar la FPGA
+  a partir de las restricciones definidas (Figura~\ref{fig:gb-input}).
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{generador_bitstream/23_uso_de_xdc_controlar_switches_fpga.png}
+\caption{Control de la FPGA con \texttt{inputFPGA.sh} usando el archivo
+\texttt{.xdc}}
+\label{fig:gb-input}
+\end{figure}
+
+\begin{stepbox}{25}
+  Probar la asignación de valores a los switches para comprobar que el archivo
+  \texttt{.bit} efectivamente se construyó bien: al cambiar los switches, la
+  FPGA responde según el diseño, validando el flujo completo
+  (Figura~\ref{fig:gb-resultado}).
+\end{stepbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{generador_bitstream/24_asignacion_pines_resultado_fpga.png}
+\caption{Prueba de asignación de valores en los switches y respuesta de la
+FPGA que valida el bitstream generado}
+\label{fig:gb-resultado}
+\end{figure}
+
+
 % ── Apéndices ───────────────────────────────────────────────
 \appendix
 
 \chapter{Glosario de Términos}
 \label{apx:glosario}
-% VPL, VHDL, testbench, lógica reconfigurable, FPGA, etc.
 
-\chapter{Referencia Rápida de Comandos}
-\label{apx:referencia}
-% Tabla de comandos GHDL, scripts de VPL
+\begin{description}
+  \item[\vpl (Virtual Programming Lab)] Módulo de \moodle para editar,
+        compilar, ejecutar y evaluar código directamente desde el navegador.
+        En este manual se usa para diseños \vhdl.
+  \item[\moodle] Plataforma de gestión del aprendizaje (\textit{LMS}) sobre la
+        que se instala el plugin \vpl y se alojan los cursos y actividades.
+  \item[\vhdl (VHSIC Hardware Description Language)] Lenguaje de descripción de
+        hardware empleado para modelar y diseñar circuitos digitales.
+  \item[FPGA (Field-Programmable Gate Array)] Dispositivo de lógica
+        reconfigurable cuyas conexiones internas se programan tras la
+        fabricación para implementar un circuito digital.
+  \item[Lógica reconfigurable] Hardware cuyo comportamiento puede redefinirse
+        mediante programación, como ocurre con las FPGA.
+  \item[Bitstream] Archivo binario de configuración (\texttt{.bit}) que
+        programa la FPGA con el circuito descrito en \vhdl.
+  \item[Archivo \texttt{.xdc} (Xilinx Design Constraints)] Archivo de
+        restricciones que asocia los puertos del diseño con pines físicos de
+        la tarjeta y define sus estándares de E/S.
+  \item[Testbench] Banco de pruebas en \vhdl que estimula el diseño y verifica
+        sus salidas durante la simulación. \vpl puede generarlo
+        automáticamente.
+  \item[GHDL] Compilador y simulador de \vhdl de código abierto que \vpl usa
+        para analizar y ejecutar los diseños.
+  \item[GTKWave] Visor de formas de onda que muestra la evolución temporal de
+        las señales obtenidas en la simulación.
+  \item[Evaluación automática] Proceso por el cual \vpl ejecuta el diseño del
+        alumno contra los casos de prueba del profesor y calcula una
+        calificación.
+  \item[Casos de prueba] Conjunto de entradas y salidas esperadas, definido en
+        el archivo \texttt{vpl\_evaluate.cases}, contra el que se evalúa el
+        diseño.
+  \item[Entidad \textit{top}] Entidad \vhdl de nivel superior cuyos puertos se
+        mapean a los pines de la tarjeta FPGA.
+  \item[Mapeo de pines] Asociación de cada puerto del diseño con un recurso
+        físico de la tarjeta (switch, led, botón, pin), guardada en
+        \texttt{pins.yml} y traducida al archivo \texttt{.xdc}.
+  \item[Board] Modelo de tarjeta FPGA destino (por ejemplo
+        \texttt{nexys4ddr-a7-100t}), que determina los pines y recursos
+        disponibles.
+  \item[\ssh (Secure Shell)] Protocolo para abrir sesiones de línea de comandos
+        cifradas en un servidor remoto.
+  \item[\texttt{scp} / SFTP] Mecanismos de copia y transferencia de archivos
+        cifrada sobre \ssh, usados para mover archivos entre el laboratorio
+        virtual y los servidores remotos.
+  \item[\texttt{genBIT.sh}] Script del servidor remoto que gestiona los
+        proyectos FPGA y genera el bitstream a partir del diseño \vhdl.
+  \item[\texttt{progFPGA.sh}] Script que programa la FPGA del laboratorio
+        remoto cargando un archivo \texttt{.bit}.
+  \item[\texttt{inputFPGA.sh}] Script que controla las entradas de la FPGA
+        (por ejemplo los switches) a partir de un archivo \texttt{.xdc}.
+\end{description}
 
 \chapter{Recursos y Referencias}
 \label{apx:recursos}
-% Documentación oficial VPL, IEEE VHDL, Moodle
+
+\begin{description}
+  \item[Documentación oficial de VPL for Moodle] Características, instalación,
+        configuración y solución de problemas del plugin. \\
+        \url{https://vpl.dis.ulpgc.es/documentation/vpl-4.4.2/}
+  \item[Sitio del proyecto VPL] Información general y descargas del Virtual
+        Programming Lab. \\
+        \url{https://vpl.dis.ulpgc.es/}
+  \item[Moodle] Documentación de la plataforma de gestión del aprendizaje. \\
+        \url{https://docs.moodle.org/}
+  \item[GHDL] Documentación del compilador y simulador de \vhdl. \\
+        \url{https://ghdl.github.io/ghdl/}
+  \item[GTKWave] Visor de formas de onda usado en la depuración por
+        simulación. \\
+        \url{https://gtkwave.sourceforge.net/}
+  \item[IEEE Std 1076 (VHDL)] Estándar del lenguaje \vhdl. \\
+        \url{https://standards.ieee.org/ieee/1076/}
+  \item[Digilent Nexys4 DDR / Nexys A7] Documentación de la tarjeta FPGA y su
+        archivo maestro de restricciones (\texttt{.xdc}). \\
+        \url{https://digilent.com/reference/programmable-logic/nexys-a7/start}
+  \item[AMD/Xilinx – Constraints (XDC)] Guía de uso de los archivos de
+        restricciones de diseño. \\
+        \url{https://docs.amd.com/}
+\end{description}
 
 % ── Bibliografía ────────────────────────────────────────────
 \backmatter
