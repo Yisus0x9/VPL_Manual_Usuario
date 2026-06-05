@@ -39,7 +39,7 @@
 \contentsline {subsection}{\numberline {9.2.3}Otras configuraciones}{37}{subsection.9.2.3}%
 \contentsline {chapter}{\numberline {10}Acciones Permitidas}{39}{chapter.10}%
 \contentsline {section}{\numberline {10.1}Tipos de acciones en VPL}{39}{section.10.1}%
-\contentsline {section}{\numberline {10.2}Configurar acciones disponibles para el alumno}{39}{section.10.2}%
+\contentsline {section}{\numberline {10.2}Configurar acciones disponibles para el alumno}{40}{section.10.2}%
 \contentsline {chapter}{\numberline {11}Configuración de Casos de Prueba}{42}{chapter.11}%
 \contentsline {section}{\numberline {11.1}Archivo \texttt {vpl\_evaluate.cases}}{42}{section.11.1}%
 \contentsline {subsection}{\numberline {11.1.1}Sintaxis general de los casos de prueba}{42}{subsection.11.1.1}%

@@ -22,7 +22,7 @@
 \contentsline {figure}{\numberline {6.4}{\ignorespaces Diálogo de confirmación para importar todas las señales del componente}}{19}{figure.caption.19}%
 \contentsline {figure}{\numberline {6.5}{\ignorespaces Formas de onda de las señales del diseño visualizadas en GTKWave}}{19}{figure.caption.20}%
 \contentsline {figure}{\numberline {6.6}{\ignorespaces Señales vectoriales expandidas mostrando cada bit individualmente en GTKWave}}{20}{figure.caption.21}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Directiva \texttt {vpl\_stop\_time} declarada en el testbench y confirmada por el compilador}}{21}{figure.caption.22}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Directiva \texttt {stime\_stop} declarada en el testbench y confirmada por el compilador}}{21}{figure.caption.22}%
 \contentsline {figure}{\numberline {6.8}{\ignorespaces GTKWave con el eje temporal ajustado al tiempo definido por \texttt {vpl\_stop\_time}}}{21}{figure.caption.23}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {7.1}{\ignorespaces Vista del editor \textsc {VPL}\xspace al evaluar: lista de archivos, código del diseño y panel con la calificación propuesta y el reporte de compilación}}{23}{figure.caption.24}%

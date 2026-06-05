@@ -190,6 +190,13 @@
 \newcommand{\archivo}[1]{\texttt{\small#1}}
 \newcommand{\menu}[1]{\textsf{\textbf{#1}}}
 
+% ── Iconos de acciones del editor (inline) ──────────────────
+% \icono coloca el icono PNG en el mismo renglón, alineado con el texto.
+% \accion combina icono + etiqueta en negrita para las acciones de la barra.
+\newcommand{\icono}[1]{%
+  \raisebox{-0.25em}{\includegraphics[height=1.1em]{iconos/#1}}}
+\newcommand{\accion}[2]{\icono{#1}\,\menu{#2}}
+
 \usepackage{xspace}
 
 
@@ -313,7 +320,7 @@ Para utilizar el laboratorio virtual \vpl es necesario contar con:
         contraseña válidos para iniciar sesión en la plataforma.
   \item \textbf{Estar inscrito en el curso:} la cuenta debe estar inscrita en el
         curso que contiene la actividad \vpl.
-  \item \textbf{Conexión a internet estable:} la compilación y simulación se
+  \item \textbf{Conexión a internet estable:} la cconexión al lab remoto y la descarga de archivos se
         ejecutan en el servidor; una conexión inestable puede interrumpir
         la ejecución.
 \end{itemize}
@@ -377,7 +384,7 @@ información relevante:
 \end{itemize}
 
 Para ingresar al editor y comenzar a trabajar, hacer clic en el botón
-\menu{VPL} en la parte inferior de la página o en la pestaña \menu{Edit}.
+\icono{editar.png} en la parte inferior de la página.
 
 % ── Capítulo 2 ──────────────────────────────────────────────
 \chapter{Entrar al Editor de VPL}
@@ -402,7 +409,7 @@ principales:
 \end{itemize}
 
 Para crear el primer archivo de trabajo, hacer clic en el ícono
-\menu{Crear nuevo archivo} (primer ícono de la barra de herramientas).
+\accion{crear_archivo.png}{Crear nuevo archivo} (primer ícono de la barra de herramientas).
 Aparece un cuadro de diálogo solicitando el nombre del nuevo archivo
 (Figura~\ref{fig:acceso-editor}). Al scceder por primera vez al editor, en automatico lanza el recuadro para solicitar
 el nombre del nuevo archivo, por lo que el paso de hacer clic en el ícono de crear nuevo archivo se puede omitir si es la primera vez que se accede al editor.
@@ -418,10 +425,12 @@ el nombre del nuevo archivo, por lo que el paso de hacer clic en el ícono de cr
 \label{sec:ajustes-editor}
 
 El editor incluye resaltado de sintaxis para \vhdl, indentación automática
-y deshacer/rehacer cambios con los controles de la barra de herramientas.
+y deshacer/rehacer cambios con los controles \icono{deshacer_rehacer.png} de la
+barra de herramientas.
 
 \begin{tipbox}[Pantalla completa]
-  El ícono de pantalla completa (extremo derecho de la barra de herramientas)
+  El ícono de pantalla completa \icono{expandir_editor.png} (extremo derecho de
+  la barra de herramientas)
   amplía el editor para aprovechar todo el espacio disponible, lo que
   resulta útil al revisar el código y los resultados al mismo tiempo.
 \end{tipbox}
@@ -450,7 +459,7 @@ Un archivo \vhdl mínimo consta de tres partes:
 
 \begin{stepbox}{1}
   En la barra de herramientas, hacer clic en el ícono
-  \menu{Crear nuevo archivo}.
+  \accion{crear_archivo.png}{Crear nuevo archivo}.
 \end{stepbox}
 
 \begin{stepbox}{2}
@@ -498,7 +507,7 @@ el panel \textit{Compilation}. Para ejecutarla:
 
 \begin{stepbox}{1}
   Con el archivo \vhdl abierto en el editor, hacer clic en el ícono
-  \menu{Run} (triángulo de reproducción) en la barra de herramientas.
+  \accion{run_compilar.png}{Run} (ícono de cohete) en la barra de herramientas.
 \end{stepbox}
 
 \begin{stepbox}{2}
@@ -514,8 +523,8 @@ el panel \textit{Compilation}. Para ejecutarla:
 \label{fig:accion-run}
 \end{figure}
 
-Para visualizar el código y los resultados simultáneamente, activar la
-vista en pantalla completa desde la barra de herramientas
+Para visualizar el código y los resultados mejor, activar la
+vista en pantalla completa \icono{expandir_editor.png} desde la barra de herramientas
 (Figura~\ref{fig:full-screen}).
 
 \begin{figure}[H]
@@ -546,7 +555,7 @@ Los mensajes de error de GHDL siguen el formato:
 \end{center}
 
 Para corregir un error, localizar la línea indicada en el mensaje, revisar
-la sintaxis en esa sección y ejecutar \menu{Run} nuevamente para
+la sintaxis en esa sección y ejecutar \accion{run_compilar.png}{Run} nuevamente para
 verificar la corrección.
 
 
@@ -590,7 +599,7 @@ fuente. Para utilizarlo:
 \end{figure}
 
 \begin{stepbox}{2}
-  Hacer clic en el ícono \menu{Generate testbench} en la barra de
+  Hacer clic en el ícono \accion{generar_testbench.png}{Generate testbench} en la barra de
   herramientas del editor.
 \end{stepbox}
 
@@ -668,7 +677,7 @@ Antes de iniciarla, verificar que:
 \end{itemize}
 
 \begin{stepbox}{1}
-  Hacer clic en el ícono \menu{Debug} en la barra de herramientas del
+  Hacer clic en el ícono \accion{debug_simular.png}{Debug} en la barra de herramientas del
   editor.
 \end{stepbox}
 
@@ -770,13 +779,13 @@ columna junto al nombre de la señal. Para navegar entre eventos, usar los
 controles de avance y retroceso de la barra de herramientas de GTKWave.
 
 Para controlar el tiempo total de simulación, añadir la directiva
-\texttt{vpl\_stop\_time} como comentario en las primeras líneas del
+\texttt{stine\_stop} como comentario en las primeras líneas del
 testbench \texttt{\_tb.vhd}:
 
 \begin{lstlisting}[language=VHDL, numbers=none,
   caption={Directiva para establecer el tiempo de simulación},
   label={lst:stop-time}]
--- vpl_stop_time = 2 ms
+-- stime_stop = 2 ms
 \end{lstlisting}
 
 La Figura~\ref{fig:stop-time-tb} muestra el testbench con esta directiva
@@ -786,7 +795,7 @@ correctamente.
 \begin{figure}[H]
 \centering
 \includegraphics[width=1\textwidth]{alumno/uso_stime_stop_en_tesbench_18.png}
-\caption{Directiva \texttt{vpl\_stop\_time} declarada en el testbench y confirmada por el compilador}
+\caption{Directiva \texttt{stime\_stop} declarada en el testbench y confirmada por el compilador}
 \label{fig:stop-time-tb}
 \end{figure}
 
@@ -833,11 +842,11 @@ con la calificación final.
 
 \begin{stepbox}{1}
   Verificar que el diseño compile sin errores utilizando la acción
-  \menu{Run} antes de enviarlo.
+  \accion{run_compilar.png}{Run} antes de enviarlo.
 \end{stepbox}
 
 \begin{stepbox}{2}
-  Hacer clic en el ícono \menu{Evaluate} en la barra de herramientas del
+  Hacer clic en el ícono \accion{evaluar.png}{Evaluate} en la barra de herramientas del
   editor. \vpl compila el diseño, ejecuta los casos de prueba y muestra el
   resultado en el panel derecho. Como se observa en la
   Figura~\ref{fig:evaluar-alumno}, el panel presenta la calificación
@@ -899,8 +908,8 @@ El número máximo de entregas está determinado por la configuración del
 profesor. Se recomienda:
 
 \begin{itemize}
-  \item Usar \menu{Run} para verificar la compilación antes de cada envío.
-  \item Depurar el comportamiento del diseño con \menu{Debug} antes de
+  \item Usar \accion{run_compilar.png}{Run} para verificar la compilación antes de cada envío.
+  \item Depurar el comportamiento del diseño con \accion{debug_simular.png}{Debug} antes de
         gastar un intento de evaluación.
   \item Revisar los mensajes de retroalimentación de intentos anteriores
         para corregir los casos que fallaron.
@@ -908,7 +917,7 @@ profesor. Se recomienda:
 
 \begin{warnbox}[Límite de intentos]
   Si la actividad tiene un número limitado de evaluaciones, cada clic en
-  \menu{Evaluate} consume un intento sin importar el resultado obtenido.
+  \accion{evaluar.png}{Evaluate} consume un intento sin importar el resultado obtenido.
   Asegúrese de haber depurado el diseño antes de evaluar.
 \end{warnbox}
 
@@ -935,7 +944,8 @@ gran utilidad para conectarse al \textbf{generador de archivos bitstream} y
 al \textbf{laboratorio remoto de FPGA's}.
 
 \begin{stepbox}{1}
-  Hacer clic en el botón de conexión al laboratorio remoto de la barra de
+  Hacer clic en el botón de conexión al laboratorio remoto \icono{lab_remoto.png}
+  de la barra de
   herramientas del editor. Se abre el modal \textit{Remote Lab}, que
   solicita los datos de acceso al servidor: \texttt{Server IP / Host},
   \texttt{Username} y \texttt{Password}
@@ -992,7 +1002,8 @@ proyecto. Es de utilidad para obtener los archivos de configuración
 \texttt{.bit} (bitstream) y los archivos de restricciones \texttt{.xdc}.
 
 \begin{stepbox}{1}
-  Hacer clic en el botón de descarga. Se abre el modal \textit{Download from
+  Hacer clic en el botón de descarga \icono{descargar_archivos.png}. Se abre el
+  modal \textit{Download from
   Remote}, con los campos \texttt{Server IP / Host}, \texttt{Username},
   \texttt{Password} y el campo \texttt{Remote file(s)} para indicar qué
   archivos descargar (Figura~\ref{fig:descargar-modal}).
@@ -1095,9 +1106,7 @@ Antes de crear una actividad \vpl, verificar que se cumplan los siguientes requi
   \item \textbf{Plugin de VPL instalado:} El plugin de VPL debe estar instalado y activo en la plataforma \moodle.
 \end{itemize}
 
-\begin{warnbox}[Verificación de permisos]
-  Si las opciones de edición no aparecen en el curso, contactar al administrador de la plataforma para revisar el rol asignado a la cuenta.
-\end{warnbox}
+
 
 \section{Crear una actividad VPL}
 \label{sec:crear-actividad-vpl}
@@ -1145,7 +1154,8 @@ Incluye el nombre de la actividad (obligatorio), una descripción corta y una de
 \subsection{Restricciones de entrega}
 \label{subsec:restricciones}
 En esta sección se puedes establecer configuraciones como el numero maximo de archivos que el alumno puede entrgar, el tipo de trabajo (individual o grupal), fecha de entrega, entre otras opciones que pueden ser útiles para controlar la entrega de los trabajos por parte de los alumnos.
-Aqui lo mas importante es configurar el numero maximo de archivos que el alumno puede entregar, por default se establecieron 2 archivos maximos, considerando un archivo vhdl fuente y su archivo testbench generado, sin embargo, dependiendo de la actividad se pueden establecer mas archivos maximos para que el alumno pueda entregar archivos adicionales (por ejemplo, un archivo de texto con una explicación del diseño o un diagrama del circuito).
+
+Aqui lo mas importante es configurar el numero maximo de archivos que el alumno puede entregar, por default se establecieron 4 archivos maximos, considerando un archivo vhdl fuente,su archivo testbench generado, el archivo .bit y el archivo de restricciones .xdc, sin embargo, dependiendo de la actividad se pueden establecer mas archivos maximos para que el alumno pueda entregar archivos adicionales (por ejemplo, un archivo de texto con una explicación del diseño o un diagrama del circuito).
 \begin{figure}[H]
 \centering
 \includegraphics[width=1\textwidth]{vpl/restricciones_actividad_vpl.png}
@@ -1158,7 +1168,7 @@ Aqui lo mas importante es configurar el numero maximo de archivos que el alumno 
 EL VPL es un plugin muy completo que ofrece muchas opciones de configuración, por lo que se recomienda revisar cada una de las secciones para personalizar la actividad a las necesidades del curso, sin embargo, se recomienda revisar la  documentacion propia de VPL for Moodle para  saber mas acerca de las otras configuraciones.
 
 
-Una vez configurada la activisdad, se debe guardar los cambios para que la actividad quede disponible para los alumnos.
+Una vez configurada la actividad, se debe guardar los cambios para que la actividad quede disponible para los alumnos.
 \begin{figure}[H]
 \centering
 \includegraphics[width=1\textwidth]{vpl/guardar_actividad_vpl.png}
@@ -1188,8 +1198,11 @@ En el laboratorio virtual de VPL, existen 5 tipos principales de acciones  que s
   \item \textbf{Run (Ejecutar):} Permite a los alumnos ejecutar su código VHDL para verificar su funcionamiento básico. Esta acción generalmente compila y simula el diseño, mostrando los resultados de la simulación.
   \item \textbf{Debug (Depurar):} Permite a los alumnos depurar su código VHDL, lo que puede incluir la visualización de formas de onda, inspección de señales y análisis detallado del comportamiento del diseño durante la simulación.
   \item \textbf{Evaluate (Evaluar):} Permite a los alumnos enviar su diseño para evaluación automática, donde se ejecutan casos de prueba predefinidos para verificar la corrección del diseño y asignar una calificación basada en los resultados. 
-  \item \textbf{Remote Lab (Laboratorio Remoto):} Permite conectarse al laboratorio remoto de FPGA'S.
   \item \textbf{Testbench (Generar Testbench):} Permite a los alumnos generar automáticamente un testbench básico para su diseño VHDL, lo que facilita la simulación y verificación de su código.
+  \item  \textbf{Remote Lab (Laboratorio Remoto):} Permite establecer una conexión ssh y copiar los archivos del alumno al servidor.
+  \item  \textbf{Download from Remote  (Descargar remotamente):} Permite descargar archivos de un servidor remoto y mostrarlos en la lista de archivos del alumno..
+
+
 \end{itemize}
 
 \section{Configurar acciones disponibles para el alumno}
@@ -1209,7 +1222,7 @@ Para habilitar o deshabilitar estas acciones para los alumnos, se deben seguir l
 \end{stepbox}
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\textwidth]{profesor/opciones_ejecucion_vpl.png}
+\includegraphics[width=1\textwidth]{profesor/image.png}
 \caption{Opciones de ejecución en la actividad VPL}
 \label{fig:opciones-ejecucion-vpl}
 \end{figure} 
@@ -1776,7 +1789,8 @@ conexión y descarga del editor \vpl con la herramienta de línea de comandos
 \label{sec:gb-conexion}
 
 \begin{stepbox}{1}
-  Usar el botón de \textbf{conexión al laboratorio remoto} para conectarse al
+  Usar el botón de \textbf{conexión al laboratorio remoto} \icono{lab_remoto.png}
+  para conectarse al
   servidor de generación de bitstream (IP \texttt{148.204.59.117}). \vpl
   copia con \texttt{scp} los archivos \vhdl del alumno y abre la sesión \ssh.
   La consola muestra \texttt{Transferencia completada} y, con \texttt{ls}, los
@@ -2044,7 +2058,7 @@ terminada}
 \label{sec:gb-descarga}
 
 \begin{stepbox}{17}
-  Salir de la interfaz e ingresar a la ruta de salida para ver qué archivos
+  Salir de la interfaz ( Ctrl + q) e ingresar a la ruta de salida para ver qué archivos
   hay. Con \texttt{ls} se listan los resultados del build (entre ellos
   \texttt{prueba.bit} y \texttt{xdc\_prueba.xdc}); copiar esa ruta para la
   descarga (Figura~\ref{fig:gb-archivos}).
@@ -2059,7 +2073,8 @@ del proyecto}
 \end{figure}
 
 \begin{stepbox}{18}
-  Usar el botón de \textbf{descargar archivos} para obtener el \texttt{.bit} y
+  Usar el botón de \textbf{descargar archivos} \icono{descargar_archivos.png}
+  para obtener el \texttt{.bit} y
   el \texttt{.xdc}. En el campo \texttt{Remote file(s)} se indica la ruta del
   build seguida de los archivos a descargar, por ejemplo
   \texttt{ruta/build:prueba.bit,xdc\_prueba.xdc}
@@ -2105,7 +2120,8 @@ de \vpl}
 \label{sec:gb-fpga}
 
 \begin{stepbox}{21}
-  Usar el botón de \textbf{conexión al laboratorio remoto de FPGA's} para que
+  Usar el botón de \textbf{conexión al laboratorio remoto de FPGA's}
+  \icono{lab_remoto.png} para que
   copie los archivos, incluidos el \texttt{.bit} y el \texttt{.xdc}
   (Figura~\ref{fig:gb-conexion-fpga}).
 \end{stepbox}

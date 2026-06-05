@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.16)  4 JUN 2026 23:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.4.16)  5 JUN 2026 08:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1158,8 +1158,8 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )) (C:\Users\jesus\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 19
-8.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 20
+5.
 
 (C:\Users\jesus\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1176,36 +1176,36 @@ Package babel Info: 'spanish' activates 'spanish' shorthands.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 198.
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 198.
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 198.
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 198.
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 198.
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 198.
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 198.
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 198.
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 198.
-LaTeX Font Info:    ... okay on input line 198.
-LaTeX Info: Redefining \. on input line 198.
-LaTeX Info: Redefining \% on input line 198.
-LaTeX Info: Redefining \microtypecontext on input line 198.
-Package microtype Info: Applying patch `item' on input line 198.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 205.
+LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 205.
+LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 205.
+LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 205.
+LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 205.
+LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 205.
+LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 205.
+LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 205.
+LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 205.
+LaTeX Font Info:    ... okay on input line 205.
+LaTeX Info: Redefining \. on input line 205.
+LaTeX Info: Redefining \% on input line 205.
+LaTeX Info: Redefining \microtypecontext on input line 205.
+Package microtype Info: Applying patch `item' on input line 205.
 
 
-Package microtype Warning: Unable to apply patch `toc' on input line 198.
+Package microtype Warning: Unable to apply patch `toc' on input line 205.
 
-Package microtype Info: Applying patch `eqnum' on input line 198.
-Package microtype Info: Applying patch `footnote' on input line 198.
-Package microtype Info: Applying patch `verbatim' on input line 198.
-LaTeX Info: Redefining \microtypesetup on input line 198.
+Package microtype Info: Applying patch `eqnum' on input line 205.
+Package microtype Info: Applying patch `footnote' on input line 205.
+Package microtype Info: Applying patch `verbatim' on input line 205.
+LaTeX Info: Redefining \microtypesetup on input line 205.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1284,7 +1284,7 @@ Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
 \c@lstlisting=\count384
-Package hyperref Info: Link coloring ON on input line 198.
+Package hyperref Info: Link coloring ON on input line 205.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 Package microtype Info: Character `029' is missing
@@ -1360,8 +1360,8 @@ Package microtype Info: Character `029' is missing
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
-LaTeX Info: Redefining \. on input line 261.
-LaTeX Info: Redefining \% on input line 261.
+LaTeX Info: Redefining \. on input line 268.
+LaTeX Info: Redefining \% on input line 268.
 
 [3] (main.lof
 LaTeX Info: Redefining \. on input line 1.
@@ -1391,8 +1391,8 @@ Package microtype Info: Loading generic protrusion settings for font family
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
-LaTeX Info: Redefining \. on input line 262.
-LaTeX Info: Redefining \% on input line 262.
+LaTeX Info: Redefining \. on input line 269.
+LaTeX Info: Redefining \% on input line 269.
 
 [6] (main.lot
 LaTeX Info: Redefining \. on input line 1.
@@ -1405,7 +1405,7 @@ LaTeX Info: Redefining \% on input line 1.
 
 ]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
-76.
+83.
 
 (C:\Users\jesus\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1417,7 +1417,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.298 \part{GuÃ­a del Alumno}
+l.305 \part{GuÃ­a del Alumno}
                               [1
 
 
@@ -1429,239 +1429,315 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.345 
+l.352 
        [2
 
 ]
 <alumno/vista_curso_almno_1.png, id=410, 1914.40219pt x 1088.56688pt>
 File: alumno/vista_curso_almno_1.png Graphic file (type png)
 <use alumno/vista_curso_almno_1.png>
-Package pdftex.def Info: alumno/vista_curso_almno_1.png  used on input line 348
+Package pdftex.def Info: alumno/vista_curso_almno_1.png  used on input line 355
 .
 (pdftex.def)             Requested size: 426.79135pt x 242.6746pt.
 <alumno/vista_actividad_2.png, id=412, 1910.63812pt x 1085.55562pt>
 File: alumno/vista_actividad_2.png Graphic file (type png)
 <use alumno/vista_actividad_2.png>
-Package pdftex.def Info: alumno/vista_actividad_2.png  used on input line 364.
+Package pdftex.def Info: alumno/vista_actividad_2.png  used on input line 371.
 (pdftex.def)             Requested size: 426.79135pt x 242.48366pt.
-LaTeX Info: Redefining \. on input line 368.
-LaTeX Info: Redefining \% on input line 368.
+LaTeX Info: Redefining \. on input line 375.
+LaTeX Info: Redefining \% on input line 375.
  [3 <./alumno/vista_curso_almno_1.png>]
-LaTeX Info: Redefining \. on input line 383.
-LaTeX Info: Redefining \% on input line 383.
- [4 <./alumno/vista_actividad_2.png>]
+<iconos/editar.png, id=420, 175.65625pt x 78.2925pt>
+File: iconos/editar.png Graphic file (type png)
+<use iconos/editar.png>
+Package pdftex.def Info: iconos/editar.png  used on input line 387.
+(pdftex.def)             Requested size: 28.99811pt x 12.92488pt.
+LaTeX Info: Redefining \. on input line 390.
+LaTeX Info: Redefining \% on input line 390.
+ [4 <./alumno/vista_actividad_2.png> <./iconos/editar.png>]
 Cap\'{\i }tulo 2.
-<alumno/acceso_editor_vpl_3.png, id=426, 1915.9078pt x 1088.56688pt>
+<iconos/crear_archivo.png, id=427, 46.1725pt x 53.19875pt>
+File: iconos/crear_archivo.png Graphic file (type png)
+<use iconos/crear_archivo.png>
+Package pdftex.def Info: iconos/crear_archivo.png  used on input line 412.
+(pdftex.def)             Requested size: 11.21759pt x 12.92488pt.
+<alumno/acceso_editor_vpl_3.png, id=429, 1915.9078pt x 1088.56688pt>
 File: alumno/acceso_editor_vpl_3.png Graphic file (type png)
 <use alumno/acceso_editor_vpl_3.png>
-Package pdftex.def Info: alumno/acceso_editor_vpl_3.png  used on input line 412
+Package pdftex.def Info: alumno/acceso_editor_vpl_3.png  used on input line 419
 .
 (pdftex.def)             Requested size: 426.79135pt x 242.4919pt.
 [5
 
-]
-LaTeX Info: Redefining \. on input line 430.
-LaTeX Info: Redefining \% on input line 430.
- [6 <./alumno/acceso_editor_vpl_3.png>]
+ <./iconos/crear_archivo.png>]
+<iconos/deshacer_rehacer.png, id=436, 122.95938pt x 56.21pt>
+File: iconos/deshacer_rehacer.png Graphic file (type png)
+<use iconos/deshacer_rehacer.png>
+Package pdftex.def Info: iconos/deshacer_rehacer.png  used on input line 428.
+(pdftex.def)             Requested size: 28.27255pt x 12.92488pt.
+<iconos/expandir_editor.png, id=437, 80.3pt x 84.315pt>
+File: iconos/expandir_editor.png Graphic file (type png)
+<use iconos/expandir_editor.png>
+Package pdftex.def Info: iconos/expandir_editor.png  used on input line 432.
+(pdftex.def)             Requested size: 12.30913pt x 12.92488pt.
+LaTeX Info: Redefining \. on input line 439.
+LaTeX Info: Redefining \% on input line 439.
+ [6 <./alumno/acceso_editor_vpl_3.png> <./iconos/deshacer_rehacer.png> <./icono
+s/expandir_editor.png>]
 Cap\'{\i }tulo 3.
-<alumno/fichero_creado_4.png, id=438, 1912.14375pt x 1094.58937pt>
+File: iconos/crear_archivo.png Graphic file (type png)
+<use iconos/crear_archivo.png>
+Package pdftex.def Info: iconos/crear_archivo.png  used on input line 462.
+(pdftex.def)             Requested size: 11.21759pt x 12.92488pt.
+<alumno/fichero_creado_4.png, id=446, 1912.14375pt x 1094.58937pt>
 File: alumno/fichero_creado_4.png Graphic file (type png)
 <use alumno/fichero_creado_4.png>
-Package pdftex.def Info: alumno/fichero_creado_4.png  used on input line 469.
+Package pdftex.def Info: alumno/fichero_creado_4.png  used on input line 478.
 (pdftex.def)             Requested size: 426.79135pt x 244.30113pt.
 [7
 
 ]
-<alumno/codigo_creado_5.png, id=447, 1912.89656pt x 1094.58937pt>
+<alumno/codigo_creado_5.png, id=455, 1912.89656pt x 1094.58937pt>
 File: alumno/codigo_creado_5.png Graphic file (type png)
 <use alumno/codigo_creado_5.png>
-Package pdftex.def Info: alumno/codigo_creado_5.png  used on input line 483.
+Package pdftex.def Info: alumno/codigo_creado_5.png  used on input line 492.
 (pdftex.def)             Requested size: 426.79135pt x 244.21762pt.
-LaTeX Info: Redefining \. on input line 490.
-LaTeX Info: Redefining \% on input line 490.
+LaTeX Info: Redefining \. on input line 499.
+LaTeX Info: Redefining \% on input line 499.
  [8 <./alumno/fichero_creado_4.png> <./alumno/codigo_creado_5.png>]
 Cap\'{\i }tulo 4.
-<alumno/accion_run_6.png, id=456, 1912.89656pt x 1093.08376pt>
+<iconos/run_compilar.png, id=463, 17.56563pt x 15.55812pt>
+File: iconos/run_compilar.png Graphic file (type png)
+<use iconos/run_compilar.png>
+Package pdftex.def Info: iconos/run_compilar.png  used on input line 510.
+(pdftex.def)             Requested size: 14.59285pt x 12.92488pt.
+<alumno/accion_run_6.png, id=465, 1912.89656pt x 1093.08376pt>
 File: alumno/accion_run_6.png Graphic file (type png)
 <use alumno/accion_run_6.png>
-Package pdftex.def Info: alumno/accion_run_6.png  used on input line 512.
+Package pdftex.def Info: alumno/accion_run_6.png  used on input line 521.
 (pdftex.def)             Requested size: 426.79135pt x 243.8817pt.
 [9
 
-]
-<alumno/full_screen_7.png, id=463, 1915.155pt x 1098.35344pt>
+ <./iconos/run_compilar.png>]
+File: iconos/expandir_editor.png Graphic file (type png)
+<use iconos/expandir_editor.png>
+Package pdftex.def Info: iconos/expandir_editor.png  used on input line 527.
+(pdftex.def)             Requested size: 12.30913pt x 12.92488pt.
+<alumno/full_screen_7.png, id=473, 1915.155pt x 1098.35344pt>
 File: alumno/full_screen_7.png Graphic file (type png)
 <use alumno/full_screen_7.png>
-Package pdftex.def Info: alumno/full_screen_7.png  used on input line 523.
+Package pdftex.def Info: alumno/full_screen_7.png  used on input line 532.
 (pdftex.def)             Requested size: 426.79135pt x 244.75577pt.
-<alumno/accion_run_errores_8.png, id=465, 1914.40219pt x 1088.56688pt>
+<alumno/accion_run_errores_8.png, id=475, 1914.40219pt x 1088.56688pt>
 File: alumno/accion_run_errores_8.png Graphic file (type png)
 <use alumno/accion_run_errores_8.png>
-Package pdftex.def Info: alumno/accion_run_errores_8.png  used on input line 53
-7.
+Package pdftex.def Info: alumno/accion_run_errores_8.png  used on input line 54
+6.
 (pdftex.def)             Requested size: 426.79135pt x 242.6746pt.
-LaTeX Info: Redefining \. on input line 541.
-LaTeX Info: Redefining \% on input line 541.
+LaTeX Info: Redefining \. on input line 550.
+LaTeX Info: Redefining \% on input line 550.
  [10 <./alumno/accion_run_6.png> <./alumno/full_screen_7.png>]
-LaTeX Info: Redefining \. on input line 554.
-LaTeX Info: Redefining \% on input line 554.
+File: iconos/run_compilar.png Graphic file (type png)
+<use iconos/run_compilar.png>
+Package pdftex.def Info: iconos/run_compilar.png  used on input line 558.
+(pdftex.def)             Requested size: 14.59285pt x 12.92488pt.
+LaTeX Info: Redefining \. on input line 563.
+LaTeX Info: Redefining \% on input line 563.
  [11 <./alumno/accion_run_errores_8.png>]
 Cap\'{\i }tulo 5.
-<alumno/accion_generar_tesbench_archivo_vhdl_sin_codigo_10.png, id=478, 1908.37
+<alumno/accion_generar_tesbench_archivo_vhdl_sin_codigo_10.png, id=488, 1908.37
 968pt x 1092.33093pt>
 File: alumno/accion_generar_tesbench_archivo_vhdl_sin_codigo_10.png Graphic fil
 e (type png)
 <use alumno/accion_generar_tesbench_archivo_vhdl_sin_codigo_10.png>
 Package pdftex.def Info: alumno/accion_generar_tesbench_archivo_vhdl_sin_codigo
-_10.png  used on input line 587.
+_10.png  used on input line 596.
 (pdftex.def)             Requested size: 426.79135pt x 244.28044pt.
 [12
 
 ]
-<alumno/accion_generar_testbench_9.png, id=485, 1915.9078pt x 1103.62312pt>
+<iconos/generar_testbench.png, id=494, 73.27374pt x 82.3075pt>
+File: iconos/generar_testbench.png Graphic file (type png)
+<use iconos/generar_testbench.png>
+Package pdftex.def Info: iconos/generar_testbench.png  used on input line 602.
+(pdftex.def)             Requested size: 11.50601pt x 12.92488pt.
+<alumno/accion_generar_testbench_9.png, id=496, 1915.9078pt x 1103.62312pt>
 File: alumno/accion_generar_testbench_9.png Graphic file (type png)
 <use alumno/accion_generar_testbench_9.png>
 Package pdftex.def Info: alumno/accion_generar_testbench_9.png  used on input l
-ine 608.
+ine 617.
 (pdftex.def)             Requested size: 426.79135pt x 245.84586pt.
-LaTeX Info: Redefining \. on input line 612.
-LaTeX Info: Redefining \% on input line 612.
- [13 <./alumno/accion_generar_tesbench_archivo_vhdl_sin_codigo_10.png>]
+LaTeX Info: Redefining \. on input line 621.
+LaTeX Info: Redefining \% on input line 621.
+ [13 <./alumno/accion_generar_tesbench_archivo_vhdl_sin_codigo_10.png> <./icono
+s/generar_testbench.png>]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 622.
+nput line 631.
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 623.
-<alumno/casos_de_prueba_en_tesbench_11.png, id=492, 1911.39093pt x 1095.3422pt>
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 632.
+<alumno/casos_de_prueba_en_tesbench_11.png, id=504, 1911.39093pt x 1095.3422pt>
 
 File: alumno/casos_de_prueba_en_tesbench_11.png Graphic file (type png)
 <use alumno/casos_de_prueba_en_tesbench_11.png>
 Package pdftex.def Info: alumno/casos_de_prueba_en_tesbench_11.png  used on inp
-ut line 648.
+ut line 657.
 (pdftex.def)             Requested size: 426.79135pt x 244.56944pt.
-LaTeX Info: Redefining \. on input line 651.
-LaTeX Info: Redefining \% on input line 651.
+LaTeX Info: Redefining \. on input line 660.
+LaTeX Info: Redefining \% on input line 660.
+ [14 <./alumno/accion_generar_testbench_9.png>]
+LaTeX Info: Redefining \. on input line 663.
+LaTeX Info: Redefining \% on input line 663.
 
-[14 <./alumno/accion_generar_testbench_9.png>]
-LaTeX Info: Redefining \. on input line 654.
-LaTeX Info: Redefining \% on input line 654.
- [15 <./alumno/casos_de_prueba_en_tesbench_11.png>]
+[15 <./alumno/casos_de_prueba_en_tesbench_11.png>]
 Cap\'{\i }tulo 6.
-<alumno/output_debug_consola_17.png, id=526, 1912.89656pt x 1089.31969pt>
+<iconos/debug_simular.png, id=537, 14.0525pt x 16.06pt>
+File: iconos/debug_simular.png Graphic file (type png)
+<use iconos/debug_simular.png>
+Package pdftex.def Info: iconos/debug_simular.png  used on input line 680.
+(pdftex.def)             Requested size: 11.30933pt x 12.92488pt.
+<alumno/output_debug_consola_17.png, id=539, 1912.89656pt x 1089.31969pt>
 File: alumno/output_debug_consola_17.png Graphic file (type png)
 <use alumno/output_debug_consola_17.png>
 Package pdftex.def Info: alumno/output_debug_consola_17.png  used on input line
- 686.
+ 695.
 (pdftex.def)             Requested size: 426.79135pt x 243.04189pt.
 [16
 
-]
-<alumno/accion_debug_12.png, id=532, 1915.155pt x 1099.10625pt>
+ <./iconos/debug_simular.png>]
+<alumno/accion_debug_12.png, id=546, 1915.155pt x 1099.10625pt>
 File: alumno/accion_debug_12.png Graphic file (type png)
 <use alumno/accion_debug_12.png>
-Package pdftex.def Info: alumno/accion_debug_12.png  used on input line 700.
+Package pdftex.def Info: alumno/accion_debug_12.png  used on input line 709.
 (pdftex.def)             Requested size: 426.79135pt x 244.92352pt.
-LaTeX Info: Redefining \. on input line 705.
-LaTeX Info: Redefining \% on input line 705.
+LaTeX Info: Redefining \. on input line 714.
+LaTeX Info: Redefining \% on input line 714.
  [17 <./alumno/output_debug_consola_17.png> <./alumno/accion_debug_12.png>]
-<alumno/senales_ensimulacion_13.png, id=540, 1915.9078pt x 1108.8928pt>
+<alumno/senales_ensimulacion_13.png, id=554, 1915.9078pt x 1108.8928pt>
 File: alumno/senales_ensimulacion_13.png Graphic file (type png)
 <use alumno/senales_ensimulacion_13.png>
 Package pdftex.def Info: alumno/senales_ensimulacion_13.png  used on input line
- 716.
+ 725.
 (pdftex.def)             Requested size: 426.79135pt x 247.01974pt.
-<alumno/preguntar_anadir_senales_14.png, id=542, 1909.88531pt x 1090.82532pt>
+<alumno/preguntar_anadir_senales_14.png, id=556, 1909.88531pt x 1090.82532pt>
 File: alumno/preguntar_anadir_senales_14.png Graphic file (type png)
 <use alumno/preguntar_anadir_senales_14.png>
 Package pdftex.def Info: alumno/preguntar_anadir_senales_14.png  used on input 
-line 735.
+line 744.
 (pdftex.def)             Requested size: 426.79135pt x 243.76064pt.
-LaTeX Info: Redefining \. on input line 739.
-LaTeX Info: Redefining \% on input line 739.
-[18 <./alumno/senales_ensimulacion_13.png>]
-<alumno/visualizacion_senales_15.png, id=549, 1915.155pt x 1088.56688pt>
+LaTeX Info: Redefining \. on input line 748.
+LaTeX Info: Redefining \% on input line 748.
+ [18 <./alumno/senales_ensimulacion_13.png>]
+<alumno/visualizacion_senales_15.png, id=563, 1915.155pt x 1088.56688pt>
 File: alumno/visualizacion_senales_15.png Graphic file (type png)
 <use alumno/visualizacion_senales_15.png>
 Package pdftex.def Info: alumno/visualizacion_senales_15.png  used on input lin
-e 747.
+e 756.
 (pdftex.def)             Requested size: 426.79135pt x 242.57495pt.
-<alumno/desplegar_senaels_vectores_16.png, id=551, 1912.14375pt x 1087.81406pt>
+<alumno/desplegar_senaels_vectores_16.png, id=565, 1912.14375pt x 1087.81406pt>
 
 File: alumno/desplegar_senaels_vectores_16.png Graphic file (type png)
 <use alumno/desplegar_senaels_vectores_16.png>
 Package pdftex.def Info: alumno/desplegar_senaels_vectores_16.png  used on inpu
-t line 759.
+t line 768.
 (pdftex.def)             Requested size: 426.79135pt x 242.78896pt.
-LaTeX Info: Redefining \. on input line 762.
-LaTeX Info: Redefining \% on input line 762.
- [19 <./alumno/preguntar_anadir_senales_14.png> <./alumno/visualizacion_senales
-_15.png>]
-<alumno/uso_stime_stop_en_tesbench_18.png, id=559, 1910.63812pt x 1099.85907pt>
+LaTeX Info: Redefining \. on input line 771.
+LaTeX Info: Redefining \% on input line 771.
+
+[19 <./alumno/preguntar_anadir_senales_14.png> <./alumno/visualizacion_senales_
+15.png>]
+<alumno/uso_stime_stop_en_tesbench_18.png, id=573, 1910.63812pt x 1099.85907pt>
 
 File: alumno/uso_stime_stop_en_tesbench_18.png Graphic file (type png)
 <use alumno/uso_stime_stop_en_tesbench_18.png>
 Package pdftex.def Info: alumno/uso_stime_stop_en_tesbench_18.png  used on inpu
-t line 788.
+t line 797.
 (pdftex.def)             Requested size: 426.79135pt x 245.67867pt.
-LaTeX Info: Redefining \. on input line 792.
-LaTeX Info: Redefining \% on input line 792.
+LaTeX Info: Redefining \. on input line 801.
+LaTeX Info: Redefining \% on input line 801.
  [20 <./alumno/desplegar_senaels_vectores_16.png>]
-<alumno/uso_do_stime_stop_simulacion_19.png, id=568, 1914.40219pt x 1096.095pt>
+<alumno/uso_do_stime_stop_simulacion_19.png, id=582, 1914.40219pt x 1096.095pt>
 
 File: alumno/uso_do_stime_stop_simulacion_19.png Graphic file (type png)
 <use alumno/uso_do_stime_stop_simulacion_19.png>
 Package pdftex.def Info: alumno/uso_do_stime_stop_simulacion_19.png  used on in
-put line 800.
+put line 809.
 (pdftex.def)             Requested size: 426.79135pt x 244.35284pt.
-LaTeX Info: Redefining \. on input line 806.
-LaTeX Info: Redefining \% on input line 806.
+LaTeX Info: Redefining \. on input line 815.
+LaTeX Info: Redefining \% on input line 815.
  [21 <./alumno/uso_stime_stop_en_tesbench_18.png> <./alumno/uso_do_stime_stop_s
 imulacion_19.png>]
 Cap\'{\i }tulo 7.
+File: iconos/run_compilar.png Graphic file (type png)
+<use iconos/run_compilar.png>
+Package pdftex.def Info: iconos/run_compilar.png  used on input line 845.
+(pdftex.def)             Requested size: 14.59285pt x 12.92488pt.
+<iconos/evaluar.png, id=590, 78.79437pt x 54.70438pt>
+File: iconos/evaluar.png Graphic file (type png)
+<use iconos/evaluar.png>
+Package pdftex.def Info: iconos/evaluar.png  used on input line 849.
+(pdftex.def)             Requested size: 18.61646pt x 12.92488pt.
 [22
 
 ]
-<alumno/EVALUAR_POR_ALUMNO.png, id=585, 1283.29437pt x 743.77875pt>
+<alumno/EVALUAR_POR_ALUMNO.png, id=600, 1283.29437pt x 743.77875pt>
 File: alumno/EVALUAR_POR_ALUMNO.png Graphic file (type png)
 <use alumno/EVALUAR_POR_ALUMNO.png>
-Package pdftex.def Info: alumno/EVALUAR_POR_ALUMNO.png  used on input line 851.
+Package pdftex.def Info: alumno/EVALUAR_POR_ALUMNO.png  used on input line 860.
 
 (pdftex.def)             Requested size: 426.79135pt x 247.3544pt.
-<alumno/EVALUACION_PROPUESTA.png, id=587, 1283.29437pt x 736.25063pt>
+<alumno/EVALUACION_PROPUESTA.png, id=602, 1283.29437pt x 736.25063pt>
 File: alumno/EVALUACION_PROPUESTA.png Graphic file (type png)
 <use alumno/EVALUACION_PROPUESTA.png>
 Package pdftex.def Info: alumno/EVALUACION_PROPUESTA.png  used on input line 87
-0.
+9.
 (pdftex.def)             Requested size: 426.79135pt x 244.85081pt.
-LaTeX Info: Redefining \. on input line 876.
-LaTeX Info: Redefining \% on input line 876.
- [23 <./alumno/EVALUAR_POR_ALUMNO.png>]
-LaTeX Info: Redefining \. on input line 907.
-LaTeX Info: Redefining \% on input line 907.
+LaTeX Info: Redefining \. on input line 885.
+LaTeX Info: Redefining \% on input line 885.
+ [23 <./iconos/evaluar.png> <./alumno/EVALUAR_POR_ALUMNO.png>]
+File: iconos/run_compilar.png Graphic file (type png)
+<use iconos/run_compilar.png>
+Package pdftex.def Info: iconos/run_compilar.png  used on input line 911.
+(pdftex.def)             Requested size: 14.59285pt x 12.92488pt.
+File: iconos/debug_simular.png Graphic file (type png)
+<use iconos/debug_simular.png>
+Package pdftex.def Info: iconos/debug_simular.png  used on input line 912.
+(pdftex.def)             Requested size: 11.30933pt x 12.92488pt.
+LaTeX Info: Redefining \. on input line 916.
+LaTeX Info: Redefining \% on input line 916.
  [24 <./alumno/EVALUACION_PROPUESTA.png>]
-LaTeX Info: Redefining \. on input line 917.
-LaTeX Info: Redefining \% on input line 917.
+File: iconos/evaluar.png Graphic file (type png)
+<use iconos/evaluar.png>
+Package pdftex.def Info: iconos/evaluar.png  used on input line 920.
+(pdftex.def)             Requested size: 18.61646pt x 12.92488pt.
+LaTeX Info: Redefining \. on input line 926.
+LaTeX Info: Redefining \% on input line 926.
  [25]
 Cap\'{\i }tulo 8.
-<boton_conexion_lab_remoto/ejecutarr_boton.png, id=603, 1915.9078pt x 1093.0837
+<iconos/lab_remoto.png, id=618, 72.27pt x 81.30376pt>
+File: iconos/lab_remoto.png Graphic file (type png)
+<use iconos/lab_remoto.png>
+Package pdftex.def Info: iconos/lab_remoto.png  used on input line 947.
+(pdftex.def)             Requested size: 11.48843pt x 12.92488pt.
+<boton_conexion_lab_remoto/ejecutarr_boton.png, id=620, 1915.9078pt x 1093.0837
 6pt>
 File: boton_conexion_lab_remoto/ejecutarr_boton.png Graphic file (type png)
 <use boton_conexion_lab_remoto/ejecutarr_boton.png>
 Package pdftex.def Info: boton_conexion_lab_remoto/ejecutarr_boton.png  used on
- input line 947.
+ input line 957.
 (pdftex.def)             Requested size: 426.79135pt x 243.49808pt.
 [26
 
-]
-<boton_conexion_lab_remoto/ingresar_credenciales.png, id=609, 1912.14375pt x 10
+ <./iconos/lab_remoto.png>]
+<boton_conexion_lab_remoto/ingresar_credenciales.png, id=627, 1912.14375pt x 10
 94.58937pt>
 File: boton_conexion_lab_remoto/ingresar_credenciales.png Graphic file (type pn
 g)
 <use boton_conexion_lab_remoto/ingresar_credenciales.png>
 Package pdftex.def Info: boton_conexion_lab_remoto/ingresar_credenciales.png  u
-sed on input line 962.
+sed on input line 972.
 (pdftex.def)             Requested size: 426.79135pt x 244.30113pt.
-LaTeX Info: Redefining \. on input line 977.
-LaTeX Info: Redefining \% on input line 977.
+LaTeX Info: Redefining \. on input line 987.
+LaTeX Info: Redefining \% on input line 987.
 
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
@@ -1672,497 +1748,515 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 
 [27 <./boton_conexion_lab_remoto/ejecutarr_boton.png> <./boton_conexion_lab_rem
 oto/ingresar_credenciales.png>]
-<boton_conexion_lab_remoto/conexion_y_copiado_de_arcivos.png, id=618, 1914.4021
+<boton_conexion_lab_remoto/conexion_y_copiado_de_arcivos.png, id=636, 1914.4021
 9pt x 1093.08376pt>
 File: boton_conexion_lab_remoto/conexion_y_copiado_de_arcivos.png Graphic file 
 (type png)
 <use boton_conexion_lab_remoto/conexion_y_copiado_de_arcivos.png>
 Package pdftex.def Info: boton_conexion_lab_remoto/conexion_y_copiado_de_arcivo
-s.png  used on input line 980.
+s.png  used on input line 990.
 (pdftex.def)             Requested size: 426.79135pt x 243.68155pt.
-<boton_descargar_Archivos/modal_boton.png, id=620, 1911.39093pt x 1102.1175pt>
+<iconos/descargar_archivos.png, id=637, 83.81313pt x 83.81313pt>
+File: iconos/descargar_archivos.png Graphic file (type png)
+<use iconos/descargar_archivos.png>
+Package pdftex.def Info: iconos/descargar_archivos.png  used on input line 1005
+.
+(pdftex.def)             Requested size: 12.9244pt x 12.92488pt.
+<boton_descargar_Archivos/modal_boton.png, id=639, 1911.39093pt x 1102.1175pt>
 File: boton_descargar_Archivos/modal_boton.png Graphic file (type png)
 <use boton_descargar_Archivos/modal_boton.png>
 Package pdftex.def Info: boton_descargar_Archivos/modal_boton.png  used on inpu
-t line 1003.
+t line 1014.
 (pdftex.def)             Requested size: 426.79135pt x 246.08223pt.
-LaTeX Info: Redefining \. on input line 1008.
-LaTeX Info: Redefining \% on input line 1008.
- [28 <./boton_conexion_lab_remoto/conexion_y_copiado_de_arcivos.png>]
-Overfull \hbox (69.67389pt too wide) in paragraph at lines 1015--1017
+LaTeX Info: Redefining \. on input line 1019.
+LaTeX Info: Redefining \% on input line 1019.
+ [28 <./boton_conexion_lab_remoto/conexion_y_copiado_de_arcivos.png> <./iconos/
+descargar_archivos.png>]
+Overfull \hbox (69.67389pt too wide) in paragraph at lines 1026--1028
 []\T1/lmr/bx/sc/12 (-20) Nombres se-pa-ra-dos por co-ma: \T1/lmr/m/n/12 (-20) v
 a-rios ar-chi-vos, por ejem-plo \T1/lmtt/m/n/12 archivo1.bit,archivo2.xdc\T1/lm
 r/m/n/12 (-20) . 
  []
 
 
-Overfull \hbox (6.40065pt too wide) in paragraph at lines 1017--1019
+Overfull \hbox (6.40065pt too wide) in paragraph at lines 1028--1030
 []\T1/lmr/bx/sc/12 (-20) Ruta es-pe-cí-fi-ca: \T1/lmr/m/n/12 (-20) un ar-chi-vo
  den-tro de una ru-ta, por ejem-plo \T1/lmtt/m/n/12 ruta/archivo.bit\T1/lmr/m/n
 /12 (-20) . 
  []
 
 
-Overfull \hbox (112.85083pt too wide) in paragraph at lines 1019--1021
+Overfull \hbox (112.85083pt too wide) in paragraph at lines 1030--1032
 []\T1/lmr/bx/sc/12 (-20) Múltiples ar-chi-vos en una ru-ta: \T1/lmr/m/n/12 (-20
 ) usan-do la sin-ta-xis \T1/lmtt/m/n/12 ruta/archivos:archivo1.bit,archivo2.xdc
 \T1/lmr/m/n/12 (-20) . 
  []
 
-<boton_descargar_Archivos/ingresar_credenciales_y archivos.png, id=627, 1283.29
+<boton_descargar_Archivos/ingresar_credenciales_y archivos.png, id=647, 1283.29
 437pt x 739.76375pt>
 File: boton_descargar_Archivos/ingresar_credenciales_y archivos.png Graphic fil
 e (type png)
 <use boton_descargar_Archivos/ingresar_credenciales_y archivos.png>
 Package pdftex.def Info: boton_descargar_Archivos/ingresar_credenciales_y archi
-vos.png  used on input line 1032.
+vos.png  used on input line 1043.
 (pdftex.def)             Requested size: 426.79135pt x 246.01915pt.
-LaTeX Info: Redefining \. on input line 1037.
-LaTeX Info: Redefining \% on input line 1037.
+LaTeX Info: Redefining \. on input line 1048.
+LaTeX Info: Redefining \% on input line 1048.
 [29 <./boton_descargar_Archivos/modal_boton.png>]
-<boton_descargar_Archivos/ver_archivos_en_servidor.png, id=634, 1915.155pt x 10
+<boton_descargar_Archivos/ver_archivos_en_servidor.png, id=654, 1915.155pt x 10
 96.84781pt>
 File: boton_descargar_Archivos/ver_archivos_en_servidor.png Graphic file (type 
 png)
 <use boton_descargar_Archivos/ver_archivos_en_servidor.png>
 Package pdftex.def Info: boton_descargar_Archivos/ver_archivos_en_servidor.png 
- used on input line 1047.
+ used on input line 1058.
 (pdftex.def)             Requested size: 426.79135pt x 244.42026pt.
-LaTeX Info: Redefining \. on input line 1060.
-LaTeX Info: Redefining \% on input line 1060.
+LaTeX Info: Redefining \. on input line 1071.
+LaTeX Info: Redefining \% on input line 1071.
  [30 <./boton_descargar_Archivos/ingresar_credenciales_y archivos.png> <./boton
 _descargar_Archivos/ver_archivos_en_servidor.png>]
-<boton_descargar_Archivos/archivos_descargados.png, id=642, 1282.7925pt x 707.6
+<boton_descargar_Archivos/archivos_descargados.png, id=662, 1282.7925pt x 707.6
 4375pt>
 File: boton_descargar_Archivos/archivos_descargados.png Graphic file (type png)
 
 <use boton_descargar_Archivos/archivos_descargados.png>
 Package pdftex.def Info: boton_descargar_Archivos/archivos_descargados.png  use
-d on input line 1063.
+d on input line 1074.
 (pdftex.def)             Requested size: 426.79135pt x 235.43436pt.
-LaTeX Info: Redefining \. on input line 1079.
-LaTeX Info: Redefining \% on input line 1079.
+LaTeX Info: Redefining \. on input line 1090.
+LaTeX Info: Redefining \% on input line 1090.
  [31 <./boton_descargar_Archivos/archivos_descargados.png>] [32
 
 ]
 Cap\'{\i }tulo 9.
-<moodle/mis_cursos_moodle.png, id=652, 1915.9078pt x 1095.3422pt>
+<moodle/mis_cursos_moodle.png, id=672, 1915.9078pt x 1095.3422pt>
 File: moodle/mis_cursos_moodle.png Graphic file (type png)
 <use moodle/mis_cursos_moodle.png>
-Package pdftex.def Info: moodle/mis_cursos_moodle.png  used on input line 1110.
+Package pdftex.def Info: moodle/mis_cursos_moodle.png  used on input line 1119.
 
 (pdftex.def)             Requested size: 426.79135pt x 244.00117pt.
 [33
 
 ]
-<moodle/curso_vpl.png, id=658, 1915.9078pt x 1096.095pt>
+<moodle/curso_vpl.png, id=678, 1915.9078pt x 1096.095pt>
 File: moodle/curso_vpl.png Graphic file (type png)
 <use moodle/curso_vpl.png>
-Package pdftex.def Info: moodle/curso_vpl.png  used on input line 1119.
+Package pdftex.def Info: moodle/curso_vpl.png  used on input line 1128.
 (pdftex.def)             Requested size: 426.79135pt x 244.16887pt.
-<vpl/crear_actividad_vpl.png, id=659, 1915.9078pt x 1097.60063pt>
+<vpl/crear_actividad_vpl.png, id=679, 1915.9078pt x 1097.60063pt>
 File: vpl/crear_actividad_vpl.png Graphic file (type png)
 <use vpl/crear_actividad_vpl.png>
-Package pdftex.def Info: vpl/crear_actividad_vpl.png  used on input line 1128.
+Package pdftex.def Info: vpl/crear_actividad_vpl.png  used on input line 1137.
 (pdftex.def)             Requested size: 426.79135pt x 244.50427pt.
-LaTeX Info: Redefining \. on input line 1131.
-LaTeX Info: Redefining \% on input line 1131.
+LaTeX Info: Redefining \. on input line 1140.
+LaTeX Info: Redefining \% on input line 1140.
  [34 <./moodle/mis_cursos_moodle.png> <./moodle/curso_vpl.png>]
-<vpl/actividad_vpl.png, id=666, 1915.9078pt x 1096.84781pt>
+<vpl/actividad_vpl.png, id=686, 1915.9078pt x 1096.84781pt>
 File: vpl/actividad_vpl.png Graphic file (type png)
 <use vpl/actividad_vpl.png>
-Package pdftex.def Info: vpl/actividad_vpl.png  used on input line 1140.
+Package pdftex.def Info: vpl/actividad_vpl.png  used on input line 1149.
 (pdftex.def)             Requested size: 426.79135pt x 244.33658pt.
-LaTeX Info: Redefining \. on input line 1144.
-LaTeX Info: Redefining \% on input line 1144.
+LaTeX Info: Redefining \. on input line 1153.
+LaTeX Info: Redefining \% on input line 1153.
  [35 <./vpl/crear_actividad_vpl.png>]
-<vpl/restricciones_actividad_vpl.png, id=672, 1915.9078pt x 1104.37593pt>
+<vpl/restricciones_actividad_vpl.png, id=692, 1915.9078pt x 1104.37593pt>
 File: vpl/restricciones_actividad_vpl.png Graphic file (type png)
 <use vpl/restricciones_actividad_vpl.png>
 Package pdftex.def Info: vpl/restricciones_actividad_vpl.png  used on input lin
-e 1151.
+e 1161.
 (pdftex.def)             Requested size: 426.79135pt x 246.01355pt.
-LaTeX Info: Redefining \. on input line 1155.
-LaTeX Info: Redefining \% on input line 1155.
+LaTeX Info: Redefining \. on input line 1165.
+LaTeX Info: Redefining \% on input line 1165.
  [36 <./vpl/actividad_vpl.png>]
-<vpl/guardar_actividad_vpl.png, id=678, 1915.155pt x 1095.3422pt>
+<vpl/guardar_actividad_vpl.png, id=698, 1915.155pt x 1095.3422pt>
 File: vpl/guardar_actividad_vpl.png Graphic file (type png)
 <use vpl/guardar_actividad_vpl.png>
-Package pdftex.def Info: vpl/guardar_actividad_vpl.png  used on input line 1164
+Package pdftex.def Info: vpl/guardar_actividad_vpl.png  used on input line 1174
 .
 (pdftex.def)             Requested size: 426.79135pt x 244.08475pt.
-LaTeX Info: Redefining \. on input line 1168.
-LaTeX Info: Redefining \% on input line 1168.
- [37 <./vpl/restricciones_actividad_vpl.png>]
-<vpl/overview_actividad_vpl.png, id=684, 1914.40219pt x 1090.82532pt>
-File: vpl/overview_actividad_vpl.png Graphic file (type png)
-<use vpl/overview_actividad_vpl.png>
-Package pdftex.def Info: vpl/overview_actividad_vpl.png  used on input line 117
-2.
-(pdftex.def)             Requested size: 426.79135pt x 243.17809pt.
 LaTeX Info: Redefining \. on input line 1178.
 LaTeX Info: Redefining \% on input line 1178.
+ [37 <./vpl/restricciones_actividad_vpl.png>]
+<vpl/overview_actividad_vpl.png, id=704, 1914.40219pt x 1090.82532pt>
+File: vpl/overview_actividad_vpl.png Graphic file (type png)
+<use vpl/overview_actividad_vpl.png>
+Package pdftex.def Info: vpl/overview_actividad_vpl.png  used on input line 118
+2.
+(pdftex.def)             Requested size: 426.79135pt x 243.17809pt.
+LaTeX Info: Redefining \. on input line 1188.
+LaTeX Info: Redefining \% on input line 1188.
  [38 <./vpl/guardar_actividad_vpl.png> <./vpl/overview_actividad_vpl.png>]
 Cap\'{\i }tulo 10.
 
-Overfull \hbox (9.99379pt too wide) in paragraph at lines 1195--1195
+Overfull \hbox (9.99379pt too wide) in paragraph at lines 1208--1208
 |[]\T1/lmr/bx/n/17.28 (-20) Configurar ac-cio-nes dis-po-ni-bles pa-ra el alumn
 o| 
  []
 
-<profesor/mas_actividad_vpl.png, id=692, 1911.39093pt x 1096.095pt>
-File: profesor/mas_actividad_vpl.png Graphic file (type png)
-<use profesor/mas_actividad_vpl.png>
-Package pdftex.def Info: profesor/mas_actividad_vpl.png  used on input line 120
-3.
-(pdftex.def)             Requested size: 426.79135pt x 244.73753pt.
 [39
 
 ]
-<profesor/opciones_ejecucion_vpl.png, id=698, 1915.155pt x 1101.36469pt>
-File: profesor/opciones_ejecucion_vpl.png Graphic file (type png)
-<use profesor/opciones_ejecucion_vpl.png>
-Package pdftex.def Info: profesor/opciones_ejecucion_vpl.png  used on input lin
-e 1212.
-(pdftex.def)             Requested size: 426.79135pt x 245.42679pt.
-LaTeX Info: Redefining \. on input line 1216.
-LaTeX Info: Redefining \% on input line 1216.
+<profesor/mas_actividad_vpl.png, id=717, 1911.39093pt x 1096.095pt>
+File: profesor/mas_actividad_vpl.png Graphic file (type png)
+<use profesor/mas_actividad_vpl.png>
+Package pdftex.def Info: profesor/mas_actividad_vpl.png  used on input line 121
+6.
+(pdftex.def)             Requested size: 426.79135pt x 244.73753pt.
+<profesor/image.png, id=718, 1277.27188pt x 698.10812pt>
+File: profesor/image.png Graphic file (type png)
+<use profesor/image.png>
+Package pdftex.def Info: profesor/image.png  used on input line 1225.
+(pdftex.def)             Requested size: 426.79135pt x 233.26315pt.
+LaTeX Info: Redefining \. on input line 1229.
+LaTeX Info: Redefining \% on input line 1229.
  [40 <./profesor/mas_actividad_vpl.png>]
-<profesor/permitir_opciones_vpl.png, id=704, 1915.155pt x 1093.83656pt>
+<profesor/permitir_opciones_vpl.png, id=724, 1915.155pt x 1093.83656pt>
 File: profesor/permitir_opciones_vpl.png Graphic file (type png)
 <use profesor/permitir_opciones_vpl.png>
 Package pdftex.def Info: profesor/permitir_opciones_vpl.png  used on input line
- 1222.
+ 1235.
 (pdftex.def)             Requested size: 426.79135pt x 243.74924pt.
-LaTeX Info: Redefining \. on input line 1230.
-LaTeX Info: Redefining \% on input line 1230.
- [41 <./profesor/opciones_ejecucion_vpl.png> <./profesor/permitir_opciones_vpl.
-png>]
+LaTeX Info: Redefining \. on input line 1243.
+LaTeX Info: Redefining \% on input line 1243.
+ [41 <./profesor/image.png> <./profesor/permitir_opciones_vpl.png>]
 Cap\'{\i }tulo 11.
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 1239.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 1252.
 ignored error: Infinite glue shrinkage found in box being split [42
 
 ]
-LaTeX Info: Redefining \. on input line 1343.
-LaTeX Info: Redefining \% on input line 1343.
+LaTeX Info: Redefining \. on input line 1356.
+LaTeX Info: Redefining \% on input line 1356.
  [43]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 1386.
-LaTeX Info: Redefining \. on input line 1404.
-LaTeX Info: Redefining \% on input line 1404.
+(Font)              <10.95> on input line 1399.
+LaTeX Info: Redefining \. on input line 1417.
+LaTeX Info: Redefining \% on input line 1417.
 
 [44]
 
 LaTeX Font Warning: Font shape `T1/lmtt/bx/it' in size <12> not available
-(Font)              Font shape `T1/lmtt/b/sl' tried instead on input line 1449.
+(Font)              Font shape `T1/lmtt/b/sl' tried instead on input line 1462.
 
 
-LaTeX Info: Redefining \. on input line 1455.
-LaTeX Info: Redefining \% on input line 1455.
+LaTeX Info: Redefining \. on input line 1468.
+LaTeX Info: Redefining \% on input line 1468.
 [45]
-<vpl/test_configuration.png, id=789, 1915.155pt x 1101.36469pt>
+<vpl/test_configuration.png, id=809, 1915.155pt x 1101.36469pt>
 File: vpl/test_configuration.png Graphic file (type png)
 <use vpl/test_configuration.png>
-Package pdftex.def Info: vpl/test_configuration.png  used on input line 1486.
+Package pdftex.def Info: vpl/test_configuration.png  used on input line 1499.
 (pdftex.def)             Requested size: 426.79135pt x 245.42679pt.
-LaTeX Info: Redefining \. on input line 1490.
-LaTeX Info: Redefining \% on input line 1490.
- [46]
-<vpl/test_creado.png, id=816, 1915.9078pt x 1102.1175pt>
-File: vpl/test_creado.png Graphic file (type png)
-<use vpl/test_creado.png>
-Package pdftex.def Info: vpl/test_creado.png  used on input line 1495.
-(pdftex.def)             Requested size: 426.79135pt x 245.51047pt.
-LaTeX Info: Redefining \. on input line 1501.
-LaTeX Info: Redefining \% on input line 1501.
- [47 <./vpl/test_configuration.png> <./vpl/test_creado.png>]
 LaTeX Info: Redefining \. on input line 1503.
 LaTeX Info: Redefining \% on input line 1503.
+ [46]
+<vpl/test_creado.png, id=836, 1915.9078pt x 1102.1175pt>
+File: vpl/test_creado.png Graphic file (type png)
+<use vpl/test_creado.png>
+Package pdftex.def Info: vpl/test_creado.png  used on input line 1508.
+(pdftex.def)             Requested size: 426.79135pt x 245.51047pt.
+LaTeX Info: Redefining \. on input line 1514.
+LaTeX Info: Redefining \% on input line 1514.
+ [47 <./vpl/test_configuration.png> <./vpl/test_creado.png>]
+LaTeX Info: Redefining \. on input line 1516.
+LaTeX Info: Redefining \% on input line 1516.
  [48]
 Cap\'{\i }tulo 12.
 [49
 
 ]
-LaTeX Info: Redefining \. on input line 1601.
-LaTeX Info: Redefining \% on input line 1601.
+LaTeX Info: Redefining \. on input line 1614.
+LaTeX Info: Redefining \% on input line 1614.
  [50{C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.
 enc}]
-LaTeX Info: Redefining \. on input line 1649.
-LaTeX Info: Redefining \% on input line 1649.
+LaTeX Info: Redefining \. on input line 1662.
+LaTeX Info: Redefining \% on input line 1662.
  [51]
-<vpl/resultado_vpl.png, id=869, 1913.64937pt x 1095.3422pt>
+<vpl/resultado_vpl.png, id=889, 1913.64937pt x 1095.3422pt>
 File: vpl/resultado_vpl.png Graphic file (type png)
 <use vpl/resultado_vpl.png>
-Package pdftex.def Info: vpl/resultado_vpl.png  used on input line 1675.
+Package pdftex.def Info: vpl/resultado_vpl.png  used on input line 1688.
 (pdftex.def)             Requested size: 426.79135pt x 244.28531pt.
-LaTeX Info: Redefining \. on input line 1691.
-LaTeX Info: Redefining \% on input line 1691.
+LaTeX Info: Redefining \. on input line 1704.
+LaTeX Info: Redefining \% on input line 1704.
  [52 <./vpl/resultado_vpl.png>]
-<vpl/resultado_vpl_output.png, id=876, 1913.64937pt x 1101.36469pt>
+<vpl/resultado_vpl_output.png, id=896, 1913.64937pt x 1101.36469pt>
 File: vpl/resultado_vpl_output.png Graphic file (type png)
 <use vpl/resultado_vpl_output.png>
-Package pdftex.def Info: vpl/resultado_vpl_output.png  used on input line 1724.
+Package pdftex.def Info: vpl/resultado_vpl_output.png  used on input line 1737.
 
 (pdftex.def)             Requested size: 426.79135pt x 245.62845pt.
-LaTeX Info: Redefining \. on input line 1733.
-LaTeX Info: Redefining \% on input line 1733.
+LaTeX Info: Redefining \. on input line 1746.
+LaTeX Info: Redefining \% on input line 1746.
  [53 <./vpl/resultado_vpl_output.png>]
-<vpl/resultado_vpl_fail.png, id=884, 1915.9078pt x 1099.85907pt>
+<vpl/resultado_vpl_fail.png, id=904, 1915.9078pt x 1099.85907pt>
 File: vpl/resultado_vpl_fail.png Graphic file (type png)
 <use vpl/resultado_vpl_fail.png>
-Package pdftex.def Info: vpl/resultado_vpl_fail.png  used on input line 1745.
+Package pdftex.def Info: vpl/resultado_vpl_fail.png  used on input line 1758.
 (pdftex.def)             Requested size: 426.79135pt x 245.00737pt.
-LaTeX Info: Redefining \. on input line 1760.
-LaTeX Info: Redefining \% on input line 1760.
+LaTeX Info: Redefining \. on input line 1773.
+LaTeX Info: Redefining \% on input line 1773.
  [54 <./vpl/resultado_vpl_fail.png>] [55
 
 ]
 Cap\'{\i }tulo 13.
-<generador_bitstream/1_uso_de_boton_lab_remoto.png, id=895, 1278.27562pt x 741.
+File: iconos/lab_remoto.png Graphic file (type png)
+<use iconos/lab_remoto.png>
+Package pdftex.def Info: iconos/lab_remoto.png  used on input line 1792.
+(pdftex.def)             Requested size: 11.48843pt x 12.92488pt.
+<generador_bitstream/1_uso_de_boton_lab_remoto.png, id=915, 1278.27562pt x 741.
 26938pt>
 File: generador_bitstream/1_uso_de_boton_lab_remoto.png Graphic file (type png)
 
 <use generador_bitstream/1_uso_de_boton_lab_remoto.png>
 Package pdftex.def Info: generador_bitstream/1_uso_de_boton_lab_remoto.png  use
-d on input line 1790.
+d on input line 1804.
 (pdftex.def)             Requested size: 426.79135pt x 247.4926pt.
 [56
 
 ]
-<generador_bitstream/2_comando_genBIT.png, id=901, 1283.29437pt x 739.76375pt>
+<generador_bitstream/2_comando_genBIT.png, id=921, 1283.29437pt x 739.76375pt>
 File: generador_bitstream/2_comando_genBIT.png Graphic file (type png)
 <use generador_bitstream/2_comando_genBIT.png>
 Package pdftex.def Info: generador_bitstream/2_comando_genBIT.png  used on inpu
-t line 1806.
+t line 1820.
 (pdftex.def)             Requested size: 426.79135pt x 246.01915pt.
-LaTeX Info: Redefining \. on input line 1820.
-LaTeX Info: Redefining \% on input line 1820.
+LaTeX Info: Redefining \. on input line 1834.
+LaTeX Info: Redefining \% on input line 1834.
  [57 <./generador_bitstream/1_uso_de_boton_lab_remoto.png> <./generador_bitstre
 am/2_comando_genBIT.png>]
-<generador_bitstream/3_crear_proyecto.png, id=910, 1283.29437pt x 739.76375pt>
+<generador_bitstream/3_crear_proyecto.png, id=930, 1283.29437pt x 739.76375pt>
 File: generador_bitstream/3_crear_proyecto.png Graphic file (type png)
 <use generador_bitstream/3_crear_proyecto.png>
 Package pdftex.def Info: generador_bitstream/3_crear_proyecto.png  used on inpu
-t line 1823.
+t line 1837.
 (pdftex.def)             Requested size: 426.79135pt x 246.01915pt.
-<generador_bitstream/4_mover_codigo_vhdl_a_proyecto.png, id=912, 1280.28313pt x
+<generador_bitstream/4_mover_codigo_vhdl_a_proyecto.png, id=932, 1280.28313pt x
  735.24687pt>
 File: generador_bitstream/4_mover_codigo_vhdl_a_proyecto.png Graphic file (type
  png)
 <use generador_bitstream/4_mover_codigo_vhdl_a_proyecto.png>
 Package pdftex.def Info: generador_bitstream/4_mover_codigo_vhdl_a_proyecto.png
-  used on input line 1840.
+  used on input line 1854.
 (pdftex.def)             Requested size: 426.79135pt x 245.10039pt.
-LaTeX Info: Redefining \. on input line 1845.
-LaTeX Info: Redefining \% on input line 1845.
+LaTeX Info: Redefining \. on input line 1859.
+LaTeX Info: Redefining \% on input line 1859.
  [58 <./generador_bitstream/3_crear_proyecto.png>]
-<generador_bitstream/5_ingresar_a_proyecto.png, id=919, 1283.29437pt x 736.7525
+<generador_bitstream/5_ingresar_a_proyecto.png, id=939, 1283.29437pt x 736.7525
 pt>
 File: generador_bitstream/5_ingresar_a_proyecto.png Graphic file (type png)
 <use generador_bitstream/5_ingresar_a_proyecto.png>
 Package pdftex.def Info: generador_bitstream/5_ingresar_a_proyecto.png  used on
- input line 1864.
+ input line 1878.
 (pdftex.def)             Requested size: 426.79135pt x 245.01772pt.
-LaTeX Info: Redefining \. on input line 1869.
-LaTeX Info: Redefining \% on input line 1869.
+LaTeX Info: Redefining \. on input line 1883.
+LaTeX Info: Redefining \% on input line 1883.
 [59 <./generador_bitstream/4_mover_codigo_vhdl_a_proyecto.png>]
-<generador_bitstream/6_interfaz_generador_bitstream.png, id=926, 1283.29437pt x
+<generador_bitstream/6_interfaz_generador_bitstream.png, id=946, 1283.29437pt x
  733.74126pt>
 File: generador_bitstream/6_interfaz_generador_bitstream.png Graphic file (type
  png)
 <use generador_bitstream/6_interfaz_generador_bitstream.png>
 Package pdftex.def Info: generador_bitstream/6_interfaz_generador_bitstream.png
-  used on input line 1893.
+  used on input line 1907.
 (pdftex.def)             Requested size: 426.79135pt x 244.01628pt.
-LaTeX Info: Redefining \. on input line 1898.
-LaTeX Info: Redefining \% on input line 1898.
+LaTeX Info: Redefining \. on input line 1912.
+LaTeX Info: Redefining \% on input line 1912.
  [60 <./generador_bitstream/5_ingresar_a_proyecto.png>]
-<generador_bitstream/7_uso_filtro.png, id=933, 1281.78876pt x 735.24687pt>
+<generador_bitstream/7_uso_filtro.png, id=953, 1281.78876pt x 735.24687pt>
 File: generador_bitstream/7_uso_filtro.png Graphic file (type png)
 <use generador_bitstream/7_uso_filtro.png>
 Package pdftex.def Info: generador_bitstream/7_uso_filtro.png  used on input li
-ne 1907.
+ne 1921.
 (pdftex.def)             Requested size: 426.79135pt x 244.80869pt.
-LaTeX Info: Redefining \. on input line 1913.
-LaTeX Info: Redefining \% on input line 1913.
+LaTeX Info: Redefining \. on input line 1927.
+LaTeX Info: Redefining \% on input line 1927.
  [61 <./generador_bitstream/6_interfaz_generador_bitstream.png> <./generador_bi
 tstream/7_uso_filtro.png>]
-<generador_bitstream/8_asociar_puertos.png, id=941, 1281.78876pt x 727.21687pt>
+<generador_bitstream/8_asociar_puertos.png, id=961, 1281.78876pt x 727.21687pt>
 
 File: generador_bitstream/8_asociar_puertos.png Graphic file (type png)
 <use generador_bitstream/8_asociar_puertos.png>
 Package pdftex.def Info: generador_bitstream/8_asociar_puertos.png  used on inp
-ut line 1925.
+ut line 1939.
 (pdftex.def)             Requested size: 426.79135pt x 242.13501pt.
-<generador_bitstream/9_agregar_mapeo.png, id=943, 1280.28313pt x 741.26938pt>
+<generador_bitstream/9_agregar_mapeo.png, id=963, 1280.28313pt x 741.26938pt>
 File: generador_bitstream/9_agregar_mapeo.png Graphic file (type png)
 <use generador_bitstream/9_agregar_mapeo.png>
 Package pdftex.def Info: generador_bitstream/9_agregar_mapeo.png  used on input
- line 1940.
+ line 1954.
 (pdftex.def)             Requested size: 426.79135pt x 247.10803pt.
-LaTeX Info: Redefining \. on input line 1945.
-LaTeX Info: Redefining \% on input line 1945.
+LaTeX Info: Redefining \. on input line 1959.
+LaTeX Info: Redefining \% on input line 1959.
  [62 <./generador_bitstream/8_asociar_puertos.png>]
-<generador_bitstream/10_todo_mapeados.png, id=950, 1281.78876pt x 739.76375pt>
+<generador_bitstream/10_todo_mapeados.png, id=970, 1281.78876pt x 739.76375pt>
 File: generador_bitstream/10_todo_mapeados.png Graphic file (type png)
 <use generador_bitstream/10_todo_mapeados.png>
 Package pdftex.def Info: generador_bitstream/10_todo_mapeados.png  used on inpu
-t line 1953.
+t line 1967.
 (pdftex.def)             Requested size: 426.79135pt x 246.31264pt.
-LaTeX Info: Redefining \. on input line 1958.
-LaTeX Info: Redefining \% on input line 1958.
+LaTeX Info: Redefining \. on input line 1972.
+LaTeX Info: Redefining \% on input line 1972.
  [63 <./generador_bitstream/9_agregar_mapeo.png> <./generador_bitstream/10_todo
 _mapeados.png>]
-<generador_bitstream/11_guardado_de_mapeo.png, id=959, 1281.28688pt x 737.75626
+<generador_bitstream/11_guardado_de_mapeo.png, id=979, 1281.28688pt x 737.75626
 pt>
 File: generador_bitstream/11_guardado_de_mapeo.png Graphic file (type png)
 <use generador_bitstream/11_guardado_de_mapeo.png>
 Package pdftex.def Info: generador_bitstream/11_guardado_de_mapeo.png  used on 
-input line 1969.
+input line 1983.
 (pdftex.def)             Requested size: 426.79135pt x 245.73428pt.
-<generador_bitstream/12_generar_xdc.png, id=961, 1283.29437pt x 734.745pt>
+<generador_bitstream/12_generar_xdc.png, id=981, 1283.29437pt x 734.745pt>
 File: generador_bitstream/12_generar_xdc.png Graphic file (type png)
 <use generador_bitstream/12_generar_xdc.png>
 Package pdftex.def Info: generador_bitstream/12_generar_xdc.png  used on input 
-line 1982.
+line 1996.
 (pdftex.def)             Requested size: 426.79135pt x 244.35008pt.
-LaTeX Info: Redefining \. on input line 1987.
-LaTeX Info: Redefining \% on input line 1987.
+LaTeX Info: Redefining \. on input line 2001.
+LaTeX Info: Redefining \% on input line 2001.
  [64 <./generador_bitstream/11_guardado_de_mapeo.png>]
-<generador_bitstream/13_construri_bit.png, id=968, 1281.28688pt x 742.27313pt>
+<generador_bitstream/13_construri_bit.png, id=988, 1281.28688pt x 742.27313pt>
 File: generador_bitstream/13_construri_bit.png Graphic file (type png)
 <use generador_bitstream/13_construri_bit.png>
 Package pdftex.def Info: generador_bitstream/13_construri_bit.png  used on inpu
-t line 1996.
+t line 2010.
 (pdftex.def)             Requested size: 426.79135pt x 247.23877pt.
-LaTeX Info: Redefining \. on input line 2006.
-LaTeX Info: Redefining \% on input line 2006.
+LaTeX Info: Redefining \. on input line 2020.
+LaTeX Info: Redefining \% on input line 2020.
  [65 <./generador_bitstream/12_generar_xdc.png> <./generador_bitstream/13_const
 ruri_bit.png>]
-<generador_bitstream/14_construir_bit_parte_2.png, id=976, 1283.29437pt x 743.7
+<generador_bitstream/14_construir_bit_parte_2.png, id=996, 1283.29437pt x 743.7
 7875pt>
 File: generador_bitstream/14_construir_bit_parte_2.png Graphic file (type png)
 <use generador_bitstream/14_construir_bit_parte_2.png>
 Package pdftex.def Info: generador_bitstream/14_construir_bit_parte_2.png  used
- on input line 2009.
+ on input line 2023.
 (pdftex.def)             Requested size: 426.79135pt x 247.3544pt.
-<generador_bitstream/15_actualizar_estado.png, id=978, 1281.78876pt x 739.26187
+<generador_bitstream/15_actualizar_estado.png, id=998, 1281.78876pt x 739.26187
 pt>
 File: generador_bitstream/15_actualizar_estado.png Graphic file (type png)
 <use generador_bitstream/15_actualizar_estado.png>
 Package pdftex.def Info: generador_bitstream/15_actualizar_estado.png  used on 
-input line 2023.
+input line 2037.
 (pdftex.def)             Requested size: 426.79135pt x 246.14552pt.
-LaTeX Info: Redefining \. on input line 2028.
-LaTeX Info: Redefining \% on input line 2028.
+LaTeX Info: Redefining \. on input line 2042.
+LaTeX Info: Redefining \% on input line 2042.
  [66 <./generador_bitstream/14_construir_bit_parte_2.png>]
-<generador_bitstream/16_build_terminado_y_ruta_resultados.png, id=985, 1281.788
-76pt x 735.24687pt>
+<generador_bitstream/16_build_terminado_y_ruta_resultados.png, id=1005, 1281.78
+876pt x 735.24687pt>
 File: generador_bitstream/16_build_terminado_y_ruta_resultados.png Graphic file
  (type png)
 <use generador_bitstream/16_build_terminado_y_ruta_resultados.png>
 Package pdftex.def Info: generador_bitstream/16_build_terminado_y_ruta_resultad
-os.png  used on input line 2038.
+os.png  used on input line 2052.
 (pdftex.def)             Requested size: 426.79135pt x 244.80869pt.
-LaTeX Info: Redefining \. on input line 2043.
-LaTeX Info: Redefining \% on input line 2043.
+LaTeX Info: Redefining \. on input line 2057.
+LaTeX Info: Redefining \% on input line 2057.
  [67 <./generador_bitstream/15_actualizar_estado.png> <./generador_bitstream/16
 _build_terminado_y_ruta_resultados.png>]
-<generador_bitstream/17_visualizacion_de_Archivos_generados.png, id=993, 1283.2
-9437pt x 750.30313pt>
+<generador_bitstream/17_visualizacion_de_Archivos_generados.png, id=1013, 1283.
+29437pt x 750.30313pt>
 File: generador_bitstream/17_visualizacion_de_Archivos_generados.png Graphic fi
 le (type png)
 <use generador_bitstream/17_visualizacion_de_Archivos_generados.png>
 Package pdftex.def Info: generador_bitstream/17_visualizacion_de_Archivos_gener
-ados.png  used on input line 2055.
+ados.png  used on input line 2069.
 (pdftex.def)             Requested size: 426.79135pt x 249.52417pt.
-<generador_bitstream/18_descargar_archivis_bit_y_xdc.png, id=995, 1281.78876pt 
-x 738.25812pt>
+File: iconos/descargar_archivos.png Graphic file (type png)
+<use iconos/descargar_archivos.png>
+Package pdftex.def Info: iconos/descargar_archivos.png  used on input line 2076
+.
+(pdftex.def)             Requested size: 12.9244pt x 12.92488pt.
+<generador_bitstream/18_descargar_archivis_bit_y_xdc.png, id=1015, 1281.78876pt
+ x 738.25812pt>
 File: generador_bitstream/18_descargar_archivis_bit_y_xdc.png Graphic file (typ
 e png)
 <use generador_bitstream/18_descargar_archivis_bit_y_xdc.png>
 Package pdftex.def Info: generador_bitstream/18_descargar_archivis_bit_y_xdc.pn
-g  used on input line 2071.
+g  used on input line 2086.
 (pdftex.def)             Requested size: 426.79135pt x 245.81133pt.
-LaTeX Info: Redefining \. on input line 2076.
-LaTeX Info: Redefining \% on input line 2076.
+LaTeX Info: Redefining \. on input line 2091.
+LaTeX Info: Redefining \% on input line 2091.
  [68 <./generador_bitstream/17_visualizacion_de_Archivos_generados.png>]
-<generador_bitstream/19_ve_archivo_bit_editorvpl.png, id=1002, 1283.29437pt x 7
+<generador_bitstream/19_ve_archivo_bit_editorvpl.png, id=1022, 1283.29437pt x 7
 36.7525pt>
 File: generador_bitstream/19_ve_archivo_bit_editorvpl.png Graphic file (type pn
 g)
 <use generador_bitstream/19_ve_archivo_bit_editorvpl.png>
 Package pdftex.def Info: generador_bitstream/19_ve_archivo_bit_editorvpl.png  u
-sed on input line 2084.
+sed on input line 2099.
 (pdftex.def)             Requested size: 426.79135pt x 245.01772pt.
-LaTeX Info: Redefining \. on input line 2095.
-LaTeX Info: Redefining \% on input line 2095.
+LaTeX Info: Redefining \. on input line 2110.
+LaTeX Info: Redefining \% on input line 2110.
  [69 <./generador_bitstream/18_descargar_archivis_bit_y_xdc.png> <./generador_b
 itstream/19_ve_archivo_bit_editorvpl.png>]
-<generador_bitstream/20_ver_Archivo_xdc_editor_vpl.png, id=1011, 1282.7925pt x 
+<generador_bitstream/20_ver_Archivo_xdc_editor_vpl.png, id=1031, 1282.7925pt x 
 726.21312pt>
 File: generador_bitstream/20_ver_Archivo_xdc_editor_vpl.png Graphic file (type 
 png)
 <use generador_bitstream/20_ver_Archivo_xdc_editor_vpl.png>
 Package pdftex.def Info: generador_bitstream/20_ver_Archivo_xdc_editor_vpl.png 
- used on input line 2098.
+ used on input line 2113.
 (pdftex.def)             Requested size: 426.79135pt x 241.61241pt.
-<generador_bitstream/21_conexion_la_fpga.png, id=1013, 1283.29437pt x 736.25063
+File: iconos/lab_remoto.png Graphic file (type png)
+<use iconos/lab_remoto.png>
+Package pdftex.def Info: iconos/lab_remoto.png  used on input line 2124.
+(pdftex.def)             Requested size: 11.48843pt x 12.92488pt.
+<generador_bitstream/21_conexion_la_fpga.png, id=1033, 1283.29437pt x 736.25063
 pt>
 File: generador_bitstream/21_conexion_la_fpga.png Graphic file (type png)
 <use generador_bitstream/21_conexion_la_fpga.png>
 Package pdftex.def Info: generador_bitstream/21_conexion_la_fpga.png  used on i
-nput line 2115.
+nput line 2131.
 (pdftex.def)             Requested size: 426.79135pt x 244.85081pt.
-LaTeX Info: Redefining \. on input line 2120.
-LaTeX Info: Redefining \% on input line 2120.
+LaTeX Info: Redefining \. on input line 2136.
+LaTeX Info: Redefining \% on input line 2136.
  [70 <./generador_bitstream/20_ver_Archivo_xdc_editor_vpl.png>]
-<generador_bitstream/21_ver_archvos_lab_fpga.png, id=1020, 1277.27188pt x 735.2
+<generador_bitstream/21_ver_archvos_lab_fpga.png, id=1040, 1277.27188pt x 735.2
 4687pt>
 File: generador_bitstream/21_ver_archvos_lab_fpga.png Graphic file (type png)
 <use generador_bitstream/21_ver_archvos_lab_fpga.png>
 Package pdftex.def Info: generador_bitstream/21_ver_archvos_lab_fpga.png  used 
-on input line 2128.
+on input line 2144.
 (pdftex.def)             Requested size: 426.79135pt x 245.67255pt.
-LaTeX Info: Redefining \. on input line 2139.
-LaTeX Info: Redefining \% on input line 2139.
+LaTeX Info: Redefining \. on input line 2155.
+LaTeX Info: Redefining \% on input line 2155.
 [71 <./generador_bitstream/21_conexion_la_fpga.png> <./generador_bitstream/21_v
 er_archvos_lab_fpga.png>]
-<generador_bitstream/22_programacion_ver_servidor_video_fpga.png, id=1028, 1283
+<generador_bitstream/22_programacion_ver_servidor_video_fpga.png, id=1048, 1283
 .29437pt x 796.9775pt>
 File: generador_bitstream/22_programacion_ver_servidor_video_fpga.png Graphic f
 ile (type png)
 <use generador_bitstream/22_programacion_ver_servidor_video_fpga.png>
 Package pdftex.def Info: generador_bitstream/22_programacion_ver_servidor_video
-_fpga.png  used on input line 2142.
+_fpga.png  used on input line 2158.
 (pdftex.def)             Requested size: 426.79135pt x 265.0464pt.
-<generador_bitstream/23_uso_de_xdc_controlar_switches_fpga.png, id=1030, 1282.7
+<generador_bitstream/23_uso_de_xdc_controlar_switches_fpga.png, id=1050, 1282.7
 925pt x 760.34062pt>
 File: generador_bitstream/23_uso_de_xdc_controlar_switches_fpga.png Graphic fil
 e (type png)
 <use generador_bitstream/23_uso_de_xdc_controlar_switches_fpga.png>
 Package pdftex.def Info: generador_bitstream/23_uso_de_xdc_controlar_switches_f
-pga.png  used on input line 2155.
+pga.png  used on input line 2171.
 (pdftex.def)             Requested size: 426.79135pt x 252.9667pt.
-LaTeX Info: Redefining \. on input line 2160.
-LaTeX Info: Redefining \% on input line 2160.
+LaTeX Info: Redefining \. on input line 2176.
+LaTeX Info: Redefining \% on input line 2176.
  [72 <./generador_bitstream/22_programacion_ver_servidor_video_fpga.png>]
-<generador_bitstream/24_asignacion_pines_resultado_fpga.png, id=1037, 1281.7887
+<generador_bitstream/24_asignacion_pines_resultado_fpga.png, id=1057, 1281.7887
 6pt x 736.7525pt>
 File: generador_bitstream/24_asignacion_pines_resultado_fpga.png Graphic file (
 type png)
 <use generador_bitstream/24_asignacion_pines_resultado_fpga.png>
 Package pdftex.def Info: generador_bitstream/24_asignacion_pines_resultado_fpga
-.png  used on input line 2170.
+.png  used on input line 2186.
 (pdftex.def)             Requested size: 426.79135pt x 245.31001pt.
-LaTeX Info: Redefining \. on input line 2180.
-LaTeX Info: Redefining \% on input line 2180.
+LaTeX Info: Redefining \. on input line 2196.
+LaTeX Info: Redefining \% on input line 2196.
  [73 <./generador_bitstream/23_uso_de_xdc_controlar_switches_fpga.png> <./gener
 ador_bitstream/24_asignacion_pines_resultado_fpga.png>]
 Ap\'{e}ndice A.
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 2198.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 2214.
 [74
 
 ] [75]
@@ -2183,11 +2277,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 45773 strings out of 467871
- 1054375 string characters out of 5418376
- 1780654 words of memory out of 5000000
- 73241 multiletter control sequences out of 15000+600000
- 743512 words of font info for 278 fonts, out of 8000000 for 9000
+ 45853 strings out of 467871
+ 1056488 string characters out of 5418376
+ 1780704 words of memory out of 5000000
+ 73311 multiletter control sequences out of 15000+600000
+ 744055 words of font info for 283 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,13n,98p,1003b,2154s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pf
@@ -2208,9 +2302,9 @@ b><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pf
 b><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pf
 b><C:/Users/jesus/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtti10.p
 fb>
-Output written on main.pdf (86 pages, 15283735 bytes).
+Output written on main.pdf (86 pages, 15251577 bytes).
 PDF statistics:
- 1425 PDF objects out of 1440 (max. 8388607)
+ 1445 PDF objects out of 1728 (max. 8388607)
  357 named destinations out of 1000 (max. 500000)
- 66585 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 66635 words of extra memory for PDF output out of 74296 (max. 10000000)
 
